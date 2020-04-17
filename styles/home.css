@@ -109,8 +109,51 @@ a.nav{
     width:100%;
 }
 
+.footer{
+    
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: space-between;
+    
+}
 .nosotras{
     font-family:'Inria Sans', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
+    margin-top: 10px;
 }
+.deezer img{
+    height:30px;
+    margin:0 auto;
+    margin-left: 20px;
+    display:block;
+}
+.rankings{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.rankings img{
+    width: 65%;
+    height: 200px;
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+.sections {
+    text-align: center;
+    margin: 0 auto;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.albums img{
+    width:55%;
+}
+.artists img{
+    width: 60%;
+}
+
 
