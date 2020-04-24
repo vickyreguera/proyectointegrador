@@ -85,6 +85,7 @@ nav:hover ul.navegacion{
     grid-template-columns: 100%;
     justify-content: space-between;
     width: 100%;
+    margin: 5px;
 }
 .menu{
     text-decoration: none;
@@ -92,9 +93,11 @@ nav:hover ul.navegacion{
     text-transform: uppercase;
     list-style: none;
     text-align: center;
-    font-weight:bold;
-    margin-bottom: 10px;
-    width:100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width:90%;
+    background-color: black;
+    
 }
 
 a.nav{
@@ -106,8 +109,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: black;
-    width:100%;
+    
 }
 img.tini{
     display: block;
@@ -136,20 +138,20 @@ h5{
     text-decoration: none;
     
 }
-.infoalbum ul{
+.infoalbum {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-content: space-around;
     
 }
-ul li{
+article.info{
    margin-left: 0;
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
     color: black;
     text-decoration: none;
-    margin right: 5px; 
+    margin-right: 5px; 
 }
 .txchico{
     font-size: 15px;
@@ -175,6 +177,7 @@ h4.reproducir{
     background-color: black;
     width: 45%;
     margin: 0 auto;
+    margin-bottom: 50px;
     
 }
 ul.gridrepro {
@@ -191,4 +194,24 @@ ul.gridrepro {
     height: 10px;
     padding-top: 10px;
     padding-right: 7px;
+    padding-left: 5px;
+}
+.footer{
+    
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: space-between;
+    
+}
+.nosotras{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.deezer img{
+    height:30px;
+    margin:0 auto;
+    margin-left: 20px;
+    display:block;
 }
