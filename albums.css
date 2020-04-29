@@ -222,7 +222,7 @@ section.listasongs{
 @media (min-width: 1024px){
     header {
         display: grid;
-        grid-template-columns: 20% 70%;
+        grid-template-columns: 30% 60%;
         justify-content: space-around;
         background-color: black;
         height: 90px;
@@ -269,7 +269,7 @@ section.listasongs{
         display: grid;
         grid-template-columns: 40% 50%;
         justify-content: space-around;
-        margin-bottom: 220px;
+        margin-bottom: 150px;
     }
     img.tini{
         display: block;
@@ -305,7 +305,7 @@ section.listasongs{
 
     }
     footer{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     div.footer{
 
@@ -323,7 +323,8 @@ section.listasongs{
         margin-left: 40px;
     }
     .infoalbum {
-            margin-top: 40px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         
     }
        
@@ -349,10 +350,10 @@ section.listasongs{
         section.listasongs{
             display: block;
             background-color: rgb(250, 229, 219);
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 50px;
+            margin-top: 0;
+            margin-bottom: 0px;
         }
         ol.listacanciones{
             list-style: decimal-leading-zero;

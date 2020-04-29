@@ -42,6 +42,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -189,6 +193,7 @@ section.listasongs{
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 ol.listacanciones{
     list-style: decimal-leading-zero;
@@ -222,4 +227,153 @@ ol.listacanciones{
     margin-left: 20px;
     display:block;
 }
+article.columnas {
+    display: none;
+}
 
+@media (min-width: 1024px){
+    header {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        justify-content: space-around;
+        background-color: black;
+        height: 90px;
+        margin-bottom: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .toggle-nav{
+        display: none;
+    }
+    nav:hover ul.navegacion{
+        display: grid;
+    }
+    ul.navegacion{
+        display: block;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        margin-top: 26px;
+    }
+    .logo img{
+        height: 90px;
+        display:block;
+        border-radius: 100%;
+        
+    }
+    a.nav{
+        color: white;
+        text-decoration: none;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }    
+    .menu{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0;
+        width:90%;
+        margin-top: 5px;
+    }
+    div.container{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-around;
+        margin-bottom: 150px;
+        margin-top: 60px;
+    }
+    img.tini{
+        display: block;
+        max-width: 300px;
+        min-height: 300px;
+        padding-top: 30px;
+        padding-left: 8px;
+        margin-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        margin: 0 auto;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 40px;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        padding-bottom: 5px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+   
+    footer{
+        margin-bottom: 30px;
+    }
+    div.footer{
+
+    }
+    
+    .nosotras{
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+        margin-left: 40px;
+    }
+ 
+    section.listasongs{
+            display: block;
+            background-color: rgb(250, 229, 219);
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 120px;
+            margin-bottom: 0px;
+        }
+        ol.listacanciones{
+            list-style: decimal-leading-zero;
+            margin-left: 50px;
+        }
+        .cancion{
+            font-family:'Inria Sans', sans-serif;
+            font-size: 35px;
+            padding: 8px;
+            
+        }
+    .txchico{
+       font-size: 24px; 
+       margin-bottom: 10px;
+    }    
+    .separar{
+        font-size: 20px;
+    }
+    ul.columnas{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-around;
+    }
+    h4.album{
+        font-size: 20px;
+        font-family:'Inria Sans', sans-serif;
+        text-align: center;
+       
+    }
+    .fas{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    h6.quiero{
+        font-size: 25px;
+        font-family:'Inria Sans', sans-serif;
+        font-weight: bold;
+    }
+    li.alado{s
+        display: grid;
+        grid-template-columns: 40% 60%;
+        justify-content: space-evenly;
+    }
+  
+}
