@@ -34,6 +34,10 @@ body {
 ol, ul {
 	list-style: none;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -121,7 +125,7 @@ a.nav{
     width:100%;
     display: grid;
     grid-template-columns: 20% 80%;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 .nosotras{
@@ -169,15 +173,6 @@ a.nav{
 }
 
 
-ul.detalle{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-    display:none;
-
-}
 .top5{
     text-decoration: none;
     font-family: 'Inria Sans', sans-serif;
@@ -194,21 +189,37 @@ ul.detalle{
 }
 
 a.nombre{
-    display: none;
+    
     color:black;
+    display: none;
     text-decoration: none;
 
 }
 
 img.foto{
     margin: 0 auto;
-    height:80px;
-    width: 70%;
-    border-radius: 50%;
+    width: 50%;
+    border-radius: 100%;
     display: block;
     margin-bottom: 3px;
 }
 
+ul.detalle{
+   
+    width:100%;
+    
+}
 nav:hover ul.detalle{
     display: block;
+    
 }
+
+.detalle{
+    display: grid;
+    grid-template-columns:100%;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
