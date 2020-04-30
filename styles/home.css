@@ -280,4 +280,17 @@ nav:hover ul.detalle{
         margin-bottom: 150px;
         margin-top: 60px;
     }
+    .main{
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .top5{
+        margin-top: 30px;
+    }
+    .nombre{
+        margin-bottom: 10px;
+    }
+
 }
