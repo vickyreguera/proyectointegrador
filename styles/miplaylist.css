@@ -211,6 +211,10 @@ a.nav{
     margin-left: 10px;
     font-size: 12px;
 }
+.data i{
+    margin-top: 10px;
+    font-size: 30px;
+}
 
 
 
@@ -310,6 +314,9 @@ a.nav{
     .h1{
         margin-left: 40px;
     }
-    
+    .data i{
+        margin-top:0px;
+        font-size: 25px;
+    }
     
 }
