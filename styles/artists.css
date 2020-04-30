@@ -57,13 +57,14 @@ body{
     background-color: rgb(255,224,208)
 }
 .logo img{
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    width: 55%;
-    border-radius: 50%;
+    width: 80px;
+    
     display:block;
     align-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .toggle-nav {
     background-color: black;
@@ -297,9 +298,11 @@ li.alado{
         margin-top: 26px;
     }
     .logo img{
-        height: 90px;
+        height: 70px;
         display:block;
-        border-radius: 100%;
+        width: 70px;
+        padding-top: 3px;
+        padding-bottom: 3px ;
         
     }
     a.nav{
