@@ -231,6 +231,7 @@ a.nav{
     }
     nav:hover ul.navegacion{
         display: grid;
+        margin-top: 26px;
     }
     ul.navegacion{
         display: block;
@@ -309,5 +310,6 @@ a.nav{
     .h1{
         margin-left: 40px;
     }
+    
     
 }
