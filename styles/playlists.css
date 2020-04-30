@@ -93,6 +93,10 @@ ul li{
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 5px;
+    
+}
+.repro{
+    margin: 0;
 }
 .colrepro {
     display: grid;
