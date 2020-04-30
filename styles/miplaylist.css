@@ -147,85 +147,73 @@ a.nav{
     margin-left: 15px;
     display:block;
     margin-bottom: 10px;
-}
-.rankings{
-    display: grid;
-    grid-template-columns: 100%;
-    
-}
 
-.rankings img{
-    width: 65%;
-    height: 200px;
-    align-content: center;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
 }
-.sections {
-    text-align: center;
-    margin: 0 auto;
+.h1{
     font-family:'Inria Sans', sans-serif;
     font-size: 30px;
-    margin-bottom: 20px;
-    color: black;
-    text-decoration: none;
+    text-decoration:underline;
+    height: 50px;
+    margin: 20px;
+    margin-top: 10px;
 }
-
-
-.top5{
-    text-decoration: none;
-    font-family: 'Inria Sans', sans-serif;
-    text-transform: uppercase;
-    list-style: none;
-    text-align: center;
-    font-weight:bold;
-    margin-bottom: 5px;
-    width:100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color:black;
-
-}
-
-a.nombre{
-    
-    color:black;
-    display: none;
-    text-decoration: none;
-
-}
-h4.nombre{
-    color:black;
-    font-family:'Inria Sans', sans-serif;
-}
-
-img.foto{
-    margin: 0 auto;
+.crear{
+    background-color:rgb(250, 229, 219);
     width: 50%;
-    height:150px;
-    border-radius: 100%;
+    height:25px;
+    align-content: center;
+    padding-right:10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-between;
+    border: 1px solid rgb(235, 223, 228);
+    margin-bottom: 20px;
+}
+
+.nuevo{
+    font-family:'Inria Sans', sans-serif;
+    text-align: right;
+    margin-right: 10px;
+    color: black;
+}
+
+.mia{
     display: block;
+    width:100%;
+    height:50px;
+}
+.playlists{
+    background-color:rgb(250, 229, 219);
+    padding-top: 10px;
+    width:95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.musica{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-left:10px;
+    width:95%;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
+.nombre{
+    font-family:'Inria Sans', sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.subnombre{
+    font-family:'Inria Sans', sans-serif;
+    margin-left: 10px;
+    font-size: 12px;
+}
 
-ul.detalle{
-   
-    width:100%;
-    
-}
-nav:hover ul.detalle{
-    display: block;
-    
-}
 
-.detalle{
-    display: grid;
-    grid-template-columns:100%;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-}
+
 
 @media (min-width:1024px){
     header {
@@ -280,4 +268,5 @@ nav:hover ul.detalle{
         margin-bottom: 150px;
         margin-top: 60px;
     }
+    
 }
