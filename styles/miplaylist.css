@@ -34,6 +34,10 @@ body {
 ol, ul {
 	list-style: none;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -59,7 +63,7 @@ body{
     border-radius: 50%;
     display:block;
     align-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 .toggle-nav {
     background-color: black;
@@ -69,7 +73,7 @@ body{
     display: block;
     margin-top: 10px;
     width: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 ul.navegacion{
     display: none;
@@ -78,12 +82,16 @@ ul.navegacion{
 
 nav:hover ul.navegacion{
     display: block;
+    width: 90%;
+    margin: 0 auto;
+    
 }
 .navegacion{
     display: grid;
     grid-template-columns: 100%;
     justify-content: space-between;
     width: 100%;
+    margin:5px;
 }
 .menu{
     text-decoration: none;
@@ -92,8 +100,9 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width:100%;
+    background-color: black;
 }
 
 a.nav{
@@ -103,94 +112,108 @@ a.nav{
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
+    width:100%;
+}
+.menu{
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: black;
-    width:100%;
+    
 }
 
 .footer{
     
     width:100%;
     display: grid;
-    grid-template-columns: 20% 70%;
-    justify-content: space-between;
+    grid-template-columns: 20% 80%;
+    justify-content: space-around;
     
 }
 .nosotras{
-    font-family:'Inria Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    
 }
+.nosotras h3{
+    font-size:12px;
+    font-family: 'Inria Sans', sans-serif;
+    margin-left: 7px;
+    padding-top:10px;
+    
+}
+
 .deezer img{
     height:30px;
     margin:0 auto;
-    margin-left: 20px;
+    margin-left: 15px;
     display:block;
+    margin-bottom: 10px;
+
 }
-.rankings{
-    display: grid;
-    grid-template-columns: 100%;
-}
-.rankings img{
-    width: 65%;
-    height: 200px;
-    align-content: center;
-    display: block;
-    margin: auto;
-}
-.sections {
-    text-align: center;
-    margin: 0 auto;
+.h1{
     font-family:'Inria Sans', sans-serif;
     font-size: 30px;
-    margin-bottom: 50px;
-    color: black;
-    text-decoration: none;
+    text-decoration:underline;
+    height: 50px;
+    margin: 20px;
+    margin-top: 10px;
 }
-
-.albums img{
-    width:55%;
-}
-
-a.nombre{
-    
-    color:black;
-    display: none;
-    text-decoration: none;
-
-}
-h4.nombre{
-    color:black;
-    font-family:'Inria Sans', sans-serif;
-}
-
-img.foto{
-    margin: 0 auto;
+.crear{
+    background-color:rgb(250, 229, 219);
     width: 50%;
-    height:150px;
-    border-radius: 100%;
-    display: block;
-    margin-bottom: 10px;
-}
-
-ul.detalle{
-   
-    width:100%;
-    
-}
-nav:hover ul.detalle{
-    display: block;
-    
-}
-
-.detalle{
-    display: grid;
-    grid-template-columns:100%;
+    height:25px;
+    align-content: center;
+    padding-right:10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 20% 80%;
     justify-content: space-between;
-    width: 100%;
+    border: 1px solid rgb(235, 223, 228);
     margin-bottom: 20px;
 }
+
+.nuevo{
+    font-family:'Inria Sans', sans-serif;
+    text-align: right;
+    margin-right: 10px;
+    color: black;
+}
+
+.mia{
+    display: block;
+    width:100%;
+    height:50px;
+}
+.playlists{
+    background-color:rgb(250, 229, 219);
+    padding-top: 10px;
+    width:95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.musica{
+    display: grid;
+    grid-template-columns: 20% 70% 5%;
+    margin-left:10px;
+    width:95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.nombre{
+    font-family:'Inria Sans', sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.subnombre{
+    font-family:'Inria Sans', sans-serif;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+
 
 @media (min-width:1024px){
     header {
@@ -245,17 +268,46 @@ nav:hover ul.detalle{
         margin-bottom: 150px;
         margin-top: 60px;
     }
-    .main{
-        display: grid;
-        grid-template-columns:20% 20% 20% 20% 20%;
+    .variedad{
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
         justify-content: space-between;
-        height: 300px;
     }
-    .top5{
-        margin-top: 30px;
+    .musica{
+        display: grid;
+        grid-template-columns: 100%;
     }
-    .nombre{
+    .mia{
+        height:250px;
+        width:80%;
+        margin:0 auto;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
-
+    .crear{
+        margin-left: 40px;
+        width:23%;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .nuevo{
+        text-align: center;
+    }
+    .data{
+        margin: 0 auto;
+    }
+    .nombre{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .subnombre{
+        margin: 0 auto;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .h1{
+        margin-left: 40px;
+    }
+    
 }
