@@ -6,16 +6,11 @@
     <title>Audiora Studios</title>
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
    <link rel="stylesheet" href="../proyectointegrador/styles/home.css">
 </head>
 <body>
     <header>
-        <div class="logo"> <a href="home.html"><img src="../proyectointegrador/fotos/Screen Shot 2020-04-10 at 5.13.17 PM.png"></a></div>
+        <div class="logo"> <img src="../proyectointegrador/fotos/Screen Shot 2020-04-10 at 5.13.17 PM.png"></div>
         <nav class="main-nav">
             <a href="#" class="toggle-nav">
                 <span class="fa fa-bars"></span>
@@ -26,7 +21,6 @@
                 <li class="menu"><a href="home.html" class="nav">Home</a></li> 
             </ul>
         </nav>
-    </header>
     <main>
         <div class="rankings">
             <div class="tracks">
@@ -63,8 +57,12 @@
                 </ul>
                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
                     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                 <a style=text-decoration:none href="../proyectointegrador/tracks.html"><img src="../proyectointegrador/fotos/icon tracks.png" alt="tracks">
+                 <h2 class="sections">Tracks</h2></a>
             </div>
-                </nav>  
+            <div class="albums"> 
+               <a style=text-decoration:none href="../proyectointegrador/albums.html"><img src="../proyectointegrador/fotos/icon playlist.png">
+                <h2 class="sections"> Albums</h2></a> 
             </div>
             <div class="artists">
                 <nav class="main">
@@ -83,6 +81,8 @@
                     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 </div>
                 </nav>  
+                <a style=text-decoration:none href="../proyectointegrador/artists.html"> <img src="../proyectointegrador/fotos/music-artist-icon.png">
+                <h2 class="sections"> Artists</h2></a>
                 </div>
             <div class="playlists"> 
                 <nav class="main">
@@ -101,16 +101,18 @@
                 </div>
             </nav> 
             </div> 
-        </div>
+            <div class="podcasts"> 
+                <a style=text-decoration:none href="../proyectointegrador/podcasts.html"><img src="../proyectointegrador/fotos/podcast png.png">
+                <h2 class="sections"> Podcasts</h2></a>
+            </div>
+       
     </main>
     <footer>
         <div class="footer"> 
             <div class="deezer"> <img src="../proyectointegrador/fotos/deezer logo.jpg" alt="logo deezer"></div>
-            <div class="nosotras"> <h3>   Milagros Jones </h3> <h3>Josefina Goñi </h3> <h3>Victoria Reguera </h3>
-            </div>
+            <div class="nosotras"> Milagros Jones Josefina Goñi Victoria Reguera</div>
         </div>
     </footer>
-    
-
+    </header>
 </body>
 </html>

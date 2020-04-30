@@ -85,6 +85,7 @@ nav:hover ul.navegacion{
     grid-template-columns: 100%;
     justify-content: space-between;
     width: 100%;
+    margin: 5px;
 }
 .menu{
     text-decoration: none;
@@ -92,9 +93,11 @@ nav:hover ul.navegacion{
     text-transform: uppercase;
     list-style: none;
     text-align: center;
-    font-weight:bold;
-    margin-bottom: 10px;
-    width:100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width:90%;
+    background-color: black;
+    
 }
 
 a.nav{
@@ -106,8 +109,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: black;
-    width:100%;
+    
 }
 img.tini{
     display: block;
@@ -136,20 +138,20 @@ h5{
     text-decoration: none;
     
 }
-.infoalbum ul{
+.infoalbum {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-content: space-around;
     
 }
-ul li{
+article.info{
    margin-left: 0;
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
     color: black;
     text-decoration: none;
-    margin right: 5px; 
+    margin-right: 5px; 
 }
 .txchico{
     font-size: 15px;
@@ -175,6 +177,7 @@ h4.reproducir{
     background-color: black;
     width: 45%;
     margin: 0 auto;
+    margin-bottom: 50px;
     
 }
 ul.gridrepro {
@@ -191,4 +194,174 @@ ul.gridrepro {
     height: 10px;
     padding-top: 10px;
     padding-right: 7px;
+    padding-left: 5px;
+}
+.footer{
+    
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: space-between;
+    
+}
+.nosotras{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.deezer img{
+    height:30px;
+    margin:0 auto;
+    margin-left: 20px;
+    display:block;
+}
+section.listasongs{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    header {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        justify-content: space-around;
+        background-color: black;
+        height: 90px;
+        margin-bottom: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .toggle-nav{
+        display: none;
+    }
+    nav:hover ul.navegacion{
+        display: grid;
+    }
+    ul.navegacion{
+        display: block;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        margin-top: 26px;
+    }
+    .logo img{
+        height: 90px;
+        display:block;
+        border-radius: 100%;
+        
+    }
+    a.nav{
+        color: white;
+        text-decoration: none;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }    
+    .menu{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0;
+        width:90%;
+        margin-top: 5px;
+    }
+    div.container{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-around;
+        margin-bottom: 150px;
+    }
+    img.tini{
+        display: block;
+        max-width: 300px;
+        min-height: 300px;
+        padding-top: 30px;
+        padding-left: 8px;
+        margin-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        margin: 0 auto;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 25px;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        padding-bottom: 5px;
+        margin-top: 0;
+    }
+    h5{
+        text-align: center;
+        font-size: 22px;   
+    }
+    div h3{
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 0;
+        padding-top: 28px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+
+    }
+    footer{
+        margin-bottom: 30px;
+    }
+ 
+    
+    .nosotras{
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+        margin-left: 40px;
+    }
+    .infoalbum {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        
+    }
+       
+    article.info{
+           margin-left: 0;
+            font-family:'Inria Sans', sans-serif;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            margin-right: 5px; 
+        }
+    article.txchico{
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+    .separar{
+            margin-bottom: 10px;
+        }
+        article.info.separar {
+            font-size: 30px;
+
+        }
+        section.listasongs{
+            display: block;
+            background-color: rgb(250, 229, 219);
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 0;
+            margin-bottom: 0px;
+        }
+        ol.listacanciones{
+            list-style: decimal-leading-zero;
+            margin-left: 50px;
+        }
+        .cancion{
+            font-family:'Inria Sans', sans-serif;
+            font-size: 25px;
+            padding: 8px;
+            
+        }
+        
 }

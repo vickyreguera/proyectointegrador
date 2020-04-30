@@ -42,6 +42,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -92,8 +96,11 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-    margin-bottom: 10px;
-    width:100%;
+     margin: 0 auto;
+     margin-bottom: 10px;
+    width:90%;
+    background-color: black;
+   
 }
 
 a.nav{
@@ -105,8 +112,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: black;
-    width:100%;
+    
 }
 img.tini{
     display: block;
@@ -120,7 +126,7 @@ h3{
     margin: 0 auto;
     font-family:'Inria Sans', sans-serif;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: black;
     text-decoration: none;
     padding: 10px;
@@ -138,7 +144,7 @@ ul li{
     font-size: 20px;
     color: black;
     text-decoration: none;
-    margin right: 5px; 
+    margin-right: 5px; 
 }
 .txchico{
     font-size: 15px;
@@ -180,12 +186,14 @@ ul.gridrepro {
     height: 10px;
     padding-top: 10px;
     padding-right: 7px;
+    padding-left: 5px;
 }
 section.listasongs{
     background-color: rgb(250, 229, 219);
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 ol.listacanciones{
     list-style: decimal-leading-zero;
@@ -195,7 +203,229 @@ ol.listacanciones{
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
     padding: 5px;
+    
 }
 .borde1{
     padding-top:10px ;
+}
+.footer{
+    
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: space-between;
+    
+}
+.nosotras{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.deezer img{
+    height:30px;
+    margin:0 auto;
+    margin-left: 20px;
+    display:block;
+}
+article.columnas {
+    display: none;
+}
+ul.columnas{
+    display: block;  
+}
+article.col{
+    background-color: rgb(250, 229, 219);
+    height: 25px;
+    padding: 5px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+ul.columnas{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-around;
+}
+h4.album{
+    font-size: 19px;
+    font-family:'Inria Sans', sans-serif;
+    padding-left: 10px;
+    padding-top: 3px;
+    text-align: center;  
+}
+.fas{
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+h6.quiero{
+    font-size: 20px;
+    font-family:'Inria Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+li.alado{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-evenly;
+    width: 65%;
+    padding-top: 0px;
+}
+@media (min-width: 1024px){
+    header {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        justify-content: space-around;
+        background-color: black;
+        height: 90px;
+        margin-bottom: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .toggle-nav{
+        display: none;
+    }
+    nav:hover ul.navegacion{
+        display: grid;
+    }
+    ul.navegacion{
+        display: block;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        margin-top: 26px;
+    }
+    .logo img{
+        height: 90px;
+        display:block;
+        border-radius: 100%;
+        
+    }
+    a.nav{
+        color: white;
+        text-decoration: none;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }    
+    .menu{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0;
+        width:90%;
+        margin-top: 5px;
+    }
+    div.container{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-around;
+        margin-bottom: 150px;
+        margin-top: 60px;
+    }
+    img.tini{
+        display: block;
+        max-width: 300px;
+        min-height: 300px;
+        padding-top: 30px;
+        padding-left: 8px;
+        margin-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        margin: 0 auto;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 40px;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        padding-bottom: 5px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+   
+    footer{
+        margin-bottom: 30px;
+    }
+   
+    
+    .nosotras{
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+        margin-left: 40px;
+    }
+ 
+    section.listasongs{
+            display: block;
+            background-color: rgb(250, 229, 219);
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 55px;
+            margin-bottom: 0px;
+        }
+        ol.listacanciones{
+            list-style: decimal-leading-zero;
+            margin-left: 50px;
+        }
+        .cancion{
+            font-family:'Inria Sans', sans-serif;
+            font-size: 31px;
+            padding: 8px;
+            
+        }
+    .txchico{
+       font-size: 24px; 
+       margin-bottom: 10px;
+    }    
+    .separar{
+        font-size: 20px;
+    }
+    ul.columnas{
+        display: grid;
+        grid-template-columns: 20% 70%;
+        justify-content: space-around;
+    }
+    h4.album{
+        font-size: 25px;
+        font-family:'Inria Sans', sans-serif;
+        padding-left: 10px;
+        padding-top: 3px;
+       
+    }
+    .fas{
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+    }
+    h6.quiero{
+        font-size: 30px;
+        font-family:'Inria Sans', sans-serif;
+        font-weight: bold;
+        text-align: left;
+    }
+    li.alado{
+        display: grid;
+        grid-template-columns: 30% 60%;
+        justify-content: space-evenly;
+        width: 65%;
+        padding-top: -1px;
+    }
+    article.col{
+        background-color: rgb(250, 229, 219);
+        height: 40px;
+        padding: 5px;
+        padding-top: 15px;
+        margin-top: 33px;
+        width: 100%;
+    }
+  
 }
