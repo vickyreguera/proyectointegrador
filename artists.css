@@ -230,7 +230,48 @@ ol.listacanciones{
 article.columnas {
     display: none;
 }
-
+ul.columnas{
+    display: block;  
+}
+article.col{
+    background-color: rgb(250, 229, 219);
+    height: 25px;
+    padding: 5px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+ul.columnas{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-around;
+}
+h4.album{
+    font-size: 19px;
+    font-family:'Inria Sans', sans-serif;
+    padding-left: 10px;
+    padding-top: 3px;
+    text-align: center;  
+}
+.fas{
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+h6.quiero{
+    font-size: 20px;
+    font-family:'Inria Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+li.alado{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-evenly;
+    width: 65%;
+    padding-top: 0px;
+}
 @media (min-width: 1024px){
     header {
         display: grid;
@@ -308,9 +349,7 @@ article.columnas {
     footer{
         margin-bottom: 30px;
     }
-    div.footer{
-
-    }
+   
     
     .nosotras{
         font-size: 25px;
@@ -329,7 +368,7 @@ article.columnas {
             background-color: rgb(250, 229, 219);
             width: 100%;
             margin: 0 auto;
-            margin-top: 120px;
+            margin-top: 55px;
             margin-bottom: 0px;
         }
         ol.listacanciones{
@@ -338,7 +377,7 @@ article.columnas {
         }
         .cancion{
             font-family:'Inria Sans', sans-serif;
-            font-size: 35px;
+            font-size: 31px;
             padding: 8px;
             
         }
@@ -351,29 +390,42 @@ article.columnas {
     }
     ul.columnas{
         display: grid;
-        grid-template-columns: 40% 50%;
+        grid-template-columns: 20% 70%;
         justify-content: space-around;
     }
     h4.album{
-        font-size: 20px;
+        font-size: 25px;
         font-family:'Inria Sans', sans-serif;
-        text-align: center;
+        padding-left: 10px;
+        padding-top: 3px;
        
     }
     .fas{
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
     }
     h6.quiero{
-        font-size: 25px;
+        font-size: 30px;
         font-family:'Inria Sans', sans-serif;
         font-weight: bold;
+        text-align: left;
     }
-    li.alado{s
+    li.alado{
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 60%;
         justify-content: space-evenly;
+        width: 65%;
+        padding-top: -1px;
+    }
+    article.col{
+        background-color: rgb(250, 229, 219);
+        height: 40px;
+        padding: 5px;
+        padding-top: 15px;
+        margin-top: 33px;
+        width: 100%;
     }
   
 }
