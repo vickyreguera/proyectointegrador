@@ -107,28 +107,27 @@ ul li{
     margin-bottom: 30px;
     text-decoration: solid;
 }
-.add{
-    color: white;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 5px;
-}
-li.add{
-    width: 100%
-}
+
+
 .playlist{
     justify-content: center;
     border-radius: 15px;
     background-color: black;
     height:60px;
     width: 50%;
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto;
 }
-
-
+.play{
+    margin: 0;
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 20px; ;
+        padding-right: 50px;
+        width: 100%;
+    }
 
 .footer{  
     width:100%;
@@ -215,10 +214,8 @@ margin: 0 auto;
 .playlist{
     height: 40px;
 }
-.add{
-    font-size: 15px;
-    padding-top: 1px;
-    text-align: left;
+.play{
+    padding-top: 10px;
 }
 }
 
