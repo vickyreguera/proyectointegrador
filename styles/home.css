@@ -46,6 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 
 
 
@@ -53,13 +57,13 @@ body{
     background-color: rgb(255,224,208)
 }
 .logo img{
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    width: 55%;
-    border-radius: 50%;
+    width: 80px;
     display:block;
     align-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .toggle-nav {
     background-color: black;
@@ -69,7 +73,7 @@ body{
     display: block;
     margin-top: 10px;
     width: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 ul.navegacion{
     display: none;
@@ -78,12 +82,15 @@ ul.navegacion{
 
 nav:hover ul.navegacion{
     display: block;
+    width: 90%;
+    margin: 0 auto;
 }
 .navegacion{
     display: grid;
     grid-template-columns: 100%;
     justify-content: space-between;
     width: 100%;
+    margin:5px;
 }
 .menu{
     text-decoration: none;
@@ -92,8 +99,9 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width:100%;
+    background-color: black;
 }
 
 a.nav{
@@ -105,28 +113,44 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: black;
     width:100%;
 }
 
 .footer{
-    
+    background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 20% 70%;
-    justify-content: space-between;
+    grid-template-columns: 15% 80%;
+    justify-content: space-around;
+    height:50px;
+    margin-top: 180px;
     
 }
 .nosotras{
     font-family:'Inria Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: 10px;
+    
 }
 .deezer img{
     height:30px;
     margin:0 auto;
-    margin-left: 20px;
+    margin-top: 10px;
     display:block;
+}
+div.titaudiora{
+    display: none;
+}
+div.nosotras{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+.nos{
+    font-size: 12px;
+    font-weight: 3px;
+    text-align: center;
+    color:white;
+    margin-top: 20px;
 }
 .buscar{
     display:none;
@@ -200,11 +224,11 @@ nav:hover ul.detalle{
 @media (min-width:1024px){
     header {
         display: grid;
-        grid-template-columns: 30% 60%;
+        grid-template-columns: 10% 30% 55%;
         justify-content: space-around;
         background-color: black;
         height: 90px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
@@ -221,11 +245,34 @@ nav:hover ul.detalle{
         justify-content: space-around;
         margin-top: 26px;
     }
+    div.titaudiora{
+        display: block;
+    }
     .logo img{
-        height: 90px;
+        height: 70px;
         display:block;
-        border-radius: 100%;
-        
+        width: 70px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        margin: 0 auto;
+        margin-right: 3px;
+    } 
+    .audiora{
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+  
+    }
+    
+    h4.audiora{
+        margin-top: 20px;
+        font-size: 46px;
+        font-family: 'Dancing Script', cursive;;
+        color:  rgb(250, 229, 219);
+        letter-spacing: 5px;
     }
     a.nav{
         color: white;
@@ -235,8 +282,8 @@ nav:hover ul.detalle{
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-    }    
-    .menu{
+    }   
+    menu{
         text-align: center;
         margin: 0;
         margin-bottom: 0;
@@ -249,6 +296,30 @@ nav:hover ul.detalle{
         justify-content: space-around;
         margin-bottom: 150px;
         margin-top: 60px;
+    }
+    footer{
+        height: 60px;
+        background-color: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .nosotras{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space space-around;
+       
+    }
+    .nos{
+        font-size: 25px;
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+       margin-top: 10px;
     }
     
     .top5{
@@ -271,6 +342,14 @@ nav:hover ul.detalle{
     .detalle{
         height:250px;
     }
+    .nuevo{
+        font-family:'Inria Sans', sans-serif;
+        text-align: left;
+        margin-right: 10px;
+        color: black;
+        margin-left: 10px;
+    }
+
     .buscar{
         margin-left: 40px;
         width:10%;
@@ -287,11 +366,4 @@ nav:hover ul.detalle{
         height: 20px;
     }
     
-    .nuevo{
-        font-family:'Inria Sans', sans-serif;
-        text-align: left;
-        margin-right: 10px;
-        color: black;
-        margin-left: 10px;
-    }
 }

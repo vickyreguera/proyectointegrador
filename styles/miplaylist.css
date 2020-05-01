@@ -57,13 +57,13 @@ body{
     background-color: rgb(255,224,208)
 }
 .logo img{
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    width: 55%;
-    border-radius: 50%;
+    width: 80px;
     display:block;
     align-content: center;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .toggle-nav {
     background-color: black;
@@ -112,43 +112,53 @@ a.nav{
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
-    width:100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .menu{
     padding-top: 5px;
     padding-bottom: 5px;
     
 }
-
 .footer{
-    
+    background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 80%;
     justify-content: space-around;
-    
-}
-.nosotras{
-    display: grid;
-    grid-template-columns: 31% 31% 31%;
-    
-}
-.nosotras h3{
-    font-size:12px;
-    font-family: 'Inria Sans', sans-serif;
-    margin-left: 7px;
-    padding-top:10px;
-    
-}
-
-.deezer img{
+    height: 50px;
+    margin-top: 180px;
+   
+ }
+ .nosotras{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 10px;
+   
+  
+ }
+ .deezer img{
     height:30px;
     margin:0 auto;
-    margin-left: 15px;
     display:block;
-    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+ div.titaudiora{
+    display: none;
+ }
+ div.nosotras{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+ }
+ .nos{
+    font-size: 12px;
+    font-weight: 3px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+ }
+ 
 
-}
 .h1{
     font-family:'Inria Sans', sans-serif;
     font-size: 30px;
@@ -222,7 +232,7 @@ a.nav{
 @media (min-width:1024px){
     header {
         display: grid;
-        grid-template-columns: 30% 60%;
+        grid-template-columns: 10% 30% 55%;
         justify-content: space-around;
         background-color: black;
         height: 90px;
@@ -235,7 +245,6 @@ a.nav{
     }
     nav:hover ul.navegacion{
         display: grid;
-        margin-top: 26px;
     }
     ul.navegacion{
         display: block;
@@ -245,10 +254,21 @@ a.nav{
         margin-top: 26px;
     }
     .logo img{
-        height: 90px;
+        height: 70px;
         display:block;
-        border-radius: 100%;
-        
+        width: 70px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        margin: 0 auto;
+        margin-right: 3px;
+       
+    }
+    h4.audiora{
+        margin-top: 20px;
+        font-size: 46px;
+        font-family: 'Dancing Script', cursive;;
+        color:  rgb(250, 229, 219);
+        letter-spacing: 5px;
     }
     a.nav{
         color: white;
@@ -258,7 +278,7 @@ a.nav{
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-    }    
+    }       
     .menu{
         text-align: center;
         margin: 0;
@@ -266,6 +286,31 @@ a.nav{
         width:90%;
         margin-top: 5px;
     }
+    footer{
+        height: 60px;
+        background-color: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .nosotras{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space space-around;
+       
+    }
+    .nos{
+        font-size: 25px;
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+       margin-top: 10px;
+    }
+    
     div.container{
         display: grid;
         grid-template-columns: 40% 50%;
@@ -320,3 +365,23 @@ a.nav{
     }
     
 }
+
+
+div.titaudiora{
+    display: block;
+}
+.audiora{
+    color: white;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+
+}
+
+
+
+
+
+
