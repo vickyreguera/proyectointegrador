@@ -1,14 +1,16 @@
+
 body{
-    background-color: rgb(255,224,208)
+    background-color: rgb(255,224,208);
+    margin: 0;
 }
 .logo img{
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    width: 55%;
-    border-radius: 50%;
+    width: 80px;
     display:block;
     align-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .toggle-nav {
     background-color: black;
@@ -23,6 +25,7 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
+    padding-left: 0px;
 }
 
 nav:hover ul.navegacion{
@@ -41,9 +44,13 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-    margin-bottom: 10px;
-    width:100%;
+     margin: 0 auto;
+     margin-bottom: 10px;
+    width:90%;
     background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 
 a.nav{
@@ -55,7 +62,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width:100%;
+    
 }
 img.portadaplaylist{
     display: block;
@@ -110,52 +117,91 @@ ul li{
 }
 ul.gridrepro {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;   
+    grid-template-columns: 30% 60%;
+    
     text-align: center; 
+    margin-left: 0;
+    padding-left: 0px;
+    margin-top: 12px;
 }
 .far{
-    margin-right: 5px;
+    margin-right: 0px;
     color: white;
     width: 10px;
     height: 10px
 }
-.footer{  
+.simbolo{
+    margin-right: 0px;
+    align-content: right;
+}
+
+.infoalbum ul{
+    padding-left: 0px;
+}
+.bloque{
+    margin: 0 auto;
+    margin-top: 32px;
+    background-color: rgb(250, 229, 219);
+    width: 90%;
+}
+.borde1{
+    padding-top: 10px;
+}
+.borde2{
+    padding-bottom: 10px;
+}
+ul.info{
+    padding-left: 0px;
+}
+.footer{
+    background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 20% 70%;
-    justify-content: space-between; 
-    margin-top: 100px;
-}
-.nosotras{
+    grid-template-columns: 15% 80%;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 180px;
+   
+ }
+
+ .nosotras{
     font-family:'Inria Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 10px;
-}
-.deezer img{
+    font-size: 10px;
+   
+  
+ }
+ .deezer img{
     height:30px;
     margin:0 auto;
-    margin-left: 20px;
     display:block;
-}
-
-.canciones{
-    font-family:'Inria Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 5px;
-}  
-  
-
-.bloque{
-    margin-top: 50px;
-    background-color: rgb(250, 229, 219)
+    margin-top: 10px;
+ }
+ div.titaudiora{
+    display: none;
+ }
+ div.nosotras{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+ }
+ .nos{
+    font-size: 12px;
+    font-weight: 3px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+ }
+ li.can{
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
 }
 
 @media(min-width: 1024px){
 
     header {
         display: grid;
-        grid-template-columns: 20% 70%;
+        grid-template-columns: 10% 30% 55%;
         justify-content: space-around;
         background-color: black;
         height: 90px;
@@ -163,7 +209,20 @@ ul.gridrepro {
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
-    .toggle-nav{
+    div.titaudiora{
+        display: block;
+    }
+    .audiora{
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+  
+    }
+ 
+ .toggle-nav{
         display: none;
     }
     nav:hover ul.navegacion{
@@ -177,10 +236,21 @@ ul.gridrepro {
         margin-top: 26px;
     }
     .logo img{
-        height: 90px;
+        height: 70px;
         display:block;
-        border-radius: 100%;
-        
+        width: 70px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        margin: 0 auto;
+        margin-right: 3px;
+       
+    }
+    h4.audiora{
+        margin-top: 20px;
+        font-size: 46px;
+        font-family: 'Dancing Script', cursive;;
+        color:  rgb(250, 229, 219);
+        letter-spacing: 5px;
     }
     a.nav{
         color: white;
@@ -190,22 +260,52 @@ ul.gridrepro {
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-    }    
+    }   
     .menu{
-        text-align: left;
+        text-align: center;
         margin: 0;
         margin-bottom: 0;
         width:90%;
         margin-top: 5px;
     }
+ 
+ footer{
+        height: 60px;
+        background-color: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .nosotras{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space space-around;
+       
+    }
+    .nos{
+        font-size: 25px;
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+       margin-top: 10px;
+    } 
     .container{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        margin-bottom: 270px;
         }
-    img.portadacamilo{
+    img.portadaplaylist{
     max-width: 250px;
     min-height: 250px;
     margin: 0 auto;
+    }
+    .fotito{
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
     .nombre{
         text-align: center;
@@ -217,9 +317,15 @@ ul.gridrepro {
         height: 40px;
     }
     .reproducir{
-        font-size: 15px;
+        font-size: 25px;
         padding-top: 1px;
         text-align: left;
+    }
+    ul.gridrepro{
+        margin-top: 8px;
+    }
+    .far{
+        padding-top: 7px;
     }
     .bloque{
         margin: 0 auto;
@@ -229,5 +335,12 @@ ul.gridrepro {
         text-align: left;
 
     }
-
+   .canciones li{
+       font-weight: none;
+       padding: 8px;    
+   }
+   li.can{
+       
+       margin: 10px;
+   }
 }

@@ -78,7 +78,7 @@ body{
     display: block;
     margin-top: 10px;
     width: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 ul.navegacion{
     display: none;
@@ -105,6 +105,8 @@ nav:hover ul.navegacion{
     margin-bottom: 10px;
     width:90%;
     background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
    
 }
 
