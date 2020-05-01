@@ -85,7 +85,6 @@ nav:hover ul.navegacion{
     grid-template-columns: 100%;
     justify-content: space-between;
     width: 100%;
-    margin: 5px;
 }
 .menu{
     text-decoration: none;
@@ -93,11 +92,14 @@ nav:hover ul.navegacion{
     text-transform: uppercase;
     list-style: none;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 5px;
+    font-weight:bold;
+     margin: 0 auto;
+     margin-bottom: 10px;
     width:90%;
     background-color: black;
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 
 a.nav{
@@ -203,7 +205,7 @@ ul.gridrepro {
     grid-template-columns: 15% 80%;
     justify-content: space-around;
     height: 50px;
-    margin-top: 180px;
+    margin-top: 200px;
     
 }
 .nosotras{

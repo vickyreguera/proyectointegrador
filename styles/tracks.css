@@ -1,14 +1,15 @@
 body{
-    background-color: rgb(255,224,208)
+    background-color: rgb(255,224,208);
+    margin: 0;
 }
 .logo img{
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    width: 55%;
-    border-radius: 50%;
+    width: 80px;
     display:block;
     align-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .toggle-nav {
     background-color: black;
@@ -23,9 +24,9 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
-    margin-left: 0;
-    padding-left: 0;
+    padding-left: 0px;
 }
+
 nav:hover ul.navegacion{
     display: block;
 }
@@ -41,9 +42,14 @@ nav:hover ul.navegacion{
     text-transform: uppercase;
     list-style: none;
     text-align: center;
-    margin-bottom: 10px;
-    width:100%;
+    font-weight:bold;
+     margin: 0 auto;
+     margin-bottom: 10px;
+    width:90%;
     background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 
 a.nav{
@@ -55,7 +61,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width:100%;
+    
 }
 img.portadacamilo{
     display: block;
@@ -123,9 +129,9 @@ ul li{
     margin: 0;
         color: white;
         font-family:'Inria Sans', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
-        padding-top: 20px; ;
+        padding-top: 17px; ;
         padding-right: 50px;
         width: 100%;
     }
@@ -137,7 +143,7 @@ ul li{
     grid-template-columns: 15% 80%;
     justify-content: space-around;
     height: 50px;
-    margin-top: 180px;
+    margin-top: 200px;
    
  }
  .nosotras{
@@ -192,6 +198,8 @@ ul li{
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    margin-bottom: 250px;
     }
 img.portadacamilo{
 max-width: 250px;
@@ -205,11 +213,20 @@ margin: 0 auto;
     margin-left: 5px
 
 }
+.infoalbum ul{
+   
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+}
 .playlist{
     height: 40px;
 }
 .play{
-    padding-top: 10px;
+    padding-top: 8px;
+}
+ul.texto{
+    padding-left: 0px;
 }
 
 header {
@@ -323,5 +340,6 @@ footer{
        font-family:'Inria Sans', sans-serif;
        font-size: 13px;
        margin-top: 5px;
+       margin-right: 10px;
    }  
 }
