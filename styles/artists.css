@@ -210,23 +210,26 @@ ol.listacanciones{
     padding-top:10px ;
 }
 .footer{
-    
+    background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 20% 70%;
-    justify-content: space-between;
+    grid-template-columns: 15% 80%;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 180px;
     
 }
 .nosotras{
     font-family:'Inria Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: 10px;
+    
+
 }
 .deezer img{
     height:30px;
     margin:0 auto;
-    margin-left: 20px;
     display:block;
+    margin-top: 10px;
 }
 article.columnas {
     display: none;
@@ -275,6 +278,18 @@ li.alado{
 }
 div.titaudiora{
     display: none;
+}
+div.nosotras{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+.nos{
+    font-size: 12px;
+    font-weight: 3px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
 }
 @media (min-width: 1024px){
     header {
@@ -374,20 +389,28 @@ div.titaudiora{
     }
    
     footer{
-        margin-bottom: 30px;
+        height: 60px;
+        background-color: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
-   
-    
     .nosotras{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space space-around;
+        
+    }
+    .nos{
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: 15px;
         text-align: center;
+        color: white;
     }
     .deezer img{
          display:block;
          height:40px;
         margin:0 auto;
-        margin-left: 40px;
+       margin-top: 10px;
     }
  
     section.listasongs{
