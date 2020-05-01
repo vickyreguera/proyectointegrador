@@ -128,6 +128,9 @@ a.nav{
     margin-left: 20px;
     display:block;
 }
+.buscar{
+    display:none;
+}
 .rankings{
     display: grid;
     grid-template-columns: 100%;
@@ -160,9 +163,11 @@ a.nombre{
     text-decoration: none;
 
 }
+
 h4.nombre{
     color:black;
     font-family:'Inria Sans', sans-serif;
+    text-align: center;
 }
 
 img.foto{
@@ -199,7 +204,7 @@ nav:hover ul.detalle{
         justify-content: space-around;
         background-color: black;
         height: 90px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
@@ -245,17 +250,48 @@ nav:hover ul.detalle{
         margin-bottom: 150px;
         margin-top: 60px;
     }
-    .main{
-        display: grid;
-        grid-template-columns:20% 20% 20% 20% 20%;
-        justify-content: space-between;
-        height: 300px;
-    }
+    
     .top5{
         margin-top: 30px;
+        
     }
     .nombre{
         margin-bottom: 10px;
-    }
 
+    }
+    .rankings{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: space-between;
+        margin-bottom:70px;
+    }
+    .rankings img{
+        height:150px;
+    }
+    .detalle{
+        height:250px;
+    }
+    .buscar{
+        margin-left: 40px;
+        width:10%;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        background-color:rgb(250, 229, 219);
+        align-content: center;
+        display:grid;
+        grid-template-columns: 20% 80%;
+        justify-content: space-between;
+        border: 1px solid rgb(235, 223, 228);
+        margin-bottom: 50px;
+        height: 20px;
+    }
+    
+    .nuevo{
+        font-family:'Inria Sans', sans-serif;
+        text-align: left;
+        margin-right: 10px;
+        color: black;
+        margin-left: 10px;
+    }
 }
