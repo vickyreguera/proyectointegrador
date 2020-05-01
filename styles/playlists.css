@@ -108,7 +108,7 @@ ul li{
     border-radius: 15px;
     border: 1px solid black; 
     background-color: black;
-    width: 60%;
+    width: 53%;
     margin: 0 auto;
     height: 50px;
 }
@@ -175,6 +175,9 @@ ul.gridrepro {
  }
  li.can{
     margin: 10px;
+}
+.names{
+    display: none;
 }
 
 @media(min-width: 1024px){
@@ -310,6 +313,16 @@ ul.gridrepro {
    }
    li.can{
        
+       margin: 10px;
+   }
+   .colrepro{
+       width: 50%;
+   }
+   .canciones{
+       display: grid;
+       grid-template-columns: 45% 45%
+   }
+   .names{
        margin: 10px;
    }
 }
