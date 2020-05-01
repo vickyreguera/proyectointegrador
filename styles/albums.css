@@ -233,6 +233,9 @@ div.titaudiora{
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
+    div.titaudiora{
+        display: block;
+    }
     .audiora{
         color: white;
         font-family:'Inria Sans', sans-serif;
@@ -386,5 +389,5 @@ div.titaudiora{
             padding: 8px;
             
         }
-   
+    
 }
