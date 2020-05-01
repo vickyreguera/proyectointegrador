@@ -54,7 +54,12 @@ a{
 
 
 body{
-    background-color: rgb(255,224,208)
+    background-color: rgb(255,224,208);
+    margin-top: 0;
+    padding: 0;
+}
+.logo{
+    padding-top: 10px;
 }
 .logo img{
     height: 80px;
@@ -63,7 +68,7 @@ body{
     display:block;
     align-content: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .toggle-nav {
     background-color: black;
@@ -82,15 +87,12 @@ ul.navegacion{
 
 nav:hover ul.navegacion{
     display: block;
-    width: 90%;
-    margin: 0 auto;
 }
 .navegacion{
     display: grid;
     grid-template-columns: 100%;
     justify-content: space-between;
     width: 100%;
-    margin:5px;
 }
 .menu{
     text-decoration: none;
@@ -99,9 +101,11 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-    margin-bottom: 5px;
-    width:100%;
+     margin: 0 auto;
+     margin-bottom: 10px;
+    width:90%;
     background-color: black;
+   
 }
 
 a.nav{
@@ -113,7 +117,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width:100%;
+    
 }
 
 .footer{
@@ -232,6 +236,19 @@ nav:hover ul.detalle{
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
+    div.titaudiora{
+        display: block;
+    }
+    .audiora{
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+
+    }
+    
     .toggle-nav{
         display: none;
     }
@@ -245,9 +262,6 @@ nav:hover ul.detalle{
         justify-content: space-around;
         margin-top: 26px;
     }
-    div.titaudiora{
-        display: block;
-    }
     .logo img{
         height: 70px;
         display:block;
@@ -256,17 +270,9 @@ nav:hover ul.detalle{
         padding-bottom: 3px;
         margin: 0 auto;
         margin-right: 3px;
-    } 
-    .audiora{
-        color: white;
-        font-family:'Inria Sans', sans-serif;
-        font-size: 24px;
-        text-align: center;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-  
+        
     }
-    
+
     h4.audiora{
         margin-top: 20px;
         font-size: 46px;

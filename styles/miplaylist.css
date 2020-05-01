@@ -65,56 +65,55 @@ body{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.toggle-nav {
-    background-color: black;
-    padding: 10px;
-    color: white;
-    margin: 0 auto;
-    display: block;
-    margin-top: 10px;
-    width: 15px;
-    margin-bottom: 10px;
-}
-ul.navegacion{
-    display: none;
-    width: 100%;
-}
-
-nav:hover ul.navegacion{
-    display: block;
-    width: 90%;
-    margin: 0 auto;
+    .toggle-nav {
+        background-color: black;
+        padding: 10px;
+        color: white;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+        width: 15px;
+        margin-bottom: 15px;
+    }
+    ul.navegacion{
+        display: none;
+        width: 100%;
+    }
     
-}
-.navegacion{
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: space-between;
-    width: 100%;
-    margin:5px;
-}
-.menu{
-    text-decoration: none;
-    font-family: 'Inria Sans', sans-serif;
-    text-transform: uppercase;
-    list-style: none;
-    text-align: center;
-    font-weight:bold;
-    margin-bottom: 5px;
-    width:100%;
-    background-color: black;
-}
-
-a.nav{
-    color: white;
-    text-decoration: none;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+    nav:hover ul.navegacion{
+        display: block;
+    }
+    .navegacion{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu{
+        text-decoration: none;
+        font-family: 'Inria Sans', sans-serif;
+        text-transform: uppercase;
+        list-style: none;
+        text-align: center;
+        font-weight:bold;
+         margin: 0 auto;
+         margin-bottom: 10px;
+        width:90%;
+        background-color: black;
+       
+    }
+    
+    a.nav{
+        color: white;
+        text-decoration: none;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
 .menu{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -144,7 +143,7 @@ a.nav{
  }
  div.titaudiora{
     display: none;
- }
+}
  div.nosotras{
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -239,6 +238,18 @@ a.nav{
         margin-bottom: 30px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
+    }
+    div.titaudiora{
+        display: block;
+    }
+    .audiora{
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    
     }
     .toggle-nav{
         display: none;
@@ -367,18 +378,7 @@ a.nav{
 }
 
 
-div.titaudiora{
-    display: block;
-}
-.audiora{
-    color: white;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
 
-}
 
 
 
