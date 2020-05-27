@@ -130,6 +130,11 @@ h3{
     padding: 10px;
     padding-bottom: 5px;
 }
+li.cancion a{
+    text-decoration: none;
+    color: black;
+
+}
 h5{
     text-align: center;
     margin: 0 auto;
