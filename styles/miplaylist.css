@@ -100,6 +100,8 @@ body{
          margin-bottom: 10px;
         width:90%;
         background-color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
        
     }
     
@@ -114,11 +116,7 @@ body{
         padding-bottom: 5px;
         
     }
-.menu{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
-}
+
 .footer{
     background-color: black;
     width:100%;

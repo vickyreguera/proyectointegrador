@@ -1,15 +1,16 @@
 
 body{
-    background-color: rgb(255,224,208)
+    background-color: rgb(255,224,208);
+    margin: 0;
 }
 .logo img{
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    width: 55%;
-    border-radius: 50%;
+    width: 80px;
     display:block;
     align-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .toggle-nav {
     background-color: black;
@@ -24,8 +25,7 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
-    margin-left: 0;
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 nav:hover ul.navegacion{
@@ -48,6 +48,9 @@ nav:hover ul.navegacion{
      margin-bottom: 10px;
     width:90%;
     background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 
 a.nav{
@@ -114,27 +117,41 @@ ul li{
 }
 ul.gridrepro {
     display: grid;
-    grid-template-columns: 20% 75%;
-    justify-content: space-around;   
+    grid-template-columns: 30% 60%;
+    
     text-align: center; 
     margin-left: 0;
     padding-left: 0px;
+    margin-top: 12px;
 }
 .far{
-    margin-right: 5px;
+    margin-right: 0px;
     color: white;
     width: 10px;
     height: 10px
 }
-.canciones{
-    font-family:'Inria Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 5px;
-}  
+.simbolo{
+    margin-right: 0px;
+    align-content: right;
+}
 
+.infoalbum ul{
+    padding-left: 0px;
+}
 .bloque{
-    margin-top: 50px;
-    background-color: rgb(250, 229, 219)
+    margin: 0 auto;
+    margin-top: 32px;
+    background-color: rgb(250, 229, 219);
+    width: 90%;
+}
+.borde1{
+    padding-top: 10px;
+}
+.borde2{
+    padding-bottom: 10px;
+}
+ul.info{
+    padding-left: 0px;
 }
 .footer{
     background-color: black;
@@ -146,6 +163,7 @@ ul.gridrepro {
     margin-top: 180px;
    
  }
+
  .nosotras{
     font-family:'Inria Sans', sans-serif;
     font-size: 10px;
@@ -175,6 +193,8 @@ ul.gridrepro {
  }
  li.can{
     margin: 10px;
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
 }
 .names{
     display: none;
@@ -279,11 +299,16 @@ ul.gridrepro {
     .container{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        margin-bottom: 270px;
         }
-    img.portadacamilo{
+    img.portadaplaylist{
     max-width: 250px;
     min-height: 250px;
     margin: 0 auto;
+    }
+    .fotito{
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
     .nombre{
         text-align: center;
@@ -295,9 +320,15 @@ ul.gridrepro {
         height: 40px;
     }
     .reproducir{
-        font-size: 15px;
+        font-size: 25px;
         padding-top: 1px;
         text-align: left;
+    }
+    ul.gridrepro{
+        margin-top: 8px;
+    }
+    .far{
+        padding-top: 7px;
     }
     .bloque{
         margin: 0 auto;
