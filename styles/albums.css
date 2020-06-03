@@ -167,6 +167,9 @@ article.info{
 .separar{
     margin-bottom: 30px;
 }
+.fecha{
+    margin-bottom: 30px;
+}
 h4.reproducir{
     
     color: white;
@@ -397,6 +400,9 @@ div.nosotras{
     .separar{
             margin-bottom: 10px;
         }
+    .fecha{
+        margin-bottom: 30px;
+    }
         article.info.separar {
             font-size: 30px;
 

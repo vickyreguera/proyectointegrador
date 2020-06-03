@@ -93,6 +93,10 @@ ul li{
     margin-bottom: 30px;
     text-decoration: solid;
 }
+.horas{
+    margin-bottom: 30px;
+    text-decoration: solid;
+}
 .reproducir{
     color: white;
     font-family:'Inria Sans', sans-serif;
