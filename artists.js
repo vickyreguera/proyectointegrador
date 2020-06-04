@@ -14,10 +14,10 @@ if(codigoArtist) {
         function(resultado) {
         console.log(resultado)
            document.querySelector(".tini").src = resultado.picture;
-           document.querySelector(".cancion").innerHTML = resultado.title;
-           document.querySelector(".artist").innerHTML = resultado.artist.name;
-           document.querySelector(".fecha").innerHTML = resultado.release_date;
-           document.querySelector(".separar").innerHTML = resultado.album.title;
+           document.querySelector(".nombre").innerHTML = resultado.name;
+           document.querySelector(".seguidores").innerHTML = resultado.nb_fans;
+           document.querySelector(".separar").innerHTML = resultado.nb_album;
+           
            
         }
     )

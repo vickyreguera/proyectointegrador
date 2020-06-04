@@ -19,9 +19,25 @@ if(codigoTrack) {
            document.querySelector(".fecha").innerHTML = resultado.release_date;
            document.querySelector(".separar").innerHTML = resultado.album.title;
            
+           
+            let infoSongs = resultado.artist.data;
+        
+           console.log(infoSongs);
+        
+        for (let index = 0; index < infoSongs.length; index++) {
+            const cadaSong = infoSong[index];
+            
+            let nombreSong = cadaSong.tracklist;
+            
+            console.log(nombreSong);
+        
+            document.querySelector(".espacio").innerHTML = resultado.artist.tracklist;
         }
-    )
-}
+           
+         
+    
+        })
+        }
 else{
     alert("No se recibió ID de canción")
 }

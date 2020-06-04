@@ -156,6 +156,9 @@ ul li{
 .separar{
     margin-bottom: 30px;
 }
+.seguidores{
+    margin-bottom: 30px;
+}
 h4.reproducir{
     
     color: white;
@@ -443,6 +446,9 @@ div.nosotras{
        margin-bottom: 10px;
     }    
     .separar{
+        font-size: 20px;
+    }
+    .seguidores{
         font-size: 20px;
     }
     ul.columnas{
