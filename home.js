@@ -28,7 +28,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
            let albumId = cadaAlbum.id; 
 
            let htmlAlbumsTrending = `<li class="top5"> 
-           <a href="albums.html?idAlbums"> 
+           <a href="albums.html?idAlbums =`+ albumId + `">
            <img class="foto" src="` +  albumCover + `" alt="` + nombreAlbum + `"> 
            <h4 class="nombre">` + nombreAlbum + `</h4></a></li>`
 
@@ -75,10 +75,10 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
 
            let artistFoto = cadaArtist.picture_medium; 
 
-           let albumId = cadaArtist.id; 
+           let artistId = cadaArtist.id; 
 
            let htmlArtistTrending = `<li class="top5"> 
-           <a href="artists.html?idArtist"> 
+           <a href="artists.html?idArtist=`+ artistId + `">
            <img class="foto" src="` +  artistFoto + `" alt="` + nombreArtist + `"> 
            <h4 class="nombre">` + nombreArtist + `</h4></a></li>`
 
@@ -99,7 +99,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
            let playlistId = cadaPlaylist.id; 
 
            let htmlPlaylistTrending = `<li class="top5"> 
-           <a href="playlists.html?idPlaylists"> 
+           <a href="playlists.html?idPlaylists =`+ playlistId + `">
            <img class="foto" src="` +  playlistCover + `" alt="` + nombrePlaylist + `"> 
            <h4 class="nombre">` + nombrePlaylist + `</h4></a></li>`
 
