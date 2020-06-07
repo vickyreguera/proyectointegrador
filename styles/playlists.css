@@ -117,12 +117,17 @@ ul li{
     background-color: black;
     width: 53%;
     margin: 0 auto;
+    margin-top: 10px;
     height: 50px;
+}
+.titulando{
+    font-family:'Inria Sans', sans-serif;
+    margin-left: 160px;
+    font-size: 30px;
 }
 ul.gridrepro {
     display: grid;
     grid-template-columns: 30% 60%;
-    
     text-align: center; 
     margin-left: 0;
     padding-left: 0px;
@@ -199,7 +204,9 @@ ul.info{
     margin: 10px;
     font-size: 20px;
     font-family: 'Inria Sans', sans-serif;
+    list-style:decimal-leading-zero; 
 }
+
 .names{
     display: none;
 }
@@ -328,6 +335,17 @@ ul.info{
         padding-top: 1px;
         text-align: left;
     }
+    
+    h3.titulando{
+        text-align: center;
+        margin: 0 auto;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 25px;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        padding-bottom: 5px;
+    }
     ul.gridrepro{
         margin-top: 8px;
     }
@@ -344,18 +362,18 @@ ul.info{
     }
    .canciones li{
        font-weight: none;
-       padding: 8px;    
+       padding: 8px;     
    }
    li.can{
-       
        margin: 10px;
    }
+
    .colrepro{
        width: 50%;
    }
    .canciones{
        display: grid;
-       grid-template-columns: 45% 45%
+       grid-template-columns: 45% 45%;
    }
    .names{
        margin: 10px;

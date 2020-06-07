@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
 
                                     console.log(cadaSong);
 
-                                    let otrasSongs = `<li class="espacio"> ` + (index+1) + "- " + cadaSong.title + `</li>`
+                                    let otrasSongs = `<li class="espacio"> `  + cadaSong.title + `</li>`
 
                                     document.querySelector(".mas-canciones").innerHTML += otrasSongs;
 

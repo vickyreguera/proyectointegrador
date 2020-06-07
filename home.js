@@ -99,7 +99,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
            let playlistId = cadaPlaylist.id; 
 
            let htmlPlaylistTrending = `<li class="top5"> 
-           <a href="playlists.html?idPlaylists =`+ playlistId + `">
+           <a href="playlists.html?idPlaylists=`+ playlistId + `">
            <img class="foto" src="` +  playlistCover + `" alt="` + nombrePlaylist + `"> 
            <h4 class="nombre">` + nombrePlaylist + `</h4></a></li>`
 
