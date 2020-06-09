@@ -14,16 +14,43 @@ window.addEventListener("load", function (){
         function(resultado){  
             console.log(resultado)  
 
-            document.querySelector(".cancion").innerHTML = resultado.title;
-            document.querySelector(".fotito").src = resultado.album.cover_medium;
-            document.querySelector(".horas").innerHTML = resultado.release_data;   
-            document.querySelector(".titulo").innerHTML = resultado.album.title;
+            document.querySelector(".titulando").innerHTML = resultado.title;
+            document.querySelector(".horas").innerHTML = resultado.duration;   
+            document.querySelector(".titulo").innerHTML = resultado.fans;
+            document.querySelector(".portadaplaylist").src = resultado.picture_medium;
+
+            fetch("https://cors-anywhere.herokuapp.com/" + resultado.tracklist)
+                        .then(
+                            function (respuesta) {
+                                return respuesta.json();
+                            }
+                        )
+                        .then(
+                            function (tracklist) {
+                                console.log(tracklist)
+                                for (let index = 0; index < 100; index++) {
+                                    const cadaSong = tracklist.data[index];
+
+
+
+                                    console.log(cadaSong);
+
+                                    let otrasSongs = `<li class="can"> `  + cadaSong.title + `</li>`
+
+                                    
+
+                                    document.querySelector(".canciones").innerHTML += otrasSongs;
+
+
+
+                                }
+                            })
             
         })  
         
     }
       else{
-            alert("No se recibio ID de album")
+            alert("Esta playlist no existe")
       }
     
 })
