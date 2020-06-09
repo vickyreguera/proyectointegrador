@@ -28,7 +28,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
            let albumId = cadaAlbum.id; 
 
            let htmlAlbumsTrending = `<li class="top5"> 
-           <a href="albums.html?idAlbums =`+ albumId + `">
+           <a href="albums.html?idAlbums=`+ albumId + `">
            <img class="foto" src="` +  albumCover + `" alt="` + nombreAlbum + `"> 
            <h4 class="nombre">` + nombreAlbum + `</h4></a></li>`
 

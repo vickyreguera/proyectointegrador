@@ -194,8 +194,6 @@ ul.gridrepro {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    
-    
      
 }
 .far{
@@ -219,7 +217,6 @@ ul.gridrepro {
 .nosotras{
     font-family:'Inria Sans', sans-serif;
     font-size: 10px;
-    
 
 }
 .deezer img{
@@ -382,10 +379,10 @@ div.nosotras{
     .infoalbum {
             margin-top: 30px;
             margin-bottom: 20px;
+            font-family: 'Inria Sans', sans-serif;
         
     }
-       
-    article.info{
+    article.infoalbum{
            margin-left: 0;
             font-family:'Inria Sans', sans-serif;
             font-size: 20px;
@@ -396,16 +393,22 @@ div.nosotras{
     article.txchico{
             font-size: 24px;
             margin-bottom: 5px;
+            font-family: 'Inria sans', sans-serif;
         }
+
+    
     .separar{
             margin-bottom: 10px;
+            font-family: 'Inria Sans', sans;
         }
     .fecha{
         margin-bottom: 30px;
     }
-        article.info.separar {
+        article.separar {
             font-size: 30px;
-
+        }
+        article.fecha{
+            font-size: 30px;
         }
         section.listasongs{
             display: block;
