@@ -16,12 +16,8 @@ window.addEventListener("load", function () {
                     document.querySelector(".cancion").innerHTML = resultado.title;
                     document.querySelector(".portadacamilo").src = resultado.album.cover_medium;
                     document.querySelector(".artist").innerHTML = resultado.artist.name;
-                    document.querySelector(".fecha").innerHTML = resultado.duration;
+                    document.querySelector(".fecha").innerHTML = resultado.release_date;
                     document.querySelector(".separar").innerHTML = resultado.album.title;
-
-                   
-                    
-
 
                     fetch("https://cors-anywhere.herokuapp.com/" + resultado.artist.tracklist)
                         .then(
@@ -39,7 +35,7 @@ window.addEventListener("load", function () {
 
                                     console.log(cadaSong);
 
-                                    let otrasSongs = `<li class="espacio"> `  + cadaSong.title + `</li>`
+                                    let otrasSongs = `<li class="espacio"> ` + (index+1) + "- " + cadaSong.title + `</li>`
 
                                     document.querySelector(".mas-canciones").innerHTML += otrasSongs;
 
@@ -60,53 +56,26 @@ window.addEventListener("load", function () {
         alert("¿No se recibió ID de canción?")
     }
 
-// Agregar a playlist
-    let recuperoStorage = localStorage.getItem("playlist");
+    document.querySelector(".playlist").addEventListener("click",function() {
+        let arrayCanciones;
 
-
-if(recuperoStorage == null){
-    playlist = [];
-} else {
-    playlist = JSON.parse(recuperoStorage);
-}
-
-//Me fijo que no esté en la lista y cambio el texto del botón
-if(playlist.includes(codigoTrack)){
-    document.querySelector(".laquiero").innerHTML = "Quitar de la playlist";
-}
-
-//Paso 2: agregar un track a la playlist.
-let agregar = document.querySelector(".laquiero");
-
-agregar.addEventListener("click", function(e){
-    //Detener el comportamiento default de <a></a>
-    e.preventDefault();
-
-    if(playlist.includes(codigoTrack)){
-        //Si el track está tenemos que quitarlo.
-        let indiceEnElArray = playlist.indexOf(codigoTrack);
-        playlist.splice(indiceEnElArray, 1);
-        document.querySelector(".laquiero").innerHTML = "Agregar a playlist";
-        console.log(playlist);
+       
+         if (localStorage.getItem("cancionesFavoritas") != null) {
+            //arrayDeGifsFavoritos y le voy a agregar el código el GIF
+            arrayCanciones = localStorage.getItem("cancionesFavoritas").split(",")
+            arrayCanciones.push(codigoTrack)
+         } 
+        else {
+            
+            arrayCanciones = []
+            arrayCanciones.push(codigoTrack)
+        }
         
-    } else { 
-        //Agrego el id del track a la lista
-        playlist.push(codigoTrack);
-        document.querySelector(".laquiero").innerHTML = "Quitar de la playlist"
-    }
-    //
-
-
-    //Paso 3 guardar lista en localStorage
-    let playlistParaStorage = JSON.stringify(playlist);
-    localStorage.setItem("playlist", playlistParaStorage);
-    console.log(localStorage);
-
-
-})
-
-
+        localStorage.setItem("cancionesFavoritas", arrayCanciones);
+    })
+   
     
+
 
 
 
