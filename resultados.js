@@ -31,11 +31,15 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + l
 
             let fotoTrack = cadaResultado.album.cover_medium
 
+            let duracion = cadaResultado.duration
+
+            let trackId = cadaResultado.id
+
             let trackResultado = `<main class="container">
             <section class="colizq">
             <div><img class="portadacamilo" src="`+ fotoTrack + `"> </div>
             <div class="nombre">
-            <h3 class="cancion">` + nombreTrack + `</h3>
+            <h3 class="cancion"><a href="tracks.html?idTrack=`+ trackId + `"">` + nombreTrack + `</a></h3>
             <h5 class="artist">` + nombreDelArtista + `</h5>
             </div>
             <main class="addto"> 
@@ -49,7 +53,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + l
             <div class="infoalbum">
             <ul class="texto">
                 <li class="txchico"> Álbum: </li>
-                <li class="txchico">Fecha de estreno: </li>
+                <li class="txchico">Duración: `+ duracion + ` segundos </li>
                 <li class="separar"><strong>`+ nombreDelAlbum + `</strong></li>
                 <li class="fecha"><strong></strong></li>
             </ul>
@@ -61,8 +65,10 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + l
             </div>
         </section>`
         
-        //falta poner id correcto
-            let codigoTrack = 
+        
+        let queryString = new URLSearchParams(location.search)
+        let codigoTrack = queryString.get("idTrack")
+        
         fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoTrack)
             .then(
                 function (respuesta) {
@@ -96,7 +102,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + l
 
                                 }
                             })
-                        })
+                        }) 
         document.querySelector(".buscar").innerHTML += trackResultado
 
         }
