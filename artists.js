@@ -30,11 +30,11 @@ if(codigoArtist) {
                                 for (let index = 0; index < 5; index++) {
                                     const cadaSong = tracklist.data[index];
 
-                            
+                                    let trackId = tracklist.data.id;
 
                                     console.log(cadaSong);
 
-                                    let otrasSongs = `<li class="cancion"> `  + cadaSong.title + `</li>`
+                                    let otrasSongs = `<li class="cancion"> `  + cadaSong.title + ` </li> `
 
                                     document.querySelector(".listacanciones").innerHTML += otrasSongs;
 

@@ -26,7 +26,7 @@ function buscarYMostrarTrack(codigoTrack){
             return response.json();
         })
         .then(function (track) {
-            playlistWrapper.innerHTML += '<li>' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
+            playlistWrapper.innerHTML += '<li class="canciones">' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
         })
         .catch(function(errors){
             console.log(errors);

@@ -46,7 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a{
+    text-decoration: none;
+    color:black;
+}
 
 
 body{
@@ -243,6 +246,22 @@ div.nosotras{
     color: white;
     margin-top: 20px;
 }
+.canciones{
+    font-family:'Inria Sans', sans-serif;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin-top:15px;
+}
+.listacanciones{
+    padding-top: 4px;
+    padding-bottom:10px;
+}
+
+
+
+
+
 
 @media (min-width: 1024px){
     header {
