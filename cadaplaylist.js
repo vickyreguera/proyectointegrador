@@ -7,7 +7,7 @@ let playlistWrapper = document.querySelector(".listacanciones");
 console.log(recuperoStorage);
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [];
-    playlistWrapper.innerHTML += '<li> No hay canciones en tu playlist </li>'
+    playlistWrapper.innerHTML += '<li class="nohay"> No hay canciones en tu playlist </li>'
     console.log(playlistWrapper);
     
 } else {
@@ -18,10 +18,9 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
 }
 
 function buscarYMostrarTrack(codigoTrack){
-    let proxy = "https://cors-anywhere.herokuapp.com/";
-    let url = proxy + "https://api.deezer.com/track/" + codigoTrack;
+    
 
-    fetch(url)
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoTrack)
         .then(function (response) {
             return response.json();
         })

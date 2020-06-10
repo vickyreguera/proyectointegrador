@@ -26,7 +26,7 @@ ul.navegacion{
     width: 100%;
     padding-left: 0px;
 }
-
+ 
 nav:hover ul.navegacion{
     display: block;
 }
@@ -51,7 +51,7 @@ nav:hover ul.navegacion{
     padding-bottom: 5px;
    
 }
-
+ 
 a.nav{
     color: white;
     text-decoration: none;
@@ -73,7 +73,7 @@ img.portadacamilo{
 .main{
     width: 100%;
 }
-h3{
+h3.cancion{
     text-align: center;
     margin: 0 auto;
     font-family:'Inria Sans', sans-serif;
@@ -98,6 +98,12 @@ h5{
     grid-template-rows: auto auto;
     justify-content: space-around;
 }
+.infoalbum ol{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+}
 ul li{
    margin-left: 0;
     font-family:'Inria Sans', sans-serif;
@@ -106,6 +112,13 @@ ul li{
     list-style: none;
     margin-right: 5px;
 }
+ol li{
+    margin-left: 0;
+     font-family:'Inria Sans', sans-serif;
+     font-size: 20px;
+     color: black;
+     margin-right: 5px;
+ }
 .txchico{
     font-size: 20px;
     margin-bottom: 3px;
@@ -118,7 +131,7 @@ ul li{
     margin-bottom: 30px;
     text-decoration: solid;
 }
-
+ 
 .playlist{
     justify-content: center;
     border-radius: 15px;
@@ -136,9 +149,25 @@ ul li{
         text-align: center;
         padding-top: 17px; ;
         padding-right: 50px;
+        margin-bottom: 10px;
         width: 100%;
+        
     }
 
+.laquiero{
+    margin: 0;
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 17px; ;
+        padding-right: 50px;
+        width: 65%;
+        background-color: black;
+        margin-left:70px;
+    }
+ 
+ 
 .footer{
     background-color: black;
     width:100%;
@@ -196,8 +225,15 @@ ul li{
  .espacio{
      margin: 10px;
  }
+ .playlist{
+margin-left: 110px;
+padding-bottom:40px;
+ }
+ 
+ 
+ 
 @media(min-width: 1024px){
-
+ 
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -214,7 +250,7 @@ margin: 0 auto;
 }
 .infoalbum{
     margin-left: 5px
-
+ 
 }
 .infoalbum ul{
    
@@ -231,7 +267,10 @@ margin: 0 auto;
 ul.texto{
     padding-left: 0px;
 }
-
+ol.texto{
+    padding-left: 0px;
+}
+ 
 header {
     display: grid;
     grid-template-columns: 10% 30% 55%;
@@ -252,7 +291,7 @@ div.titaudiora{
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 5px;
-
+ 
 }
 .toggle-nav{
     display: none;
@@ -300,7 +339,7 @@ a.nav{
     width:90%;
     margin-top: 5px;
 }
-
+ 
 footer{
     height: 60px;
     background-color: black;
@@ -328,7 +367,8 @@ footer{
 .mas-canciones{
     display: block;
     margin-top: 25px;
-    background-color: rgb(250, 229, 219)
+    background-color: rgb(250, 229, 219);
+    list-style:decimal-leading-zero;
  }
  .tit{
      display: block;
@@ -343,6 +383,7 @@ footer{
        font-family:'Inria Sans', sans-serif;
        font-size: 13px;
        margin-top: 5px;
-       margin-right: 10px;
+       margin-right: 30px;
    }  
+   
 }
