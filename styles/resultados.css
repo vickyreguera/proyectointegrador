@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+body{
+    background-color: rgb(255,224,208);
+    margin: 0;
+}
+.logo img{
+    height: 80px;
+    margin: 0 auto;
+    width: 80px;
+    display:block;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.toggle-nav {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    width: 15px;
+    margin-bottom: 15px;
+}
+ul.navegacion{
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+}
+
+nav:hover ul.navegacion{
+    display: block;
+}
+.navegacion{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu{
+    text-decoration: none;
+    font-family: 'Inria Sans', sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+    font-weight:bold;
+     margin: 0 auto;
+     margin-bottom: 10px;
+    width:90%;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+
+a.nav{
+    color: white;
+    text-decoration: none;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+img.portadacamilo{
+    display: block;
+    max-width: 150px;
+    min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.main{
+    width: 100%;
+}
+h3{
+    text-align: center;
+    margin: 0 auto;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+h5{
+    text-align: center;
+    margin: 0 auto;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+}
+.infoalbum ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+}
+ul li{
+   margin-left: 0;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    list-style: none;
+    margin-right: 5px;
+}
+.txchico{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.separar{
+    margin-bottom: 30px;
+    text-decoration: solid;
+}
+.fecha{
+    margin-bottom: 30px;
+    text-decoration: solid;
+}
+
+.playlist{
+    justify-content: center;
+    border-radius: 15px;
+    background-color: black;
+    height:60px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.play{
+    margin: 0;
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 17px; ;
+        padding-right: 50px;
+        width: 100%;
+    }
+
+.footer{
+    background-color: black;
+    width:100%;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 200px;
+   
+ }
+ .nosotras{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 10px;
+ }
+ .deezer img{
+    height:30px;
+    margin:0 auto;
+    display:block;
+    margin-top: 10px;
+ }
+ div.titaudiora{
+    display: none;
+ }
+ div.nosotras{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+ }
+ .nos{
+    font-size: 12px;
+    font-weight: 3px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+ }
+ .otras{
+     display: none;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 13px;
+        margin-top: 5px;
+    }  
+ .mas-canciones{
+     display: none;
+    margin-top: 25px;
+    background-color: rgb(250, 229, 219)
+ }
+ .tit{
+     display: none;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 50px;
+    text-align: left;
+    margin-bottom: 0;
+ }
+ .espacio{
+     margin: 10px;
+ }
+@media(min-width: 1024px){
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    }
+img.portadacamilo{
+max-width: 250px;
+min-height: 250px;
+margin: 0 auto;
+}
+.nombre{
+    text-align: center;
+}
+.infoalbum{
+    margin-left: 5px
+
+}
+.infoalbum ul{
+   
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+}
+.playlist{
+    height: 40px;
+}
+.play{
+    padding-top: 8px;
+}
+ul.texto{
+    padding-left: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 10% 30% 55%;
+    justify-content: space-around;
+    background-color: black;
+    height: 90px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+div.titaudiora{
+    display: block;
+}
+.audiora{
+    color: white;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+
+}
+.toggle-nav{
+    display: none;
+}
+nav:hover ul.navegacion{
+    display: grid;
+}
+ul.navegacion{
+    display: block;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    margin-top: 26px;
+}
+.logo img{
+    height: 70px;
+    display:block;
+    width: 70px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    margin-right: 3px;
+   
+}
+h4.audiora{
+    margin-top: 20px;
+    font-size: 46px;
+    font-family: 'Dancing Script', cursive;;
+    color:  rgb(250, 229, 219);
+    letter-spacing: 5px;
+}
+a.nav{
+    color: white;
+    text-decoration: none;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}   
+.menu{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
+    width:90%;
+    margin-top: 5px;
+}
+
+footer{
+    height: 60px;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.nosotras{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space space-around;
+   
+}
+.nos{
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+.deezer img{
+     display:block;
+     height:40px;
+    margin:0 auto;
+   margin-top: 10px;
+}
+.mas-canciones{
+    display: block;
+    margin-top: 25px;
+    background-color: rgb(250, 229, 219)
+ }
+ .tit{
+     display: block;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: left;
+    margin-bottom: 0;
+ }
+ .otras{
+    display: block;
+       font-family:'Inria Sans', sans-serif;
+       font-size: 13px;
+       margin-top: 5px;
+       margin-right: 10px;
+   }  
+}

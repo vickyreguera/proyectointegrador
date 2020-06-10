@@ -58,6 +58,8 @@ body{
     margin-top: 0;
     padding: 0;
 }
+
+/* header y footer*/
 .logo{
     padding-top: 10px;
 }
@@ -158,14 +160,16 @@ div.nosotras{
     color:white;
     margin-top: 20px;
 }
+/* termina header y footer*/
+
 .buscar{
     display:none;
 }
 
-/* header y footer */
 .rankings{
     display: grid;
     grid-template-columns: 100%;
+    grid-template-rows: 40% 40%;
 }
 .rankings img{
     width: 65%;
@@ -174,6 +178,7 @@ div.nosotras{
     display: block;
     margin: auto;
 }
+
 .sections {
     text-align: center;
     margin: 0 auto;
@@ -183,7 +188,6 @@ div.nosotras{
     color: black;
     text-decoration: none;
 }
-
 .albums img{
     width:55%;
 }
@@ -228,6 +232,7 @@ nav:hover ul.detalle{
     width: 100%;
     margin-bottom: 20px;
 }
+
 
 
 @media (min-width:1024px){
@@ -333,17 +338,21 @@ nav:hover ul.detalle{
        margin-top: 10px;
     }
     
-    .top5{
-        margin-top: 30px;
-        
-    }
+    /*termina footer y header media querie*/
+   
     .nombre{
         margin-bottom: 10px;
 
     }
+
+    .top5{
+        margin-top: 30px;
+        
+    }
     .rankings{
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 40% 40%;
         justify-content: space-between;
         margin-bottom:70px;
     }
@@ -361,6 +370,7 @@ nav:hover ul.detalle{
         margin-left: 10px;
     }
 
+    /* buscador */
     .buscar{
         display: block;
         margin: 100px auto;
@@ -401,8 +411,15 @@ nav:hover ul.detalle{
         z-index: 1;
         color: #4f5b66;
       }
-
-      
-
+    /* termina buscador */
+     
+    /* 
+    div.rankings{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 13% 13% 13% 13% 13% 13% 13%;
+        justify-content: space-between;
+    } */
   
 }
+
