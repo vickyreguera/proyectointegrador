@@ -34,7 +34,7 @@ if(codigoArtist) {
 
                                     console.log(cadaSong);
 
-                                    let otrasSongs = `<li class="cancion"> ` + (index+1) + "- " + cadaSong.title + `</li>`
+                                    let otrasSongs = `<li class="cancion"> `  + cadaSong.title + `</li>`
 
                                     document.querySelector(".listacanciones").innerHTML += otrasSongs;
 
