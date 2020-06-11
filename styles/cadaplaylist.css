@@ -229,7 +229,29 @@ ul.gridrepro {
     margin-top: 10px;
 }
 section.listasongs{
-    display: none;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: rgb(250, 229, 219);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+ol.listacanciones{
+list-style: decimal-leading-zero;
+margin-left: 50px;
+}
+.cancion{
+font-family:'Inria Sans', sans-serif;
+font-size: 20px;
+padding: 5px;
+
+}
+.nohay{
+    font-family:'Inria Sans', sans-serif;
+    list-style: none;
+    font-size: 23px;
+    margin: 0 auto;
 }
 div.titaudiora{
     display: none;
