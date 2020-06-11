@@ -413,13 +413,13 @@ nav:hover ul.detalle{
       }
     /* termina buscador */
      
-    /* 
+    
     div.rankings{
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
         grid-template-rows: 13% 13% 13% 13% 13% 13% 13%;
-        justify-content: space-between;
-    } */
+        justify-content: space-around;
+    } 
   
 }
 
