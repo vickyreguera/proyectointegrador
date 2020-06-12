@@ -20,10 +20,10 @@ window.addEventListener("load", function(){
             let generoId = cadaGenero.id; 
 
             
-            let queryString = new URLSearchParams(location.search)
-            let codigoGenero = queryString.get("generoId"); 
+            /*let queryString = new URLSearchParams(location.search)
+            let codigoGenero = queryString.get("generoId"); */
 
-            fetch("https://cors-anywhere.herokuapp.com/" + resultado + "/" + codigoGenero+ "/artist")
+            fetch("https://cors-anywhere.herokuapp.com/" + resultado + "/" + generoId + "/artists")
                         .then(
                             function (respuesta) {
                                 return respuesta.json();
