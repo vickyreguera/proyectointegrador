@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+body{
+    background-color: rgb(255,224,208);
+    margin-top: 0;
+    padding: 0;
+}
+.logo{
+    padding-top: 10px;
+}
+.logo img{
+    height: 80px;
+    margin: 0 auto;
+    width: 80px;
+    display:block;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.toggle-nav {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    width: 15px;
+    margin-bottom: 15px;
+}
+ul.navegacion{
+    display: none;
+    width: 100%;
+}
+
+nav:hover ul.navegacion{
+    display: block;
+}
+.navegacion{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu{
+    text-decoration: none;
+    font-family: 'Inria Sans', sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+    font-weight:bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width:90%;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+
+a.nav{
+    color: white;
+    text-decoration: none;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.footer{
+    background-color: black;
+    width:100%;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    justify-content: space-around;
+    height:50px;
+    margin-top: 180px;
+    
+}
+.nosotras{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 10px;
+    
+}
+.deezer img{
+    height:30px;
+    margin:0 auto;
+    margin-top: 10px;
+    display:block;
+}
+div.titaudiora{
+    display: none;
+}
+div.nosotras{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+.nos{
+    font-size: 12px;
+    font-weight: 3px;
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+}
+
+
+.buscartrack{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.trackeando{
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+}
+
+.buscando{
+    margin-top: 20px;
+    margin-left: 17px;
+}
+.espacio{
+    width: 80%;
+}
+
+
+@media (min-width:1024px){
+    header {
+        display: grid;
+        grid-template-columns: 10% 30% 55%;
+        justify-content: space-around;
+        background-color: black;
+        height: 90px;
+        margin-bottom: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    div.titaudiora{
+        display: block;
+    }
+    .audiora{
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+
+    }
+    
+    .toggle-nav{
+        display: none;
+    }
+    nav:hover ul.navegacion{
+        display: grid;
+    }
+    ul.navegacion{
+        display: block;
+        display: grid;
+        grid-template-columns:  5% 30% 30% 30%;
+        justify-content: space-around;
+        margin-top: 26px;
+    }
+   .fas{
+       font-size: 28px;
+   }
+    .logo img{
+        height: 70px;
+        display:block;
+        width: 70px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        margin: 0 auto;
+        margin-right: 3px;
+        
+    }
+
+    h4.audiora{
+        margin-top: 20px;
+        font-size: 46px;
+        font-family: 'Dancing Script', cursive;;
+        color:  rgb(250, 229, 219);
+        letter-spacing: 5px;
+    }
+    a.nav{
+        color: white;
+        text-decoration: none;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }   
+    menu{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0;
+        width:90%;
+        margin-top: 5px;
+    }
+    div.container{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-around;
+        margin-bottom: 150px;
+        margin-top: 60px;
+    }
+    footer{
+        height: 60px;
+        background-color: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .nosotras{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space space-around;
+       
+    }
+    .nos{
+        font-size: 25px;
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+    }
+    .deezer img{
+         display:block;
+         height:40px;
+        margin:0 auto;
+       margin-top: 10px;
+    }
+    
+    
+    
+
+      
+
+      
+
+  
+}

@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
 
             let fotoTr = resultado.data.album.cover_xl;
 
-            let todoTrack = ``
+            let todoTrack = `<div class="trackbusco"> <h3>` + nombreTr + `</h3> <img class="foto"`
 
 
         
