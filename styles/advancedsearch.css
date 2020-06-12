@@ -46,10 +46,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
 
 body{
     background-color: rgb(255,224,208);
-    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+}
+.logo{
+    padding-top: 10px;
 }
 .logo img{
     height: 80px;
@@ -58,7 +68,7 @@ body{
     display:block;
     align-content: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .toggle-nav {
     background-color: black;
@@ -91,8 +101,8 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-     margin: 0 auto;
-     margin-bottom: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
     width:90%;
     background-color: black;
     padding-top: 5px;
@@ -111,137 +121,33 @@ a.nav{
     padding-bottom: 5px;
     
 }
-img.portadaartist{
-    display: block;
-    margin: 0 auto;
-    max-width: 150px;
-    min-height: 150px;
-    margin-bottom: 15px;  
-}
-h3{
-    text-align: center;
-    margin: 0 auto;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    padding-bottom: 5px;
-}
-li.titulo a{
-    text-decoration: none;
-    color: black;
 
-}
-h5{
-    text-align: center;
-    margin: 0 auto;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: black;
-    text-decoration: none;
-    
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-.infoalbum {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: space-around;
-    font-family:'Inria Sans', sans-serif ;
-    
-}
-article.info{
-   margin-left: 0;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    margin-right: 5px; 
-}
-.txchico{
-    font-size: 15px;
-    margin-bottom: 3px;
-}
-.titulo{
-    margin-bottom: 30px;
-}
-.fecha{
-    margin-bottom: 30px;
-}
-h4.reproducir{
-    
-    color: white;
-    padding: 10px;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    
-}
-.tini{
-    width: 70%;
-    height: 300px;
-    margin-left: 57px;
-
-}
-
-.far{
-    color: white;
-    width: 10px;
-    height: 10px;
-    padding-top: 10px;
-    padding-right: 7px;
-    padding-left: 5px;
-}
 .footer{
     background-color: black;
     width:100%;
     display: grid;
     grid-template-columns: 15% 80%;
     justify-content: space-around;
-    height: 50px;
-    margin-top: 200px;
+    height:50px;
+    margin-top: 180px;
     
 }
 .nosotras{
     font-family:'Inria Sans', sans-serif;
     font-size: 10px;
-
+    
 }
 .deezer img{
     height:30px;
     margin:0 auto;
-    display:block;
     margin-top: 10px;
-}
-section.listasongs{
-    display: block;
-    background-color: rgb(250, 229, 219);
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-ol.listacanciones{
-    list-style: decimal-leading-zero;
-    margin-left: 50px;
-    
-}
-.cancion{
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    padding: 5px;  
-    text-decoration: none;
+    display:block;
 }
 div.titaudiora{
     display: none;
 }
 div.nosotras{
-    display: grid;
+    display:grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
 }
@@ -249,20 +155,82 @@ div.nosotras{
     font-size: 12px;
     font-weight: 3px;
     text-align: center;
-    color: white;
+    color:white;
     margin-top: 20px;
 }
-.cantante{
-    margin-top: 0px;
-    text-decoration: none;
-    color: black;
-}
-a.linkeando{
-    text-decoration: none;
-    color:black;
+.buscar{
+    display:none;
 }
 
-@media (min-width: 1024px){
+/* header y footer */
+.rankings{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.rankings img{
+    width: 65%;
+    height: 200px;
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+.sections {
+    text-align: center;
+    margin: 0 auto;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.albums img{
+    width:55%;
+}
+
+a.nombre{
+    
+    color:black;
+    display: none;
+    text-decoration: none;
+
+}
+
+h4.nombre{
+    color:black;
+    font-family:'Inria Sans', sans-serif;
+    text-align: center;
+}
+
+img.foto{
+    margin: 0 auto;
+    width: 50%;
+    height:150px;
+    border-radius: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul.detalle{
+   
+    width:100%;
+    
+}
+nav:hover ul.detalle{
+    display: block;
+    
+}
+
+.detalle{
+    display: grid;
+    grid-template-columns:100%;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width:1024px){
     header {
         display: grid;
         grid-template-columns: 10% 30% 55%;
@@ -285,6 +253,7 @@ a.linkeando{
         padding-bottom: 5px;
 
     }
+    
     .toggle-nav{
         display: none;
     }
@@ -294,13 +263,13 @@ a.linkeando{
     ul.navegacion{
         display: block;
         display: grid;
-        grid-template-columns: 5% 30% 30% 30%;
+        grid-template-columns:  5% 30% 30% 30%;
         justify-content: space-around;
         margin-top: 26px;
     }
-    .fas{
-        font-size: 25px;
-    }
+   .fas{
+       font-size: 28px;
+   }
     .logo img{
         height: 70px;
         display:block;
@@ -311,6 +280,7 @@ a.linkeando{
         margin-right: 3px;
         
     }
+
     h4.audiora{
         margin-top: 20px;
         font-size: 46px;
@@ -326,8 +296,8 @@ a.linkeando{
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-    }    
-    .menu{
+    }   
+    menu{
         text-align: center;
         margin: 0;
         margin-bottom: 0;
@@ -339,39 +309,7 @@ a.linkeando{
         grid-template-columns: 40% 50%;
         justify-content: space-around;
         margin-bottom: 150px;
-    }
-    img.portadaartist{
-        display: block;
-        max-width: 300px;
-        min-height: 300px;
-        padding-top: 30px;
-        padding-left: 8px;
-        margin-bottom: 10px;
-    }
-    h3{
-        text-align: center;
-        margin: 0 auto;
-        font-family:'Inria Sans', sans-serif;
-        font-size: 25px;
-        color: black;
-        text-decoration: none;
-        padding: 10px;
-        padding-bottom: 5px;
-        margin-top: 0;
-    }
-    h5{
-        text-align: center;
-        font-size: 22px;   
-    }
-    div h3{
-        text-align: center;
-        font-size: 35px;
-        font-weight: bold;
-        padding: 0;
-        padding-top: 28px;
-        padding-left: 10px;
-        padding-bottom: 5px;
-
+        margin-top: 60px;
     }
     footer{
         height: 60px;
@@ -383,7 +321,7 @@ a.linkeando{
         display: grid;
         grid-template-columns: 33% 33% 33%;
         justify-content: space space-around;
-        
+       
     }
     .nos{
         font-size: 25px;
@@ -397,70 +335,77 @@ a.linkeando{
         margin:0 auto;
        margin-top: 10px;
     }
-    .infoalbum {
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-family: 'Inria Sans', sans-serif;
+    
+    .top5{
+        margin-top: 30px;
         
     }
-    article.infoalbum{
-           margin-left: 0;
-            font-family:'Inria Sans', sans-serif;
-            font-size: 20px;
-            color: black;
-            text-decoration: none;
-            margin-right: 5px; 
-        }
-    article.txchico{
-            font-size: 24px;
-            margin-bottom: 5px;
-            font-family: 'Inria sans', sans-serif;
-        }
+    .nombre{
+        margin-bottom: 10px;
 
-    
-    .titulo{
-            margin-bottom: 10px;
-            font-family: 'Inria Sans', sans;
-        }
-    .fecha{
-        margin-bottom: 30px;
     }
-        article.titulo {
-            font-size: 30px;
-        }
-        article.fecha{
-            font-size: 30px;
-        }
-        section.listasongs{
-            display: block;
-            background-color: rgb(250, 229, 219);
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 0;
-            margin-bottom: 0px;
-        }
-        ol.listacanciones{
-            list-style: decimal-leading-zero;
-            margin-left: 50px;
-        }
-        .cancion{
-            font-family:'Inria Sans', sans-serif;
-            font-size: 25px;
-            padding: 8px;
-            
-        }
-        .de{
-            margin-top: 5px;
-        }
-        .cantante{
-            margin-top: 0px;
-            text-decoration: none;
-            color: black;
-        }
-        .tini{
-            width:300px;
-            margin-left: 150px;
-            margin-top: 50px;
-        }
-    
+    .rankings{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: space-between;
+        margin-bottom:70px;
+    }
+    .rankings img{
+        height:150px;
+    }
+    .detalle{
+        height:250px;
+    }
+    .nuevo{
+        font-family:'Inria Sans', sans-serif;
+        text-align: left;
+        margin-right: 10px;
+        color: black;
+        margin-left: 10px;
+    }
+
+    .buscar{
+        display: block;
+        margin: 100px auto;
+        width: 300px;
+        height: 50px;
+        margin-left: 40px;
+        padding-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        
+    }
+    .container-1{
+        width: 300px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+      }
+
+      .container-1 input#search{
+        width: 300px;
+        height: 50px;
+        background-color:rgb(230, 213, 205);
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #63717f;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      .container-1 .icon{
+        position: absolute;
+        top: 50%;
+        margin-left: 17px;
+        margin-top: 17px;
+        z-index: 1;
+        color: #4f5b66;
+      }
+
+      
+
+  
 }

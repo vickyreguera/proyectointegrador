@@ -13,9 +13,15 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
 } 
 else {
 
-    playlist.forEach(function(codigoTrack){
-        mostrarPlaylist (codigoTrack);
-    });
+   
+
+    for (let index = 0; index < playlist.length; index++) {
+        const canciones = playlist[index];
+
+        mostrarPlaylist(canciones)
+
+        
+    }
 }
 
 function mostrarPlaylist(codigoTrack){

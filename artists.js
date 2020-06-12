@@ -17,7 +17,11 @@ if(codigoArtist) {
            document.querySelector(".portadaartist").src = resultado.picture;
            document.querySelector(".titulando").innerHTML = resultado.name;
            document.querySelector(".seguidores").innerHTML = resultado.nb_fan;
-           document.querySelector(".titulo").innerHTML = resultado.nb_album;
+           document.querySelector(".separar").innerHTML = resultado.nb_album;
+
+           let repro = `https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=600&height=350&color=007FEB&layout=dark&size=medium&type=radio&id=artist-` + codigoArtist +`&app_id=1`
+
+           document.querySelector(".aescuchar").src = repro
            
            fetch("https://cors-anywhere.herokuapp.com/" + resultado.tracklist)
                         .then(

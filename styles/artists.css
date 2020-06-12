@@ -295,6 +295,19 @@ div.nosotras{
     color: white;
     margin-top: 20px;
 }
+
+.aescuchar{
+    height: 90px;
+    margin-left: 20px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+
+
+
 @media (min-width: 1024px){
     header {
         display: grid;
@@ -482,5 +495,7 @@ div.nosotras{
         margin-top: 33px;
         width: 100%;
     }
-  
+  .aescuchar{
+      margin-left: 26px;
+  }
 }

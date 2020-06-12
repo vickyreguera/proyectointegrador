@@ -63,12 +63,13 @@ a.nav{
     padding-bottom: 5px;
     
 }
-img.portadaartist{
+.portadacamilo{
     display: block;
-    max-width: 150px;
-    min-height: 150px;
-    margin: 0 auto;
     margin-bottom: 15px;
+    width: 70%;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 63px;
 }
 .main{
     width: 100%;
@@ -190,7 +191,7 @@ ol li{
         width: 65%;
         padding-top: 10px;
         background-color: black;
-        margin-left:70px;
+        margin-left:83px;
         border-radius: 15px;
         height:70px;
         
@@ -275,10 +276,10 @@ padding-bottom:40px;
     margin-top: 50px;
     margin-bottom: 250px;
     }
-img.portadaartist{
-max-width: 250px;
-min-height: 250px;
+.portadacamilo{
 margin: 0 auto;
+height:300px;
+width: 300px;
 }
 .titulando{
     text-align: center;

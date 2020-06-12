@@ -15,10 +15,10 @@ window.addEventListener("load", function (){
             function(resultado){
             console.log(resultado);
             
-            document.querySelector(".titulando").innerHTML = resultado.title;
-            document.querySelector(".portadaartist").src = resultado.cover_medium;
+            document.querySelector(".nombre").innerHTML = resultado.title;
             document.querySelector(".fecha").innerHTML = resultado.release_date;   
-            document.querySelector(".titulo").innerHTML = resultado.duration;
+            document.querySelector(".separar").innerHTML = resultado.duration;
+            document.querySelector(".tini").src = resultado.cover_medium;
             
             let nombreArtista = resultado.artist.name;
             let idArtista = resultado.artist.id;
@@ -28,7 +28,13 @@ window.addEventListener("load", function (){
             document.querySelector(".cantante").innerHTML = todoArtist;
             
             
+            let escuchar = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=album&id=` + codigoAlbum + `&app_id=1`
             
+
+            document.querySelector(".tini").src = escuchar
+            
+
+
             let otrasCanciones = resultado.tracks.data
             console.log(otrasCanciones);
             
