@@ -3,21 +3,22 @@ window.addEventListener("load", function(){
 let recuperoStorage = localStorage.getItem("playlist");
 let playlist = JSON.parse(recuperoStorage);
 
-let playlistWrapper = document.querySelector(".listacanciones");
+
 console.log(recuperoStorage);
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [];
-    playlistWrapper.innerHTML += '<li class="nohay"> No hay canciones en tu playlist </li>'
-    console.log(playlistWrapper);
+    document.querySelector(".listacanciones").innerHTML += '<li class="nohay"> No hay canciones en tu playlist </li>'
     
-} else {
+    
+} 
+else {
 
     playlist.forEach(function(codigoTrack){
-        buscarYMostrarTrack(codigoTrack);
+        mostrarPlaylist (codigoTrack);
     });
 }
 
-function buscarYMostrarTrack(codigoTrack){
+function mostrarPlaylist(codigoTrack){
     
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoTrack)
@@ -25,7 +26,7 @@ function buscarYMostrarTrack(codigoTrack){
             return response.json();
         })
         .then(function (track) {
-            playlistWrapper.innerHTML += '<li class="canciones">' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
+            document.querySelector(".listacanciones").innerHTML += '<li class="canciones">' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
         })
         .catch(function(errors){
             console.log(errors);
@@ -42,15 +43,15 @@ function buscarYMostrarTrack(codigoTrack){
                         function (resultado) {
                             
                         
-                    let canciones = resultado.data
+                    
 
                     
-                    let title = canciones.title
-                    let id = canciones.id;
+                    let titleCancion = resultado.data.title
+                    let idCancion = resultado.data.id;
 
                     let todasFavoritas = `<li class = "cancion">
-                        <a href="tracks.html?idTrack=`+ id + `">`
-                        + title + `</a></li>`
+                        <a href="tracks.html?idTrack=`+ idCancion + `">`
+                        + titleCancion + `</a></li>`
                     
                         document.querySelector(".listacanciones").innerHTML += todasFavoritas
         

@@ -19,8 +19,14 @@ window.addEventListener("load", function (){
             document.querySelector(".tini").src = resultado.cover_medium;
             document.querySelector(".fecha").innerHTML = resultado.release_date;   
             document.querySelector(".separar").innerHTML = resultado.duration;
-            document.querySelector(".cantante").innerHTML = resultado.artist.name;
+            
+            let nombreArtista = resultado.artist.name;
+            let idArtista = resultado.artist.id;
 
+            let todoArtist = `<h5 class="cantante"><a class="linkeando" href="artists.html?idArtist=`+ idArtista + `">`+ nombreArtista + `</a> </li>`
+            
+            document.querySelector(".cantante").innerHTML = todoArtist;
+            
             
             
             let otrasCanciones = resultado.tracks.data
@@ -33,7 +39,9 @@ window.addEventListener("load", function (){
 
                 console.log(masSongs);
 
-                let albumCanciones = `<li class="cancion">`  + masSongs.title + `</li>`
+                let nombreCancion = masSongs.title;
+                let idCancion = masSongs.id
+                let albumCanciones = `<li class="cancion"> <a href="tracks.html?idTrack=` + idCancion + `">`  + nombreCancion + ` </a> </li>`
 
                 
 
@@ -42,6 +50,7 @@ window.addEventListener("load", function (){
 
 
             }
+
         })
     }
 

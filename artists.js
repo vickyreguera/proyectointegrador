@@ -27,46 +27,38 @@ if(codigoArtist) {
                         .then(
                             function (tracklist) {
                                 console.log(tracklist)
-                                for (let index = 0; index < 5; index++) {
+
+                                let listaSongs = tracklist.data
+                                for (let index = 0; index < listaSongs.length; index++) {
                                     const cadaSong = tracklist.data[index];
 
-                                    let trackId = tracklist.data.id;
+                                    let trackId = cadaSong.id;
+                                    let trackNombre = cadaSong.title
 
                                     console.log(cadaSong);
 
-                                    let otrasSongs = `<li class="cancion"> `  + cadaSong.title + ` </li> `
+                                    let otrasSongs = `<li class="cancion"> <a href="tracks.html?idTrack=`+ trackId +`">`  + trackNombre + `</a> </li> `
 
                                     document.querySelector(".listacanciones").innerHTML += otrasSongs;
 
+        
 
 
-                                }
-                            })
-        })
-}
+
+                                } //cierro for
+                            }) //cierro then tracklist
+        }) //cierro then artist
+} // cierro if
 else{
     alert("No se recibió ID de artist")
-}
+} //cierro else
 
 
   
 
 
                     
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + codigoArtist)
-.then(
-    function(respuesta) {
-        return respuesta.json();            
-    }
-)
-.then(
-    function(resultado) {
-    console.log(resultado)
-    
-       document.querySelector(".quiero").innerHTML = resultado.title;
-       
-    }
-)
 
 
-})
+
+}) // cierro el onload
