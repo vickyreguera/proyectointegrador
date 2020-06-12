@@ -2,9 +2,9 @@ window.addEventListener("load",function(){
 
 let queryString = new URLSearchParams(location.search)
 
-let loBuscado = queryString.get("buscador");
+let buscando = queryString.get("buscador");
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + loBuscado + "")
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + buscando + "")
 .then(
     function(respuesta) {
         return respuesta.json();
