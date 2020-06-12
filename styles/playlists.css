@@ -211,6 +211,12 @@ ul.info{
     display: none;
 }
 
+.alsong{
+text-decoration: none;
+color: black;
+}
+
+
 @media(min-width: 1024px){
 
     header {

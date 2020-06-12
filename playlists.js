@@ -32,10 +32,12 @@ window.addEventListener("load", function (){
                                     const cadaSong = tracklist.data[index];
 
 
-
                                     console.log(cadaSong);
 
-                                    let otrasSongs = `<li class="can"> `  + cadaSong.title + `</li>`
+                                    let nombreCancion = cadaSong.title;
+                                    let idCancion = cadaSong.id;
+
+                                    let otrasSongs = `<li class="can"> <a class="alsong" href="tracks.html?idTrack=`+ idCancion + `">`  + nombreCancion + `</li>`
 
                                     
 

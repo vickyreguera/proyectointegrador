@@ -150,6 +150,7 @@ h5{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-content: space-around;
+    font-family:'Inria Sans', sans-serif ;
     
 }
 article.info{
@@ -226,7 +227,22 @@ ul.gridrepro {
     margin-top: 10px;
 }
 section.listasongs{
-    display: none;
+    display: block;
+    background-color: rgb(250, 229, 219);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+ol.listacanciones{
+    list-style: decimal-leading-zero;
+    margin-left: 50px;
+}
+.cancion{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    
 }
 div.titaudiora{
     display: none;
@@ -242,6 +258,15 @@ div.nosotras{
     text-align: center;
     color: white;
     margin-top: 20px;
+}
+.cantante{
+    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+}
+.linkeando{
+    text-decoration: none;
+    color:black;
 }
 
 @media (min-width: 1024px){
@@ -433,6 +458,8 @@ div.nosotras{
         }
         .cantante{
             margin-top: 0px;
+            text-decoration: none;
+            color: black;
         }
     
 }

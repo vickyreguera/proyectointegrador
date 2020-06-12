@@ -168,6 +168,7 @@ h4.reproducir{
     text-align: center;
     
 }
+
 .colrepro {
     display: grid;
     grid-template-rows: auto;
@@ -214,6 +215,7 @@ ol.listacanciones{
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
     padding: 5px;
+    margin-top: 5px;
     
 }
 .borde1{
@@ -241,31 +243,29 @@ ol.listacanciones{
     display:block;
     margin-top: 10px;
 }
-article.columnas {
-    display: none;
-}
-ul.columnas{
-    display: block;  
-}
+
+
 article.col{
     background-color: rgb(250, 229, 219);
     height: 25px;
     padding: 5px;
     width: 85%;
     margin: 0 auto;
-    margin-top: 20px;
+
+    
 }
-ul.columnas{
+.columnas{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 10% 90%;
     justify-content: space-around;
+    
 }
 h4.album{
-    font-size: 19px;
+    font-size: 20px;
     font-family:'Inria Sans', sans-serif;
-    padding-left: 10px;
     padding-top: 3px;
-    text-align: center;  
+    margin-left: 0px;
+    padding-left: 0px;
 }
 .fas{
     display: block;
@@ -279,13 +279,7 @@ h6.quiero{
     font-weight: bold;
     text-align: center;
 }
-li.alado{
-    display: grid;
-    grid-template-columns: 30% 60%;
-    justify-content: space-evenly;
-    width: 65%;
-    padding-top: 0px;
-}
+
 div.titaudiora{
     display: none;
 }
@@ -451,9 +445,9 @@ div.nosotras{
     .seguidores{
         font-size: 20px;
     }
-    ul.columnas{
+    .columnas{
         display: grid;
-        grid-template-columns: 20% 70%;
+        grid-template-columns: 100%;
         justify-content: space-around;
     }
     h4.album{
@@ -461,6 +455,7 @@ div.nosotras{
         font-family:'Inria Sans', sans-serif;
         padding-left: 10px;
         padding-top: 3px;
+        margin-left: 0;
        
     }
     .fas{
@@ -475,13 +470,7 @@ div.nosotras{
         font-weight: bold;
         text-align: left;
     }
-    li.alado{
-        display: grid;
-        grid-template-columns: 30% 60%;
-        justify-content: space-evenly;
-        width: 65%;
-        padding-top: -1px;
-    }
+    
     article.col{
         background-color: rgb(250, 229, 219);
         height: 40px;

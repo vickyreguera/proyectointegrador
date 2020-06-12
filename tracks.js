@@ -15,12 +15,20 @@ window.addEventListener("load", function () {
                     console.log(resultado)
                     document.querySelector(".cancion").innerHTML = resultado.title;
                     document.querySelector(".portadacamilo").src = resultado.album.cover_medium;
-                    document.querySelector(".artist").innerHTML = resultado.artist.name;
                     document.querySelector(".fecha").innerHTML = resultado.duration;
-                    document.querySelector(".separar").innerHTML = resultado.album.title;
+                   
+                    let nombreAl = resultado.album.title;
+                    let identificarAl = resultado.album.id;
+                    let albumes = `<li class="separar"><a class="allink" href="albums.html?idAlbums=`+ identificarAl + `">`+ nombreAl + `</a> </li>`
+                   
+                    document.querySelector(".separar").innerHTML = albumes;
  
+                   let nombreAr = resultado.artist.name;
+                   let identificarAr = resultado.artist.id;
+                   let artista = `<li class="artist"><a class="fuera" href="artists.html?idArtist=`+ identificarAr + `">`+ nombreAr + `</a> </li>`
                    
                     
+                    document.querySelector(".artist").innerHTML = artista;
  
  
                     fetch("https://cors-anywhere.herokuapp.com/" + resultado.artist.tracklist)
@@ -35,27 +43,28 @@ window.addEventListener("load", function () {
                                 for (let index = 0; index < 6; index++) {
                                     const cadaSong = tracklist.data[index];
  
- 
+                                    
  
                                     console.log(cadaSong);
  
-                                    let otrasSongs = `<li class="espacio"> `  + cadaSong.title + `</li>`
+                                    let otrasSongs = `<li class="espacio"> <a class="melleva" href="tracks.html?idTrack=`+ cadaSong.id + `"> `  + cadaSong.title + `</a> </li>`
+                                    
  
                                     document.querySelector(".mas-canciones").innerHTML += otrasSongs;
  
+                                } // cierra for
+                                        
  
- 
-                                }
-                            })
+                                
+                            }) // cierra then artist
                     document.querySelector(".link").addEventListener("click", function (e) {
                         let continuar = confirm("¿Quiere conocer el perfil del artista?")
                         console.log(continuar);
  
+                    }) // cierra function
  
-                    })
- 
-                })
-    }
+                }) // cierra primer fetch
+    } // cierra if
     else {
         alert("¿No se recibió ID de canción?")
     }
@@ -110,4 +119,4 @@ document.querySelector(".laquiero").addEventListener("click", function(e){
  
  
  
-})
+}) // cierra window onload
