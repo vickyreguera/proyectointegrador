@@ -161,6 +161,8 @@ div.nosotras{
 .buscar{
     display:none;
 }
+
+/* header y footer */
 .rankings{
     display: grid;
     grid-template-columns: 100%;
@@ -226,6 +228,7 @@ nav:hover ul.detalle{
     width: 100%;
     margin-bottom: 20px;
 }
+
 
 @media (min-width:1024px){
     header {
@@ -359,19 +362,47 @@ nav:hover ul.detalle{
     }
 
     .buscar{
+        display: block;
+        margin: 100px auto;
+        width: 300px;
+        height: 50px;
         margin-left: 40px;
-        width:10%;
         padding-left: 20px;
-        display: grid;
-        grid-template-columns: 10% 90%;
-        background-color:rgb(250, 229, 219);
-        align-content: center;
-        display:grid;
-        grid-template-columns: 20% 80%;
-        justify-content: space-between;
-        border: 1px solid rgb(235, 223, 228);
-        margin-bottom: 50px;
-        height: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        
     }
-    
+    .container-1{
+        width: 300px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+      }
+
+      .container-1 input#search{
+        width: 300px;
+        height: 50px;
+        background-color:rgb(230, 213, 205);
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #63717f;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      .container-1 .icon{
+        position: absolute;
+        top: 50%;
+        margin-left: 17px;
+        margin-top: 17px;
+        z-index: 1;
+        color: #4f5b66;
+      }
+
+      
+
+  
 }

@@ -26,7 +26,7 @@ ul.navegacion{
     width: 100%;
     padding-left: 0px;
 }
-
+ 
 nav:hover ul.navegacion{
     display: block;
 }
@@ -51,7 +51,7 @@ nav:hover ul.navegacion{
     padding-bottom: 5px;
    
 }
-
+ 
 a.nav{
     color: white;
     text-decoration: none;
@@ -131,7 +131,7 @@ ol li{
     margin-bottom: 30px;
     text-decoration: solid;
 }
-
+ 
 .playlist{
     justify-content: center;
     border-radius: 15px;
@@ -149,9 +149,25 @@ ol li{
         text-align: center;
         padding-top: 17px; ;
         padding-right: 50px;
+        margin-bottom: 10px;
         width: 100%;
+        
     }
 
+.laquiero{
+    margin: 0;
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 17px; ;
+        padding-right: 50px;
+        width: 65%;
+        background-color: black;
+        margin-left:70px;
+    }
+ 
+ 
 .footer{
     background-color: black;
     width:100%;
@@ -213,11 +229,11 @@ ol li{
 margin-left: 110px;
 padding-bottom:40px;
  }
-
-
-
+ 
+ 
+ 
 @media(min-width: 1024px){
-
+ 
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -234,7 +250,7 @@ margin: 0 auto;
 }
 .infoalbum{
     margin-left: 5px
-
+ 
 }
 .infoalbum ul{
    
@@ -254,7 +270,7 @@ ul.texto{
 ol.texto{
     padding-left: 0px;
 }
-
+ 
 header {
     display: grid;
     grid-template-columns: 10% 30% 55%;
@@ -275,7 +291,7 @@ div.titaudiora{
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 5px;
-
+ 
 }
 .toggle-nav{
     display: none;
@@ -323,7 +339,7 @@ a.nav{
     width:90%;
     margin-top: 5px;
 }
-
+ 
 footer{
     height: 60px;
     background-color: black;

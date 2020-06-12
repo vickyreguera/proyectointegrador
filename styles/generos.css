@@ -52,9 +52,16 @@ a{
 }
 
 
+
 body{
     background-color: rgb(255,224,208);
-    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* header y footer*/
+.logo{
+    padding-top: 10px;
 }
 .logo img{
     height: 80px;
@@ -63,7 +70,7 @@ body{
     display:block;
     align-content: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .toggle-nav {
     background-color: black;
@@ -96,8 +103,8 @@ nav:hover ul.navegacion{
     list-style: none;
     text-align: center;
     font-weight:bold;
-     margin: 0 auto;
-     margin-bottom: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
     width:90%;
     background-color: black;
     padding-top: 5px;
@@ -116,148 +123,33 @@ a.nav{
     padding-bottom: 5px;
     
 }
-img.tini{
-    display: block;
-    margin: 0 auto;
-    max-width: 150px;
-    min-height: 150px;
-    margin-bottom: 15px;  
-}
-h3{
-    text-align: center;
-    margin: 0 auto;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    padding-bottom: 5px;
-}
-li.cancion a{
-    text-decoration: none;
-    color: black;
 
-}
-h5{
-    text-align: center;
-    margin: 0 auto;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: black;
-    text-decoration: none;
-    
-}
-.infoalbum {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: space-around;
-    
-}
-article.info{
-   margin-left: 0;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    margin-right: 5px; 
-}
-.txchico{
-    font-size: 15px;
-    margin-bottom: 3px;
-}
-.separar{
-    margin-bottom: 30px;
-}
-h4.reproducir{
-    
-    color: white;
-    padding: 10px;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    
-}
-.colrepro {
-    display: grid;
-    grid-template-rows: auto;
-    border-radius: 15px;
-    border: 1px solid black; 
-    background-color: black;
-    width: 45%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    
-}
-ul.gridrepro {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    
-    
-     
-}
-.far{
-    color: white;
-    width: 10px;
-    height: 10px;
-    padding-top: 10px;
-    padding-right: 7px;
-    padding-left: 5px;
-}
 .footer{
     background-color: black;
     width:100%;
     display: grid;
     grid-template-columns: 15% 80%;
     justify-content: space-around;
-    height: 50px;
-    margin-top: 200px;
+    height:50px;
+    margin-top: 180px;
     
 }
 .nosotras{
     font-family:'Inria Sans', sans-serif;
     font-size: 10px;
     
-
 }
 .deezer img{
     height:30px;
     margin:0 auto;
-    display:block;
     margin-top: 10px;
-}
-section.listasongs{
-    display: grid;
-    grid-template-columns: 100%;
-    background-color: rgb(250, 229, 219);
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-ol.listacanciones{
-list-style: decimal-leading-zero;
-margin-left: 50px;
-}
-.cancion{
-font-family:'Inria Sans', sans-serif;
-font-size: 20px;
-padding: 5px;
-
-}
-.nohay{
-    font-family:'Inria Sans', sans-serif;
-    list-style: none;
-    font-size: 23px;
-    margin: 0 auto;
+    display:block;
 }
 div.titaudiora{
     display: none;
 }
 div.nosotras{
-    display: grid;
+    display:grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
 }
@@ -265,27 +157,85 @@ div.nosotras{
     font-size: 12px;
     font-weight: 3px;
     text-align: center;
-    color: white;
+    color:white;
     margin-top: 20px;
 }
-.canciones{
+/* termina header y footer*/
+
+.buscar{
+    display:none;
+}
+
+.rankings{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40%;
+}
+.rankings img{
+    width: 65%;
+    height: 200px;
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+
+.sections {
+    text-align: center;
+    margin: 0 auto;
     font-family:'Inria Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: black;
     text-decoration: none;
+}
+.albums img{
+    width:55%;
+}
+
+a.nombre{
+    
     color:black;
-    font-size: 20px;
-    margin-top:15px;
-}
-.listacanciones{
-    padding-top: 4px;
-    padding-bottom:10px;
+    display: none;
+    text-decoration: none;
+
 }
 
+h4.nombre{
+    color:black;
+    font-family:'Inria Sans', sans-serif;
+    text-align: center;
+}
+
+img.foto{
+    margin: 0 auto;
+    width: 50%;
+    height:150px;
+    border-radius: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul.detalle{
+   
+    width:100%;
+    
+}
+nav:hover ul.detalle{
+    display: block;
+    
+}
+
+.detalle{
+    display: grid;
+    grid-template-columns:100%;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 
 
-
-
-@media (min-width: 1024px){
+@media (min-width:1024px){
     header {
         display: grid;
         grid-template-columns: 10% 30% 55%;
@@ -308,6 +258,7 @@ div.nosotras{
         padding-bottom: 5px;
 
     }
+    
     .toggle-nav{
         display: none;
     }
@@ -331,6 +282,7 @@ div.nosotras{
         margin-right: 3px;
         
     }
+
     h4.audiora{
         margin-top: 20px;
         font-size: 46px;
@@ -346,8 +298,8 @@ div.nosotras{
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-    }    
-    .menu{
+    }   
+    menu{
         text-align: center;
         margin: 0;
         margin-bottom: 0;
@@ -359,39 +311,7 @@ div.nosotras{
         grid-template-columns: 40% 50%;
         justify-content: space-around;
         margin-bottom: 150px;
-    }
-    img.tini{
-        display: block;
-        max-width: 300px;
-        min-height: 300px;
-        padding-top: 30px;
-        padding-left: 8px;
-        margin-bottom: 10px;
-    }
-    h3{
-        text-align: center;
-        margin: 0 auto;
-        font-family:'Inria Sans', sans-serif;
-        font-size: 25px;
-        color: black;
-        text-decoration: none;
-        padding: 10px;
-        padding-bottom: 5px;
-        margin-top: 0;
-    }
-    h5{
-        text-align: center;
-        font-size: 22px;   
-    }
-    div h3{
-        text-align: center;
-        font-size: 35px;
-        font-weight: bold;
-        padding: 0;
-        padding-top: 28px;
-        padding-left: 10px;
-        padding-bottom: 5px;
-
+        margin-top: 60px;
     }
     footer{
         height: 60px;
@@ -403,7 +323,7 @@ div.nosotras{
         display: grid;
         grid-template-columns: 33% 33% 33%;
         justify-content: space space-around;
-        
+       
     }
     .nos{
         font-size: 25px;
@@ -417,48 +337,89 @@ div.nosotras{
         margin:0 auto;
        margin-top: 10px;
     }
-    .infoalbum {
-            margin-top: 30px;
-            margin-bottom: 20px;
+    
+    /*termina footer y header media querie*/
+   
+    .nombre{
+        margin-bottom: 10px;
+
+    }
+
+    .top5{
+        margin-top: 30px;
         
     }
-       
-    article.info{
-           margin-left: 0;
-            font-family:'Inria Sans', sans-serif;
-            font-size: 20px;
-            color: black;
-            text-decoration: none;
-            margin-right: 5px; 
-        }
-    article.txchico{
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-    .separar{
-            margin-bottom: 10px;
-        }
-        article.info.separar {
-            font-size: 30px;
+    .rankings{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 40% 40%;
+        justify-content: space-between;
+        margin-bottom:70px;
+    }
+    .rankings img{
+        height:150px;
+    }
+    .detalle{
+        height:250px;
+    }
+    .nuevo{
+        font-family:'Inria Sans', sans-serif;
+        text-align: left;
+        margin-right: 10px;
+        color: black;
+        margin-left: 10px;
+    }
 
-        }
-        section.listasongs{
-            display: block;
-            background-color: rgb(250, 229, 219);
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 0;
-            margin-bottom: 0px;
-        }
-        ol.listacanciones{
-            list-style: decimal-leading-zero;
-            margin-left: 50px;
-        }
-        .cancion{
-            font-family:'Inria Sans', sans-serif;
-            font-size: 25px;
-            padding: 8px;
-            
-        }
-    
+    /* buscador */
+    .buscar{
+        display: block;
+        margin: 100px auto;
+        width: 300px;
+        height: 50px;
+        margin-left: 40px;
+        padding-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        
+    }
+    .container-1{
+        width: 300px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+      }
+
+      .container-1 input#search{
+        width: 300px;
+        height: 50px;
+        background-color:rgb(230, 213, 205);
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #63717f;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      .container-1 .icon{
+        position: absolute;
+        top: 50%;
+        margin-left: 17px;
+        margin-top: 17px;
+        z-index: 1;
+        color: #4f5b66;
+      }
+    /* termina buscador */
+     
+    /* 
+    div.rankings{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 13% 13% 13% 13% 13% 13% 13%;
+        justify-content: space-between;
+    } */
+  
 }
+
