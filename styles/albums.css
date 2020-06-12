@@ -47,8 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
 body{
     background-color: rgb(255,224,208);
     margin: 0 auto;
@@ -113,7 +111,7 @@ a.nav{
     padding-bottom: 5px;
     
 }
-img.tini{
+img.portadaartist{
     display: block;
     margin: 0 auto;
     max-width: 150px;
@@ -130,7 +128,7 @@ h3{
     padding: 10px;
     padding-bottom: 5px;
 }
-li.cancion a{
+li.titulo a{
     text-decoration: none;
     color: black;
 
@@ -144,6 +142,10 @@ h5{
     color: black;
     text-decoration: none;
     
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .infoalbum {
     display: grid;
@@ -180,23 +182,13 @@ h4.reproducir{
     text-align: center;
     
 }
-.colrepro {
-    display: grid;
-    grid-template-rows: auto;
-    border-radius: 15px;
-    border: 1px solid black; 
-    background-color: black;
-    width: 45%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    
+.tini{
+    width: 70%;
+    height: 300px;
+    margin-left: 57px;
+
 }
-ul.gridrepro {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-     
-}
+
 .far{
     color: white;
     width: 10px;
@@ -237,12 +229,13 @@ section.listasongs{
 ol.listacanciones{
     list-style: decimal-leading-zero;
     margin-left: 50px;
+    
 }
 .cancion{
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
-    padding: 5px;
-    
+    padding: 5px;  
+    text-decoration: none;
 }
 div.titaudiora{
     display: none;
@@ -264,7 +257,7 @@ div.nosotras{
     text-decoration: none;
     color: black;
 }
-.linkeando{
+a.linkeando{
     text-decoration: none;
     color:black;
 }
@@ -301,9 +294,12 @@ div.nosotras{
     ul.navegacion{
         display: block;
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 5% 30% 30% 30%;
         justify-content: space-around;
         margin-top: 26px;
+    }
+    .fas{
+        font-size: 25px;
     }
     .logo img{
         height: 70px;
@@ -344,7 +340,7 @@ div.nosotras{
         justify-content: space-around;
         margin-bottom: 150px;
     }
-    img.tini{
+    img.portadaartist{
         display: block;
         max-width: 300px;
         min-height: 300px;
@@ -422,7 +418,7 @@ div.nosotras{
         }
 
     
-    .separar{
+    .titulo{
             margin-bottom: 10px;
             font-family: 'Inria Sans', sans;
         }
@@ -460,6 +456,11 @@ div.nosotras{
             margin-top: 0px;
             text-decoration: none;
             color: black;
+        }
+        .tini{
+            width:300px;
+            margin-left: 150px;
+            margin-top: 50px;
         }
     
 }

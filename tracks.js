@@ -13,8 +13,8 @@ window.addEventListener("load", function () {
             .then(
                 function (resultado) {
                     console.log(resultado)
-                    document.querySelector(".cancion").innerHTML = resultado.title;
-                    document.querySelector(".portadacamilo").src = resultado.album.cover_medium;
+                    document.querySelector(".titulando").innerHTML = resultado.title;
+                    
                     document.querySelector(".fecha").innerHTML = resultado.duration;
                    
                     let nombreAl = resultado.album.title;
@@ -29,7 +29,14 @@ window.addEventListener("load", function () {
                    
                     
                     document.querySelector(".artist").innerHTML = artista;
- 
+                    
+                   
+
+                    let reproducir = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=tracks&id=` + codigoTrack + `&app_id=1`
+
+                    document.querySelector(".portadaartist").src = reproducir;
+
+
  
                     fetch("https://cors-anywhere.herokuapp.com/" + resultado.artist.tracklist)
                         .then(
@@ -40,10 +47,12 @@ window.addEventListener("load", function () {
                         .then(
                             function (tracklist) {
                                 console.log(tracklist)
-                                for (let index = 0; index < 6; index++) {
+                                for (let index = 0; index < tracklist.data.length; index++) {
                                     const cadaSong = tracklist.data[index];
  
-                                    
+                                    if (index >= 6){
+                                        break
+                                    }
  
                                     console.log(cadaSong);
  

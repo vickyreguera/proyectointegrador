@@ -240,13 +240,14 @@ section.listasongs{
 ol.listacanciones{
 list-style: decimal-leading-zero;
 margin-left: 50px;
+
 }
 .cancion{
 font-family:'Inria Sans', sans-serif;
-font-size: 20px;
+font-size: 30px;
 padding: 5px;
-
 }
+
 .nohay{
     font-family:'Inria Sans', sans-serif;
     list-style: none;
@@ -283,8 +284,6 @@ div.nosotras{
 
 
 
-
-
 @media (min-width: 1024px){
     header {
         display: grid;
@@ -299,6 +298,7 @@ div.nosotras{
     div.titaudiora{
         display: block;
     }
+
     .audiora{
         color: white;
         font-family:'Inria Sans', sans-serif;
@@ -317,9 +317,12 @@ div.nosotras{
     ul.navegacion{
         display: block;
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns:5% 30% 30% 30%;
         justify-content: space-around;
         margin-top: 26px;
+    }
+    .fas{
+        font-size: 25px;
     }
     .logo img{
         height: 70px;
@@ -360,7 +363,7 @@ div.nosotras{
         justify-content: space-around;
         margin-bottom: 150px;
     }
-    img.tini{
+    img.portadaartist{
         display: block;
         max-width: 300px;
         min-height: 300px;
@@ -435,10 +438,10 @@ div.nosotras{
             font-size: 24px;
             margin-bottom: 5px;
         }
-    .separar{
+    .titulo{
             margin-bottom: 10px;
         }
-        article.info.separar {
+        article.info.titulo {
             font-size: 30px;
 
         }
