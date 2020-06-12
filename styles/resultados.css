@@ -318,9 +318,12 @@ nav:hover ul.navegacion{
 ul.navegacion{
     display: block;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns:5% 30% 30% 30%;
     justify-content: space-around;
     margin-top: 26px;
+}
+.fas{
+    font-size: 25px;
 }
 .logo img{
     height: 70px;

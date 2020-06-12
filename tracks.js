@@ -13,15 +13,15 @@ window.addEventListener("load", function () {
             .then(
                 function (resultado) {
                     console.log(resultado)
-                    document.querySelector(".cancion").innerHTML = resultado.title;
-                    document.querySelector(".portadacamilo").src = resultado.album.cover_medium;
+                    document.querySelector(".titulando").innerHTML = resultado.title;
+                    document.querySelector(".portadaartist").src = resultado.album.cover_medium;
                     document.querySelector(".fecha").innerHTML = resultado.duration;
                    
                     let nombreAl = resultado.album.title;
                     let identificarAl = resultado.album.id;
-                    let albumes = `<li class="separar"><a class="allink" href="albums.html?idAlbums=`+ identificarAl + `">`+ nombreAl + `</a> </li>`
+                    let albumes = `<li class="titulo"><a class="allink" href="albums.html?idAlbums=`+ identificarAl + `">`+ nombreAl + `</a> </li>`
                    
-                    document.querySelector(".separar").innerHTML = albumes;
+                    document.querySelector(".titulo").innerHTML = albumes;
  
                    let nombreAr = resultado.artist.name;
                    let identificarAr = resultado.artist.id;

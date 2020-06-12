@@ -10,13 +10,14 @@ if(codigoArtist) {
             return respuesta.json();            
         }
     )
+    
     .then(
         function(resultado) {
         console.log(resultado)
-           document.querySelector(".tini").src = resultado.picture;
-           document.querySelector(".nombre").innerHTML = resultado.name;
+           document.querySelector(".portadaartist").src = resultado.picture;
+           document.querySelector(".titulando").innerHTML = resultado.name;
            document.querySelector(".seguidores").innerHTML = resultado.nb_fan;
-           document.querySelector(".separar").innerHTML = resultado.nb_album;
+           document.querySelector(".titulo").innerHTML = resultado.nb_album;
            
            fetch("https://cors-anywhere.herokuapp.com/" + resultado.tracklist)
                         .then(

@@ -15,10 +15,10 @@ window.addEventListener("load", function (){
             function(resultado){
             console.log(resultado);
             
-            document.querySelector(".nombre").innerHTML = resultado.title;
-            document.querySelector(".tini").src = resultado.cover_medium;
+            document.querySelector(".titulando").innerHTML = resultado.title;
+            document.querySelector(".portadaartist").src = resultado.cover_medium;
             document.querySelector(".fecha").innerHTML = resultado.release_date;   
-            document.querySelector(".separar").innerHTML = resultado.duration;
+            document.querySelector(".titulo").innerHTML = resultado.duration;
             
             let nombreArtista = resultado.artist.name;
             let idArtista = resultado.artist.id;
