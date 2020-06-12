@@ -19,6 +19,10 @@ window.addEventListener("load", function (){
             document.querySelector(".titulo").innerHTML = resultado.fans;
             document.querySelector(".portadaplaylist").src = resultado.picture_medium;
 
+            let escuche = `https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=600&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=` + codigoPlaylists + `&app_id=1`
+
+            document.querySelector(".daleplay").src = escuche
+
             fetch("https://cors-anywhere.herokuapp.com/" + resultado.tracklist)
                         .then(
                             function (respuesta) {
@@ -28,7 +32,7 @@ window.addEventListener("load", function (){
                         .then(
                             function (tracklist) {
                                 console.log(tracklist)
-                                for (let index = 0; index < 100; index++) {
+                                for (let index = 0; index < tracklist.data.length; index++) {
                                     const cadaSong = tracklist.data[index];
 
 
