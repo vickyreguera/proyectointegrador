@@ -107,7 +107,6 @@ nav:hover ul.navegacion{
     background-color: black;
     padding-top: 5px;
     padding-bottom: 5px;
-   
 }
 
 a.nav{
@@ -229,6 +228,9 @@ nav:hover ul.detalle{
     margin-bottom: 20px;
 }
 
+.spinnertracks{
+    margin-top: 20px;
+}
 
 @media (min-width:1024px){
     header {

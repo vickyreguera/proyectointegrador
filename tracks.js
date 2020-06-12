@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
             .then(
                 function (resultado) {
                     console.log(resultado)
-                    document.querySelector(".cancion").innerHTML = resultado.title;
+                    document.querySelector(".titulando").innerHTML = resultado.title;
                     
                     document.querySelector(".fecha").innerHTML = resultado.duration;
                    
@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
 
                     let reproducir = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=tracks&id=` + codigoTrack + `&app_id=1`
 
-                    document.querySelector(".portadacamilo").src = reproducir;
+                    document.querySelector(".portadaartist").src = reproducir;
 
 
  

@@ -58,8 +58,6 @@ body{
     margin-top: 0;
     padding: 0;
 }
-
-/* header y footer*/
 .logo{
     padding-top: 10px;
 }
@@ -160,80 +158,64 @@ div.nosotras{
     color:white;
     margin-top: 20px;
 }
-/* termina header y footer*/
-
 .buscar{
     display:none;
 }
 
-.rankings{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 40% 40%;
-}
-.rankings img{
-    width: 65%;
-    height: 200px;
-    align-content: center;
-    display: block;
-    margin: auto;
-}
+/* header y footer */
 
-.sections {
-    text-align: center;
-    margin: 0 auto;
-    font-family:'Inria Sans', sans-serif;
-    font-size: 30px;
-    margin-bottom: 50px;
-    color: black;
-    text-decoration: none;
-}
-.albums img{
-    width:55%;
-}
-
-a.nombre{
-    
-    color:black;
-    display: none;
-    text-decoration: none;
-
-}
-
-h4.nombre{
-    color:black;
-    font-family:'Inria Sans', sans-serif;
-    text-align: center;
-}
-
-img.foto{
-    margin: 0 auto;
-    width: 50%;
-    height:150px;
-    border-radius: 100%;
-    display: block;
-    margin-bottom: 10px;
-}
-
-ul.detalle{
-   
-    width:100%;
-    
-}
 nav:hover ul.detalle{
     display: block;
     
 }
 
-.detalle{
+.listadogeneros{
     display: grid;
-    grid-template-columns:100%;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
+    grid-template-columns: 100%;
 }
 
 
+.cadagenero {
+    text-align: center;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    
+    color: black;
+    text-decoration: none;
+    
+
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    
+}
+
+
+.listagenero{
+    display: grid;
+    grid-template-columns: 20% 70% 5%;
+    margin-left:10px;
+    width:95%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background-color:rgb(250, 229, 219);
+}
+
+.portadagenero{
+    display: block;
+    width:100%;
+    height:50px;
+}
+
+.nombre{
+    font-family:'Inria Sans', sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-top: 7px;
+    
+}
 
 @media (min-width:1024px){
     header {
@@ -268,10 +250,13 @@ nav:hover ul.detalle{
     ul.navegacion{
         display: block;
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns:  5% 30% 30% 30%;
         justify-content: space-around;
         margin-top: 26px;
     }
+   .fas{
+       font-size: 28px;
+   }
     .logo img{
         height: 70px;
         display:block;
@@ -337,40 +322,7 @@ nav:hover ul.detalle{
         margin:0 auto;
        margin-top: 10px;
     }
-    
-    /*termina footer y header media querie*/
-   
-    .nombre{
-        margin-bottom: 10px;
 
-    }
-
-    .top5{
-        margin-top: 30px;
-        
-    }
-    .rankings{
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        grid-template-rows: 40% 40%;
-        justify-content: space-between;
-        margin-bottom:70px;
-    }
-    .rankings img{
-        height:150px;
-    }
-    .detalle{
-        height:250px;
-    }
-    .nuevo{
-        font-family:'Inria Sans', sans-serif;
-        text-align: left;
-        margin-right: 10px;
-        color: black;
-        margin-left: 10px;
-    }
-
-    /* buscador */
     .buscar{
         display: block;
         margin: 100px auto;
@@ -411,15 +363,32 @@ nav:hover ul.detalle{
         z-index: 1;
         color: #4f5b66;
       }
-    /* termina buscador */
-     
-    
-    div.rankings{
+
+      .listadogeneros{
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+    .listagenero{
         display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        grid-template-rows: 13% 13% 13% 13% 13% 13% 13%;
-        justify-content: space-around;
-    } 
+        grid-template-columns: 100%;
+        margin-bottom: 10px;
+        
+    }
+    .portadagenero{
+        height:250px;
+        width:80%;
+        margin:0 auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nombre{
+        padding-left: 0px;
+        font-size: 30px;
+    }
+    
+      
+
   
 }
-

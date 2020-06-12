@@ -32,7 +32,7 @@ function mostrarPlaylist(codigoTrack){
             return response.json();
         })
         .then(function (track) {
-            document.querySelector(".listacanciones").innerHTML += '<li class="canciones">' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
+            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
         })
         .catch(function(errors){
             console.log(errors);
@@ -60,12 +60,12 @@ function mostrarPlaylist(codigoTrack){
                         + titleCancion + `</a></li>`
                     
                         document.querySelector(".listacanciones").innerHTML += todasFavoritas
-        
-    })
-}
+    }) 
+    
+        }
         })
-            }
+            }     
         
-            
+        
         
     })
