@@ -229,6 +229,9 @@ nav:hover ul.detalle{
     margin-bottom: 20px;
 }
 
+.spinnertracks{
+    margin-top: 20px;
+}
 
 @media (min-width:1024px){
     header {
