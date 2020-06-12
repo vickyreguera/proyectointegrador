@@ -153,7 +153,7 @@ ul li{
     font-size: 15px;
     margin-bottom: 3px;
 }
-.titulo{
+.separar{
     margin-bottom: 30px;
 }
 .seguidores{
@@ -455,7 +455,7 @@ div.nosotras{
        font-size: 24px; 
        margin-bottom: 10px;
     }    
-    .titulo{
+    .separar{
         font-size: 20px;
     }
     .seguidores{

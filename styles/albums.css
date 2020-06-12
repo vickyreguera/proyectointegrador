@@ -167,7 +167,7 @@ article.info{
     font-size: 15px;
     margin-bottom: 3px;
 }
-.titulo{
+.separar{
     margin-bottom: 30px;
 }
 .fecha{
@@ -425,7 +425,7 @@ a.linkeando{
     .fecha{
         margin-bottom: 30px;
     }
-        article.titulo {
+        article.separar {
             font-size: 30px;
         }
         article.fecha{

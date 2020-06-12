@@ -240,13 +240,14 @@ section.listasongs{
 ol.listacanciones{
 list-style: decimal-leading-zero;
 margin-left: 50px;
+
 }
 .cancion{
 font-family:'Inria Sans', sans-serif;
-font-size: 20px;
+font-size: 30px;
 padding: 5px;
-
 }
+
 .nohay{
     font-family:'Inria Sans', sans-serif;
     list-style: none;
@@ -279,8 +280,6 @@ div.nosotras{
     padding-top: 4px;
     padding-bottom:10px;
 }
-
-
 
 
 

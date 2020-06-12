@@ -63,7 +63,7 @@ a.nav{
     padding-bottom: 5px;
     
 }
-.portadacamilo{
+.portadaartist{
     display: block;
     margin-bottom: 15px;
     width: 70%;
@@ -124,7 +124,7 @@ ol li{
     font-size: 20px;
     margin-bottom: 3px;
 }
-.titulo{
+.separar{
     margin-bottom: 30px;
     text-decoration: none;
     color: black;
