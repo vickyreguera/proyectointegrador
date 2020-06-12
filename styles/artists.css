@@ -447,7 +447,7 @@ div.nosotras{
     }
     .columnas{
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 10% 90%;
         justify-content: space-around;
     }
     h4.album{

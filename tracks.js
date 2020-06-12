@@ -75,13 +75,14 @@ window.addEventListener("load", function () {
  
 if(recuperoStorage == null){
     playlist = [];
-} else {
+} 
+else {
     playlist = JSON.parse(recuperoStorage);
 }
  
 //Me fijo que no esté en la lista y cambio el texto del botón
 if(playlist.includes(codigoTrack)){
-    document.querySelector(".laquiero").innerHTML = "Remove from playlist";
+    document.querySelector(".play").innerHTML = "Remove from playlist";
 }
  
 //Paso 2: agregar un track a la playlist.
@@ -92,30 +93,30 @@ document.querySelector(".laquiero").addEventListener("click", function(e){
     if(playlist.includes(codigoTrack)){
         //Si el track está tenemos que quitarlo.
         // indexof() para localizar valores en un array 
-        let indiceEnElArray = playlist.indexOf(codigoTrack);
-        playlist.splice(indiceEnElArray, 1);
-        document.querySelector(".laquiero").innerHTML = "Add to playlist";
+        let array = playlist.indexOf(codigoTrack);
+        playlist.splice(array, 1);
+        document.querySelector(".play").innerHTML = "Add to playlist";
         console.log(playlist);
         
-    } else { 
+    } 
+    else { 
         //Agrego el id del track a la lista
         playlist.push(codigoTrack);
-        document.querySelector(".laquiero").innerHTML = "Remove from playlist"
+        document.querySelector(".play").innerHTML = "Remove from playlist"
     }
-    //
+    
  
  
     //Paso 3 guardar lista en localStorage
-    let playlistParaStorage = JSON.stringify(playlist);
-    localStorage.setItem("playlist", playlistParaStorage);
+    let alStorage = JSON.stringify(playlist);
+    localStorage.setItem("playlist", alStorage);
     console.log(localStorage);
  
  
 })
  
  
-    
- 
+
  
  
  

@@ -165,30 +165,36 @@ ol li{
         margin: 0;
         color: white;
         font-family:'Inria Sans', sans-serif;
-        font-size: 27px;
+        font-size: 20px;
         text-align: center;
         padding-right: 45px;
+        padding-top: 11px;
         width: 100%;
         margin-left:22px;
         margin-bottom: 35px;
         text-transform: uppercase;
+        padding-bottom: 10px;
+        
         
     }
 
 .laquiero{
-    margin: 0;
+        margin: 0;
         color: white;
         font-family:'Inria Sans', sans-serif;
         font-size: 20px;
         text-align: center;
-        padding-top: 28px; 
-        padding-right: 50px;
-        padding-bottom: 60px;
+        padding-right: 45px;
+        margin-left:22px;
+        text-transform: uppercase;
         width: 65%;
+        padding-top: 10px;
         background-color: black;
         margin-left:70px;
         border-radius: 15px;
-        height:10px;
+        height:70px;
+        
+         
     }
 
 .melleva{
