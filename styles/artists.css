@@ -115,6 +115,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    align-content: center;
     
 }
 img.portadaartist{
@@ -269,9 +270,10 @@ h4.album{
 }
 .fas{
     display: block;
-    width: 50px;
-    height: 50px;
+    align-content: center;
     padding-top: 5px;
+    font-size: 100%;
+    text-align: center;
 }
 h6.quiero{
     font-size: 20px;
@@ -345,7 +347,10 @@ div.nosotras{
         margin-top: 20px;
     }
     .fas{
-        font-size: 25px;
+        font-size: 28px;
+        align-content: center;
+        padding-left: 50px;
+
     }
     .logo img{
         height: 70px;
