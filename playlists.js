@@ -14,10 +14,16 @@ window.addEventListener("load", function (){
         function(resultado){  
             console.log(resultado)  
 
-            document.querySelector(".titulando").innerHTML = resultado.title;
-            document.querySelector(".horas").innerHTML = resultado.duration;   
+            document.querySelector(".titulando").innerHTML = resultado.title; 
             document.querySelector(".titulo").innerHTML = resultado.fans;
             document.querySelector(".portadaplaylist").src = resultado.picture_medium;
+
+            let duracion = resultado.duration;
+
+            let tiempo = `<li class="horas"> ` + duracion + ` segundos  </li>`
+           
+            document.querySelector(".horas").innerHTML = tiempo
+
 
             let escuche = `https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=600&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=` + codigoPlaylists + `&app_id=1`
 

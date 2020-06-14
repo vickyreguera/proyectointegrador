@@ -464,10 +464,11 @@ footer{
     z-index: 1;
     color: #4f5b66;
   }
+  .portadaartist{
+      margin-left: 100px;
+      width:300px;
+  }
 
-.portadaartist{
-    width:300px;
-    margin-left: 100px;
-}
+
    
 }

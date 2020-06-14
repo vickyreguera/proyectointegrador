@@ -107,7 +107,6 @@ nav:hover ul.navegacion{
     background-color: black;
     padding-top: 5px;
     padding-bottom: 5px;
-   
 }
 
 a.nav{
@@ -158,26 +157,26 @@ div.nosotras{
     color:white;
     margin-top: 20px;
 }
-
-
-.buscartrack{
-    margin-left: 30px;
-    margin-top: 20px;
+.buscar{
+    display:none;
 }
+
+/* header y footer */
 
 .trackeando{
-    font-family: 'Inria Sans', sans-serif;
+    font-family:'Inria Sans', sans-serif;
     font-size: 30px;
-}
-
-.buscando{
-    margin-top: 20px;
-    margin-left: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .espacio{
     width: 80%;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
-
+.fa{
+    margin-top: 10px;
+}
 
 @media (min-width:1024px){
     header {
@@ -286,11 +285,6 @@ div.nosotras{
     }
     
     
-    
-
-      
-
-      
 
   
 }

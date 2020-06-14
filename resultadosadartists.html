@@ -3,40 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <title>Audiora Studios</title>
-    <link rel="stylesheet" href="../proyectointegrador/styles/resultadosadvanced.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../proyectointegrador/styles/resultadosadartists.css">
     <script src="resultadosadartists.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo"> <a class="ahome" href="home.html"><img src="../proyectointegrador/fotos/audiora circulo.png"></a> </div>
+        <div class="logo"> <a href="home.html"><img src="../proyectointegrador/fotos/audiora circulo.png"></a> </div>
         <div class="titaudiora"><h4 class="audiora">Audiora Studios</h4></div>
         <nav class="main-nav">
-            <a href="#" class="toggle-nav"><span class="fa fa-bars"></span></a>
+            <a href="#" class="toggle-nav">
+                <span class="fa fa-bars"></span>
+            </a>
             <ul class="navegacion">
-                <li class="menu"> <a href="advancedsearch.html"> <i class="fas fa-search" style="color:#FFFFFF;"></i> </a></li>
-                <li class="menu"><a href="home.html" class="nav">Home</a></li>
+                <li class="menu"> <a href="advancedsearch.html"><i class="fas fa-search" style="color:#FFFFFF;"></i> </a></li>
+                <li class="menu"><a href="home.html" class="nav">Home</a></li> 
                 <li class="menu"><a href="miplaylist.html" class="nav">Mis playlists</a></li>
-                 <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
+                <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
             </ul>
     </header>
     <main>
-        
-       
-    </main>
+        <div class="buscar">
+            <div class="container-1"></div>
+            <form action="resultados.html" method="GET">
+                <span class="icon"><i class="fa fa-search"></i></span>  
+                <input type="text" name="buscador" placeholder="Busca una canción...">
 
-    <footer>
-        <div class="footer"> 
-            <div class="deezer"> <img src="../proyectointegrador/fotos/deezer logo.jpg" alt="logo deezer"></div>
-            <div class="nosotras"> 
-               <p class="nos"> Milagros Jones</p> 
-               <p class="nos"> Josefina Goñi</p>
-               <p class="nos"> Victoria Reguera</p>
-            </div>
-        </div> 
-    </footer>
+            </form>
+        </div>
+        <div class="container">
+            <section class="col-izq"> 
+            <img class= "portadaartist" src="#" alt="Foto artista">
+            <h3 class="titulando"></h3>
+                <div class="infoalbum">
+            <ul>
+                <li class="txchico"> Seguidores </li>
+                <li class="txchico">Nº de álbumes </li>
+                <li class="seguidores"> </li>
+                <li class="separar"></li>
+            </ul>
+                </div>
+        
+                <iframe class = "aescuchar" scrolling="no" frameborder="0" allowTransparency="true" src="" ></iframe>
+        </section>
+
+            <section class="col-der">
+                <article class="col">
+            
+                    <div class="columnas">
+                        <i class="fas fa-compact-disc"></i> 
+                        <h4 class="album"> Songs from the artist:</h4>
+                    </div> 
+            
+                </article>
+            <section class="listasongs">
+                <ol class="listacanciones">
+            
+                </ol>
+            </section> </div> 
+            </section>
+        </div>
+    </main>    
+<footer>
+    <div class="footer"> 
+        <div class="deezer"> <img src="../proyectointegrador/fotos/deezer logo.jpg" alt="logo deezer"></div>
+        <div class="nosotras"> 
+           <p class="nos"> Milagros Jones</p> 
+           <p class="nos"> Josefina Goñi</p>
+           <p class="nos"> Victoria Reguera</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

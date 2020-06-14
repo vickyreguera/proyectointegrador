@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <title>Audiora Studios</title>
-    <link rel="stylesheet" href="../proyectointegrador/styles/resultadosadvanced.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../proyectointegrador/styles/resultadosadtracks.css">
     <script src="resultadosadtracks.js"></script>
 </head>
 <body>
@@ -24,19 +25,62 @@
             </ul>
     </header>
     <main>
-        
-       
-    </main>
+        <div class="buscar">
+            <div class="container-1"></div>
+            <form action="resultados.html" method="GET">
+                <span class="icon"><i class="fa fa-search"></i></span>  
+                <input type="text" name="buscador" placeholder="Busca una canción...">
 
+            </form>
+        </div>
+        <main class="container">
+        <section class="colizq">
+            <div>
+                <iframe class="portadaartist" scrolling="no" frameborder="0" allowTransparency="true" src=""  height="350">
+            </iframe>
+            </div>
+            <div class="nombre">
+            <h3 class="titulando"></h3>
+            <a class="link" href="artists.html"><h5 class="artist"></h5></a>
+            </div>
+            <main class="addto"> 
+            <div>
+                
+                <button class="laquiero"><h4 class="play">Add to playlist</h4>
+                </button>
+            </div>   
+            
+            </main>
+            </section>
+        <section class="col-der">
+            <div class="infoalbum">
+            <ul class="texto">
+                <li class="txchico"> Álbum: </li>
+                <li class="txchico">Duración: </li>
+                <li class="separar"><strong>  </strong></li>
+                <li class="fecha"><strong></strong></li>
+            </ul>
+            <div class="tit"><h4>MORE SONGS FROM THE ARTIST :</h4></div>
+            <div class="otras">
+                <ol class="mas-canciones">
+                    
+                </ol>
+            </div>
+        </section>
+            
+        </div>
+        </main>
+    </main>    
     <footer>
-        <div class="footer"> 
+        <div class="footer">
             <div class="deezer"> <img src="../proyectointegrador/fotos/deezer logo.jpg" alt="logo deezer"></div>
-            <div class="nosotras"> 
-               <p class="nos"> Milagros Jones</p> 
+            <div class="nosotras">
+               <p class="nos"> Milagros Jones</p>
                <p class="nos"> Josefina Goñi</p>
                <p class="nos"> Victoria Reguera</p>
             </div>
-        </div> 
+        </div>
     </footer>
+ 
 </body>
 </html>
