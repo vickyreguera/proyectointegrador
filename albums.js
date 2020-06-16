@@ -16,8 +16,6 @@ window.addEventListener("load", function (){
             console.log(resultado);
             
             document.querySelector(".nombre").innerHTML = resultado.title;
-            document.querySelector(".fecha").innerHTML = resultado.release_date;   
-            document.querySelector(".separar").innerHTML = resultado.duration;
             document.querySelector(".tini").src = resultado.cover_medium;
             
             let nombreArtista = resultado.artist.name;
@@ -25,6 +23,7 @@ window.addEventListener("load", function (){
 
             let todoArtist = `<h5 class="cantante"><a class="linkeando" href="artists.html?idArtist=`+ idArtista + `">`+ nombreArtista + `</a> </li>`
             
+            document.querySelector(".spinnertracks").style.display = "none"
             document.querySelector(".cantante").innerHTML = todoArtist;
             
             
@@ -33,6 +32,18 @@ window.addEventListener("load", function (){
 
             document.querySelector(".tini").src = escuchar
             
+
+
+            let tiempo = resultado.duration;
+            let lanzamiento = resultado.release_date
+            let infoAlbum =  `<article class="txchico"> Duración: </article>
+            <article class="txchico">Fecha de estreno: </article>
+            <article class="separar">` + tiempo + ` segundos</article>
+            <article class="fecha">` + lanzamiento + `</article>`
+            
+
+
+            document.querySelector(".infoalbum").innerHTML = infoAlbum;
 
 
             let otrasCanciones = resultado.tracks.data
@@ -59,7 +70,9 @@ window.addEventListener("load", function (){
 
         })
     }
-
+else{
+    alert("Este álbum no existe")
+}
     })
 
     

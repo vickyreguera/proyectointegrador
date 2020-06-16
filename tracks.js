@@ -13,27 +13,29 @@ window.addEventListener("load", function () {
             .then(
                 function (resultado) {
                     console.log(resultado)
-                    document.querySelector(".titulando").innerHTML = resultado.title;
                     
-                    document.querySelector(".fecha").innerHTML = resultado.duration;
+                    
+                    document.querySelector(".titulando").innerHTML = resultado.title
+
+                    let tiempo = resultado.duration
+                    let enSegundos = `<li class="fecha"><strong>` + tiempo + ` segundos </strong></li>`
+                    document.querySelector(".fecha").innerHTML = enSegundos
                    
                     let nombreAl = resultado.album.title;
                     let identificarAl = resultado.album.id;
-                    let albumes = `<li class="separar"><a class="allink" href="albums.html?idAlbums=`+ identificarAl + `">`+ nombreAl + `</a> </li>`
-                   
+                    let albumes = `<li class="separar"><a class="allink" href="albums.html?idAlbums=`+ identificarAl + `"><strong>`+ nombreAl + `</strong></a> </li>`
                     document.querySelector(".separar").innerHTML = albumes;
  
                    let nombreAr = resultado.artist.name;
                    let identificarAr = resultado.artist.id;
                    let artista = `<li class="artist"><a class="fuera" href="artists.html?idArtist=`+ identificarAr + `">`+ nombreAr + `</a> </li>`
-                   
-                    
-                    document.querySelector(".artist").innerHTML = artista;
+                   document.querySelector(".artist").innerHTML = artista;
                     
                    
 
                     let reproducir = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=tracks&id=` + codigoTrack + `&app_id=1`
 
+                    document.querySelector(".spinnertracks").style.display = "none"
                     document.querySelector(".portadaartist").src = reproducir;
 
 
@@ -124,7 +126,13 @@ document.querySelector(".laquiero").addEventListener("click", function(e){
  
 })
  
- 
+ document.querySelector(".anterior").addEventListener("onclick", function(e){
+     let volver = confirm("¿Desea volver a la página anterior?") 
+    if (volver == true) { 
+       
+        
+    } // cierra if
+}) //cierra function y el evento
 
  
  

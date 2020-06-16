@@ -9,6 +9,11 @@
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
     <script src="playlists.js"></script>
 
 </head>
@@ -25,37 +30,55 @@
                  <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
             </ul>
     </header>
-    <main class="container">
-        <section class="colizq">
-        <div class="fotito">
-            <img class="portadaplaylist" src="#">
-            <h3 class="titulando"> </h3>
-        </div>
+    <main>
+        <div class="buscar">
+            <nav class="atras"> <a href="home.html" class="volver"><i class="fas fa-arrow-circle-left anterior"></i> </a> </nav>
+            <div class="icon"><i class="fa fa-search"></i></div>  
+            <div class="container-1">
+            <form action="resultados.html" method="GET">
+    
+                <input type="text" name="buscador" placeholder="Busca una canción...">
 
-        <iframe class ="daleplay" scrolling="no" frameborder="0" allowTransparency="true" src=""></iframe>
-            
-
-        </section>
-      <section class="col-der">
-        <div class="infoalbum">
-            <ul class="info">
-                <li class="chico"> Duración: </li>
-                <li class="chico">Followers: </li>
-                <li class="horas"><strong> </strong></li>
-                <li class="titulo"><strong></strong></li>
-            </ul>
-        
+            </form>
+            </div>
         </div>
-        <div class="bloque">
-            <ol class="canciones">
+        <main class="container">
+            <section class="colizq">
+            <div class="fotito">
+                <div uk-spinner class="spinnertracks"></div>
+                <img class="portadaplaylist" src="#">
+                <h3 class="titulando"> </h3>
+            </div>
+
+            <iframe class ="daleplay" scrolling="no" frameborder="0" allowTransparency="true" src=""></iframe>
                 
-            </ol>
-        </div>
-    </section>
-    </main>
+
+            </section>
+        <section class="col-der">
+            <div class="infoalbum">
+                <ul class="info">
+                    <li class="chico"> <strong>Duración: </strong></li>
+                    <li class="chico"><strong>Followers: </strong></li>
+                    <li class="horas"></li>
+                    <li class="titulo"></li>
+                </ul>
+            
+            </div>
+            <div class="bloque">
+                <ol class="canciones">
+                    
+                </ol>
+            </div>
+        </section>
+        </main>
+    </main>    
     <footer>
         <div class="footer">
-            <div class="deezer"> <img src="../proyectointegrador/fotos/deezer logo.jpg" alt="logo deezer"></div>
+            <div class="deezer">
+                <img src="../proyectointegrador/fotos/ahorasideezer.jpg" alt="logo deezer">
+                <a href="https://www.instagram.com/audiorastudios/"><i class="fab fa-instagram" style="color:#FFFFFF"> </i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook" style="color: #FFFFFF;"></i></a>
+            </div>
             <div class="nosotras">
                <p class="nos"> Milagros Jones</p>
                <p class="nos"> Josefina Goñi</p>

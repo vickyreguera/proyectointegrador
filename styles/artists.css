@@ -115,6 +115,7 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    align-content: center;
     
 }
 img.portadaartist{
@@ -269,9 +270,10 @@ h4.album{
 }
 .fas{
     display: block;
-    width: 50px;
-    height: 50px;
+    align-content: center;
     padding-top: 5px;
+    font-size: 100%;
+    text-align: center;
 }
 h6.quiero{
     font-size: 20px;
@@ -304,7 +306,20 @@ div.nosotras{
     margin-bottom: 30px;
 
 }
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
 
+.buscar{
+    display:none;
+}
 
 
 
@@ -344,8 +359,12 @@ div.nosotras{
         justify-content: space-around;
         margin-top: 20px;
     }
+    i.menu{
+        font-size: 50px;
+    }
     .fas{
-        font-size: 25px;
+        font-size: 28px;
+        margin-top:-5px;
     }
     .logo img{
         height: 70px;
@@ -470,16 +489,16 @@ div.nosotras{
         font-size: 25px;
         font-family:'Inria Sans', sans-serif;
         padding-left: 10px;
-        padding-top: 3px;
-        margin-left: 0;
+        padding-top: 5px;
+        margin-left: 10px;
        
     }
     .fas{
         display: block;
-        width: 50px;
         height: 50px;
-        padding-top: 5px;
+        margin-right: 10px;
     }
+    
     h6.quiero{
         font-size: 30px;
         font-family:'Inria Sans', sans-serif;
@@ -498,4 +517,69 @@ div.nosotras{
   .aescuchar{
       margin-left: 26px;
   }
+  .buscar{
+    display: block;
+    margin: 100px auto;
+    width: 300px;
+    height: 50px;
+    margin-left: 5px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: 10% 10% 60%;
+    justify-content: space-around;
+    
+}
+
+.container-1{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    display: grid;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+
+  .container-1 input#search{
+    width: 300px;
+    height: 50px;
+    background-color:rgb(230, 213, 205);
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+.icon{
+    top: 50%;
+    margin-left: 20px;
+    margin-top: 7px;
+    color: #4f5b66;
+  }
+
+  .volver{
+    text-decoration: none; 
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    
+}
+
+
+.atras{
+    margin-bottom: 10px;
+}
+
+
+  .fab{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
 }

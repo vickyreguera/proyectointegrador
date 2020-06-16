@@ -1,12 +1,66 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 
 body{
-    background-color: rgb(255,224,208);
-    margin: 0;
+    background-color: rgb(255,224,208)
 }
 .logo img{
     height: 80px;
     margin: 0 auto;
     width: 80px;
+    
     display:block;
     align-content: center;
     margin-bottom: 10px;
@@ -25,7 +79,6 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
-    padding-left: 0px;
 }
 
 nav:hover ul.navegacion{
@@ -62,106 +115,112 @@ a.nav{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    align-content: center;
     
 }
-img.portadaplaylist{
+img.portadaartist{
     display: block;
-    max-width: 200px;
-    min-height: 200px;
     margin: 0 auto;
-    margin-bottom: 15px;
-    align-content: center;
+    max-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+}
+h3{
+    text-align: center;
+    margin: 0 auto;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
 }
 .infoalbum ul{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-content: space-around;
+    
 }
 ul li{
    margin-left: 0;
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
     color: black;
-    list-style: none;
-    margin-right: 5px;
+    text-decoration: none;
+    margin-right: 5px; 
 }
-.chico{
-    font-size: 20px;
+.txchico{
+    font-size: 15px;
     margin-bottom: 3px;
 }
-.titulo{
+.separar{
     margin-bottom: 30px;
-    text-decoration: solid;
 }
-.horas{
+.seguidores{
     margin-bottom: 30px;
-    text-decoration: solid;
 }
-.reproducir{
+h4.reproducir{
+    
     color: white;
+    padding: 10px;
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 5px;
     
 }
-.repro{
-    margin: 0;
-}
+
 .colrepro {
     display: grid;
     grid-template-rows: auto;
     border-radius: 15px;
     border: 1px solid black; 
     background-color: black;
-    width: 53%;
+    width: 45%;
     margin: 0 auto;
-    margin-top: 10px;
-    height: 50px;
-}
-.titulando{
-    font-family:'Inria Sans', sans-serif;
-    text-align: center;
-    font-size: 30px;
+    
 }
 ul.gridrepro {
     display: grid;
-    grid-template-columns: 30% 60%;
-    text-align: center; 
-    margin-left: 0;
-    padding-left: 0px;
-    margin-top: 12px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    
+    
+     
+}
+li.cancion a{
+    text-decoration: none;
+    color: black;
+
 }
 .far{
-    margin-right: 0px;
     color: white;
     width: 10px;
-    height: 10px
+    height: 10px;
+    padding-top: 10px;
+    padding-right: 7px;
+    padding-left: 5px;
 }
-.simbolo{
-    margin-right: 0px;
-    align-content: right;
-}
-
-.infoalbum ul{
-    padding-left: 0px;
-}
-.bloque{
-    margin: 0 auto;
-    margin-top: 32px;
+section.listasongs{
     background-color: rgb(250, 229, 219);
     width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+ol.listacanciones{
+    list-style: decimal-leading-zero;
+    margin-left: 50px;
+}
+.cancion{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    
 }
 .borde1{
-    padding-top: 10px;
-}
-.borde2{
-    padding-bottom: 10px;
-}
-ul.info{
-    padding-left: 0px;
+    padding-top:10px ;
 }
 .footer{
     background-color: black;
@@ -171,56 +230,80 @@ ul.info{
     justify-content: space-around;
     height: 50px;
     margin-top: 180px;
-   
- }
-
- .nosotras{
+    
+}
+.nosotras{
     font-family:'Inria Sans', sans-serif;
     font-size: 10px;
-   
-  
- }
- .deezer img{
+    
+
+}
+.deezer img{
     height:30px;
     margin:0 auto;
     display:block;
     margin-top: 10px;
- }
- div.titaudiora{
+}
+
+
+article.col{
+    background-color: rgb(250, 229, 219);
+    height: 25px;
+    padding: 5px;
+    width: 85%;
+    margin: 0 auto;
+
+    
+}
+.columnas{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: space-around;
+    
+}
+h4.album{
+    font-size: 20px;
+    font-family:'Inria Sans', sans-serif;
+    padding-top: 3px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.fas{
+    display: block;
+    align-content: center;
+    padding-top: 5px;
+    font-size: 100%;
+    text-align: center;
+}
+h6.quiero{
+    font-size: 20px;
+    font-family:'Inria Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.titaudiora{
     display: none;
- }
- div.nosotras{
+}
+div.nosotras{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
- }
- .nos{
+}
+.nos{
     font-size: 12px;
     font-weight: 3px;
     text-align: center;
     color: white;
     margin-top: 20px;
- }
- li.can{
-    margin: 10px;
-    font-size: 20px;
-    font-family: 'Inria Sans', sans-serif;
-    list-style:decimal-leading-zero; 
 }
 
-.names{
-    display: none;
-}
-
-.alsong{
-text-decoration: none;
-color: black;
-}
-
-.daleplay{
+.aescuchar{
     height: 90px;
-    margin-left: 58px;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 
 }
 .deezer{
@@ -234,13 +317,9 @@ color: black;
     margin-right: 5px;
 }
 
-.buscar{
-    display:none;
-}
 
 
-@media(min-width: 1024px){
-
+@media (min-width: 1024px){
     header {
         display: grid;
         grid-template-columns: 10% 30% 55%;
@@ -261,10 +340,9 @@ color: black;
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-  
+
     }
- 
- .toggle-nav{
+    .toggle-nav{
         display: none;
     }
     nav:hover ul.navegacion{
@@ -277,8 +355,12 @@ color: black;
         justify-content: space-around;
         margin-top: 20px;
     }
+    i.menu{
+        font-size: 50px;
+    }
     .fas{
-        font-size: 25px;
+        font-size: 28px;
+        margin-top:-5px;
     }
     .logo img{
         height: 70px;
@@ -288,7 +370,7 @@ color: black;
         padding-bottom: 3px;
         margin: 0 auto;
         margin-right: 3px;
-       
+        
     }
     h4.audiora{
         margin-top: 20px;
@@ -305,7 +387,7 @@ color: black;
         text-align: center;
         margin-bottom: 10px;
         padding-bottom: 5px;
-    }   
+    }    
     .menu{
         text-align: center;
         margin: 0;
@@ -313,8 +395,35 @@ color: black;
         width:90%;
         margin-top: 5px;
     }
- 
- footer{
+    div.container{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-around;
+        margin-bottom: 150px;
+
+    }
+    img.portadaartist{
+        display: block;
+        max-width: 300px;
+        min-height: 300px;
+        padding-top: 30px;
+        padding-left: 8px;
+        margin-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        margin: 0 auto;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 40px;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        padding-bottom: 5px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+   
+    footer{
         height: 60px;
         background-color: black;
         border-top-left-radius: 20px;
@@ -324,7 +433,7 @@ color: black;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         justify-content: space space-around;
-       
+        
     }
     .nos{
         font-size: 25px;
@@ -337,109 +446,89 @@ color: black;
          height:40px;
         margin:0 auto;
        margin-top: 10px;
-    } 
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        margin-bottom: 270px;
+    }
+ 
+    section.listasongs{
+            display: block;
+            background-color: rgb(250, 229, 219);
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 55px;
+            margin-bottom: 0px;
         }
-    img.portadaplaylist{
-    height: 200px;
-    width: 200px;
-    text-align: center;
-
+        ol.listacanciones{
+            list-style: decimal-leading-zero;
+            margin-left: 50px;
+        }
+        .cancion{
+            font-family:'Inria Sans', sans-serif;
+            font-size: 20px;
+            padding: 8px;
+            
+        }
+    .txchico{
+       font-size: 24px; 
+       margin-bottom: 10px;
+    }    
+    .separar{
+        font-size: 20px;
     }
-    .fotito{
-        margin-top: 50px;
-        margin-bottom: 25px;
-        margin-left: 0px;
-        padding-left: 0;
-        
+    .seguidores{
+        font-size: 20px;
     }
-    .nombre{
-        text-align: center;
+    .columnas{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        justify-content: space-around;
     }
-    .infoalbum{
-        text-align: left;
-    }
-    .playlist{
-        height: 40px;
-    }
-    .reproducir{
+    h4.album{
         font-size: 25px;
-        padding-top: 1px;
+        font-family:'Inria Sans', sans-serif;
+        padding-left: 10px;
+        padding-top: 5px;
+        margin-left: 10px;
+       
+    }
+    .fas{
+        display: block;
+        height: 50px;
+        margin-right: 10px;
+    }
+    
+    h6.quiero{
+        font-size: 30px;
+        font-family:'Inria Sans', sans-serif;
+        font-weight: bold;
         text-align: left;
     }
     
-    .titulando{
-        margin: 0 auto;
-        font-family:'Inria Sans', sans-serif;
-        font-size: 25px;
-        color: black;
-        text-decoration: none;
-        padding-bottom: 5px;
-        text-align: center;
+    article.col{
+        background-color: rgb(250, 229, 219);
+        height: 40px;
+        padding: 5px;
+        padding-top: 15px;
+        margin-top: 33px;
+        width: 100%;
     }
-    ul.gridrepro{
-        margin-top: 8px;
-    }
-    .far{
-        padding-top: 7px;
-    }
-    .bloque{
-        margin: 0 auto;
-
-    }
-    .ul{
-        text-align: left;
-
-    }
-   .canciones li{
-       font-weight: none;
-       padding: 8px;     
-   }
-   li.can{
-       margin: 10px;
-   }
-
-   .colrepro{
-       width: 50%;
-   }
-   .canciones{
-       display: grid;
-       grid-template-columns: 45% 45%;
-   }
-   .names{
-       margin: 10px;
-   }
-
-   .daleplay{
-       width:400px;
-       margin-left: 41px;
-   }
-   .buscar{
+  .aescuchar{
+      margin-left: 26px;
+  }
+  .buscar{
     display: block;
     margin: 100px auto;
     width: 300px;
     height: 50px;
-    margin-left: 5px;
+    margin-left: 40px;
     padding-left: 20px;
     margin-top: 5px;
-    margin-bottom: 12px;
-    display: grid;
-    grid-template-columns: 10% 10% 60%;
-    justify-content: space-around;
+    margin-bottom: 10px;
     
 }
-
 .container-1{
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    display: grid;
-    margin-top: 5px;
-    margin-left: 0;
   }
 
   .container-1 input#search{
@@ -456,26 +545,14 @@ color: black;
     border-radius: 5px;
   }
 
-.icon{
+  .container-1 .icon{
+    position: absolute;
     top: 50%;
-    margin-left: 20px;
-    margin-top: 7px;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
     color: #4f5b66;
   }
-
-  .volver{
-    text-decoration: none; 
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 1%;
-    
-}
-
-
-.atras{
-    margin-bottom: 10px;
-}
-
 
   .fab{
     margin-top: 15px;

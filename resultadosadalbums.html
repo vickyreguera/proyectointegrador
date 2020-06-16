@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../proyectointegrador/styles/cadaplaylist.css">
+    <link rel="stylesheet" href="../proyectointegrador/styles/albums.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
-    <script src="cadaplaylist.js"></script>
+    <script src="resultadosadalbums.js"></script>
 </head>
 <body>
     <header>
@@ -24,40 +19,43 @@
             <ul class="navegacion">
                 <li class="menu"> <a href="advancedsearch.html"> <i class="fas fa-search" style="color:#FFFFFF;"></i> </a></li>
                 <li class="menu"><a href="home.html" class="nav">Home</a></li> 
-                <li class="menu"><a href="miplaylist.html" class="nav">Mis playlists</a></li>
-                <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
+                <li class="menu"><a href="miplaylist.html" class="nav">Mi playlist</a></li>
+                 <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
             </ul>
     </header>
     <main>
         <div class="buscar">
-            <nav class="atras"> <a href="miplaylist.html" class="volver"><i class="fas fa-arrow-circle-left anterior"></i> </a> </nav>
-            <div class="icon"><i class="fa fa-search"></i></div>  
-            <div class="container-1">
+            <div class="container-1"></div>
             <form action="resultados.html" method="GET">
-    
+                <span class="icon"><i class="fa fa-search"></i></span>  
                 <input type="text" name="buscador" placeholder="Busca una canción...">
 
             </form>
-            </div>
         </div>
+        </div>
+        <div class="container">
+            <section class="col-izq"> 
+                <iframe class="tini" scrolling="no" frameborder="0" allowTransparency="true" src=""></iframe>
+                <h3 class="nombre"></h3>
+                <h5 class="de"> de </h5> <h5 class="cantante"></h5>
+                
         
-    <div class="container">
-    
-        <section class="col-der">
-            <div class="infoalbum">   
-                <h3 class="mimusica"> Mi playlist</h3>
+            </section>
+            <section class="col-der">
+                <div class="infoalbum">   
+                   
             </div> 
             <section class="listasongs">
                 <ol class="listacanciones">
-                   
+                    
+                    
                 </ol>
         
             </section>  
         </section>
      
     </div>
-    </main>
-       
+    </main>   
     <footer>
         <div class="footer"> 
             <div class="deezer">

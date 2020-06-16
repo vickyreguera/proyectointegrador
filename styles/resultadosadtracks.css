@@ -1,58 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-
-
-
 body{
     background-color: rgb(255,224,208);
     margin: 0;
@@ -81,7 +26,7 @@ ul.navegacion{
     width: 100%;
     padding-left: 0px;
 }
-
+ 
 nav:hover ul.navegacion{
     display: block;
 }
@@ -106,7 +51,7 @@ nav:hover ul.navegacion{
     padding-bottom: 5px;
    
 }
-
+ 
 a.nav{
     color: white;
     text-decoration: none;
@@ -118,17 +63,18 @@ a.nav{
     padding-bottom: 5px;
     
 }
-img.portadacamilo{
+.portadaartist{
     display: block;
-    max-width: 150px;
-    min-height: 150px;
-    margin: 0 auto;
     margin-bottom: 15px;
+    width: 70%;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 63px;
 }
 .main{
     width: 100%;
 }
-h3{
+h3.titulando{
     text-align: center;
     margin: 0 auto;
     font-family:'Inria Sans', sans-serif;
@@ -137,6 +83,10 @@ h3{
     text-decoration: none;
     padding: 10px;
     padding-bottom: 5px;
+}
+.ellink{
+    text-decoration: none;
+    color:black;
 }
 h5{
     text-align: center;
@@ -153,6 +103,12 @@ h5{
     grid-template-rows: auto auto;
     justify-content: space-around;
 }
+.infoalbum ol{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+}
 ul li{
    margin-left: 0;
     font-family:'Inria Sans', sans-serif;
@@ -161,39 +117,97 @@ ul li{
     list-style: none;
     margin-right: 5px;
 }
+ol li{
+    margin-left: 0;
+     font-family:'Inria Sans', sans-serif;
+     font-size: 20px;
+     color: black;
+     margin-right: 5px;
+ }
 .txchico{
     font-size: 20px;
     margin-bottom: 3px;
 }
 .separar{
     margin-bottom: 30px;
-    text-decoration: solid;
+    text-decoration: none;
+    color: black;
+}
+.allink{
+    text-decoration: none;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+    list-style-type: none;
+}
+.artist{
+    text-decoration: none;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+    list-style-type: none;
+}
+.fuera{
+    text-decoration: none;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+    list-style-type: none;
+    
 }
 .fecha{
     margin-bottom: 30px;
     text-decoration: solid;
 }
-
+ 
 .playlist{
     justify-content: center;
     border-radius: 15px;
     background-color: black;
-    height:60px;
+    height:40px;
     width: 50%;
     text-align: center;
     margin: 0 auto;
 }
 .play{
-    margin: 0;
+        margin: 0;
         color: white;
         font-family:'Inria Sans', sans-serif;
         font-size: 20px;
         text-align: center;
-        padding-top: 17px; ;
-        padding-right: 50px;
+        padding-right: 45px;
+        padding-top: 11px;
         width: 100%;
+        margin-left:22px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        
+        
     }
 
+.laquiero{
+        margin: 0;
+        color: white;
+        font-family:'Inria Sans', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-right: 45px;
+        margin-left:22px;
+        text-transform: uppercase;
+        width: 65%;
+        padding-top: 10px;
+        background-color: black;
+        margin-left:83px;
+        border-radius: 15px;
+        height:70px;
+        
+         
+    }
+
+.melleva{
+    text-decoration: none;
+    color:black;
+}
+
+ 
 .footer{
     background-color: black;
     width:100%;
@@ -251,6 +265,10 @@ ul li{
  .espacio{
      margin: 10px;
  }
+ .playlist{
+margin-left: 110px;
+padding-bottom:40px;
+ }
 
  .deezer{
     display: grid;
@@ -263,26 +281,28 @@ ul li{
     margin-right: 5px;
 }
 
-
+ 
+ 
+ 
 @media(min-width: 1024px){
-
+ 
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-top: 50px;
     margin-bottom: 250px;
     }
-img.portadacamilo{
-max-width: 250px;
-min-height: 250px;
+.portadacamilo{
 margin: 0 auto;
+height:300px;
+width: 300px;
 }
-.nombre{
+.titulando{
     text-align: center;
 }
 .infoalbum{
     margin-left: 5px
-
+ 
 }
 .infoalbum ul{
    
@@ -299,7 +319,10 @@ margin: 0 auto;
 ul.texto{
     padding-left: 0px;
 }
-
+ol.texto{
+    padding-left: 0px;
+}
+ 
 header {
     display: grid;
     grid-template-columns: 10% 30% 55%;
@@ -320,7 +343,7 @@ div.titaudiora{
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 5px;
-
+ 
 }
 .toggle-nav{
     display: none;
@@ -331,7 +354,7 @@ nav:hover ul.navegacion{
 ul.navegacion{
     display: block;
     display: grid;
-    grid-template-columns:5% 30% 30% 30%;
+    grid-template-columns: 5% 30% 30% 30%;
     justify-content: space-around;
     margin-top: 26px;
 }
@@ -371,7 +394,7 @@ a.nav{
     width:90%;
     margin-top: 5px;
 }
-
+ 
 footer{
     height: 60px;
     background-color: black;
@@ -399,9 +422,9 @@ footer{
 .mas-canciones{
     display: block;
     margin-top: 25px;
-    background-color: rgb(250, 229, 219)
+    background-color: rgb(250, 229, 219);
+    list-style:decimal-leading-zero;
  }
- 
  .tit{
      display: block;
     font-family:'Inria Sans', sans-serif;
@@ -415,37 +438,24 @@ footer{
        font-family:'Inria Sans', sans-serif;
        font-size: 13px;
        margin-top: 5px;
-       margin-right: 10px;
+       margin-right: 30px;
    }  
-
-   .fab{
-    margin-top: 15px;
-    font-size: 30px;
-}
-
-.buscar{
+   .buscar{
     display: block;
     margin: 100px auto;
     width: 300px;
     height: 50px;
-    margin-left: 5px;
+    margin-left: 40px;
     padding-left: 20px;
     margin-top: 5px;
-    margin-bottom: 12px;
-    display: grid;
-    grid-template-columns: 10% 10% 60%;
-    justify-content: space-around;
+    margin-bottom: 10px;
     
 }
-
 .container-1{
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    display: grid;
-    margin-top: 5px;
-    margin-left: 0;
   }
 
   .container-1 input#search{
@@ -462,24 +472,22 @@ footer{
     border-radius: 5px;
   }
 
-.icon{
+  .container-1 .icon{
+    position: absolute;
     top: 50%;
-    margin-left: 20px;
-    margin-top: 7px;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
     color: #4f5b66;
   }
+  .portadaartist{
+      margin-left: 100px;
+      width:300px;
+  }
 
-  .volver{
-    text-decoration: none; 
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 1%;
-    
-}
-
-
-.atras{
-    margin-bottom: 10px;
+  .fab{
+    margin-top: 15px;
+    font-size: 30px;
 }
    
 }

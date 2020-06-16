@@ -14,7 +14,8 @@ if(codigoArtist) {
     .then(
         function(resultado) {
         console.log(resultado)
-           document.querySelector(".portadaartist").src = resultado.picture;
+        document.querySelector(".spinnertracks").style.display = "none"
+           document.querySelector(".portadaartist").src = resultado.picture_xl;
            document.querySelector(".titulando").innerHTML = resultado.name;
            document.querySelector(".seguidores").innerHTML = resultado.nb_fan;
            document.querySelector(".separar").innerHTML = resultado.nb_album;

@@ -2,18 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Audiora Studios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Audiora Studios</title>
+    <link rel="stylesheet" href="styles/resultadosadplay.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../proyectointegrador/styles/cadaplaylist.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
-    <script src="cadaplaylist.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <script src="resultadosadplay.js"></script>
+
 </head>
 <body>
     <header>
@@ -23,50 +20,59 @@
             <a href="#" class="toggle-nav"><span class="fa fa-bars"></span></a>
             <ul class="navegacion">
                 <li class="menu"> <a href="advancedsearch.html"> <i class="fas fa-search" style="color:#FFFFFF;"></i> </a></li>
-                <li class="menu"><a href="home.html" class="nav">Home</a></li> 
+                <li class="menu"><a href="home.html" class="nav">Home</a></li>
                 <li class="menu"><a href="miplaylist.html" class="nav">Mis playlists</a></li>
-                <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
+                 <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
             </ul>
     </header>
     <main>
         <div class="buscar">
-            <nav class="atras"> <a href="miplaylist.html" class="volver"><i class="fas fa-arrow-circle-left anterior"></i> </a> </nav>
-            <div class="icon"><i class="fa fa-search"></i></div>  
-            <div class="container-1">
+            <div class="container-1"></div>
             <form action="resultados.html" method="GET">
-    
+                <span class="icon"><i class="fa fa-search"></i></span>  
                 <input type="text" name="buscador" placeholder="Busca una canción...">
 
             </form>
-            </div>
         </div>
-        
-    <div class="container">
-    
+        </div>
+        <main class="container">
+            <section class="colizq">
+            <div class="fotito">
+                <img class="portadaplaylist" src="#">
+                <h3 class="titulando"> </h3>
+            </div>
+
+            <iframe class ="daleplay" scrolling="no" frameborder="0" allowTransparency="true" src=""></iframe>
+                
+
+            </section>
         <section class="col-der">
-            <div class="infoalbum">   
-                <h3 class="mimusica"> Mi playlist</h3>
-            </div> 
-            <section class="listasongs">
-                <ol class="listacanciones">
-                   
+            <div class="infoalbum">
+                <ul class="info">
+                    <li class="chico"> <strong>Duración: </strong> </li>
+                    <li class="chico"><strong>Followers: </strong> </li>
+                    <li class="horas"></li>
+                    <li class="titulo"></li>
+                </ul>
+            
+            </div>
+            <div class="bloque">
+                <ol class="canciones">
+                    
                 </ol>
-        
-            </section>  
+            </div>
         </section>
-     
-    </div>
-    </main>
-       
+        </main>
+    </main>    
     <footer>
-        <div class="footer"> 
+        <div class="footer">
             <div class="deezer">
                 <img src="../proyectointegrador/fotos/ahorasideezer.jpg" alt="logo deezer">
                 <a href="https://www.instagram.com/audiorastudios/"><i class="fab fa-instagram" style="color:#FFFFFF"> </i></a>
                 <a href="https://www.facebook.com/"><i class="fab fa-facebook" style="color: #FFFFFF;"></i></a>
             </div>
-            <div class="nosotras"> 
-               <p class="nos"> Milagros Jones</p> 
+            <div class="nosotras">
+               <p class="nos"> Milagros Jones</p>
                <p class="nos"> Josefina Goñi</p>
                <p class="nos"> Victoria Reguera</p>
             </div>

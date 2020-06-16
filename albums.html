@@ -8,6 +8,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../proyectointegrador/styles/albums.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
     <script src="albums.js"></script>
 </head>
 <body>
@@ -23,20 +28,33 @@
                  <li class="menu"><a href="generos.html" class="nav">Géneros</a></li>
             </ul>
     </header>
-    <div class="container">
-        <section class="col-izq"> 
-            <iframe class="tini" scrolling="no" frameborder="0" allowTransparency="true" src=""></iframe>
-            <h3 class="nombre"></h3>
-            <h5 class="de"> de </h5> <h5 class="cantante"></h5>
-            
+    <main>
+        <div class="buscar">
+            <nav class="atras"> <a href="home.html" class="volver"><i class="fas fa-arrow-circle-left anterior"></i> </a> </nav>
+            <div class="icon"><i class="fa fa-search"></i></div>  
+            <div class="container-1">
+            <form action="resultados.html" method="GET">
     
-        </section>
-        <section class="col-der">
-            <div class="infoalbum">   
-                <article class="txchico">  Género: </article>
-                <article class="txchico">Fecha de estreno: </article>
-                <article class="separar"> POP LATINO</article>
-                <article class="fecha">13/12/2018</article>
+                <input type="text" name="buscador" placeholder="Busca una canción...">
+
+            </form>
+            </div>
+        </div>
+        <div class="container">
+            <section class="col-izq"> 
+                <div uk-spinner class="spinnertracks"></div>
+                <iframe class="tini" scrolling="no" frameborder="0" allowTransparency="true" src=""></iframe>
+                <h3 class="nombre"></h3>
+                <h5 class="de"> de </h5> <h5 class="cantante"></h5>
+                
+        
+            </section>
+            <section class="col-der">
+                <div class="infoalbum">   
+                    <article class="txchico"> Duración: </article>
+                    <article class="txchico">Fecha de estreno: </article>
+                    <article class="separar"> </article>
+                    <article class="fecha"></article>
 
             </div> 
             <section class="listasongs">
@@ -49,10 +67,14 @@
         </section>
      
     </div>
-       
+    </main>   
     <footer>
         <div class="footer"> 
-            <div class="deezer"> <img src="../proyectointegrador/fotos/deezer logo.jpg" alt="logo deezer"></div>
+            <div class="deezer">
+                <img src="../proyectointegrador/fotos/ahorasideezer.jpg" alt="logo deezer">
+                <a href="https://www.instagram.com/audiorastudios/"><i class="fab fa-instagram" style="color:#FFFFFF"> </i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook" style="color: #FFFFFF;"></i></a>
+            </div>
             <div class="nosotras"> 
                <p class="nos"> Milagros Jones</p> 
                <p class="nos"> Josefina Goñi</p>

@@ -1,4 +1,3 @@
-
 body{
     background-color: rgb(255,224,208);
     margin: 0;
@@ -70,7 +69,6 @@ img.portadaplaylist{
     min-height: 200px;
     margin: 0 auto;
     margin-bottom: 15px;
-    align-content: center;
 }
 .infoalbum ul{
     display: grid;
@@ -125,6 +123,11 @@ ul li{
     font-family:'Inria Sans', sans-serif;
     text-align: center;
     font-size: 30px;
+}
+.ellink{
+    text-decoration: none;
+    color:black;
+    text-align: center;
 }
 ul.gridrepro {
     display: grid;
@@ -234,9 +237,7 @@ color: black;
     margin-right: 5px;
 }
 
-.buscar{
-    display:none;
-}
+
 
 
 @media(min-width: 1024px){
@@ -346,7 +347,7 @@ color: black;
     img.portadaplaylist{
     height: 200px;
     width: 200px;
-    text-align: center;
+    align-content: center;
 
     }
     .fotito{
@@ -422,24 +423,17 @@ color: black;
     margin: 100px auto;
     width: 300px;
     height: 50px;
-    margin-left: 5px;
+    margin-left: 40px;
     padding-left: 20px;
     margin-top: 5px;
-    margin-bottom: 12px;
-    display: grid;
-    grid-template-columns: 10% 10% 60%;
-    justify-content: space-around;
+    margin-bottom: 10px;
     
 }
-
 .container-1{
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    display: grid;
-    margin-top: 5px;
-    margin-left: 0;
   }
 
   .container-1 input#search{
@@ -456,26 +450,14 @@ color: black;
     border-radius: 5px;
   }
 
-.icon{
+  .container-1 .icon{
+    position: absolute;
     top: 50%;
-    margin-left: 20px;
-    margin-top: 7px;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
     color: #4f5b66;
   }
-
-  .volver{
-    text-decoration: none; 
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 1%;
-    
-}
-
-
-.atras{
-    margin-bottom: 10px;
-}
-
 
   .fab{
     margin-top: 15px;

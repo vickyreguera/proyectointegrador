@@ -177,6 +177,31 @@ div.nosotras{
 .espacio{
     width: 80%;
 }
+.fotasa{
+    width:70%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+
+}
+
+.elnombre{
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 
 
 @media (min-width:1024px){
@@ -285,7 +310,10 @@ div.nosotras{
        margin-top: 10px;
     }
     
-    
+    .fab{
+        margin-top: 15px;
+        font-size: 30px;
+    }
     
 
       

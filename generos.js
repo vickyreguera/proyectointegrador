@@ -24,6 +24,7 @@ window.addEventListener("load", function(){
             let htmlGeneros = `<li class="listagenero"><a href="cadagenero.html?idGenero=`+ generoId + ` "><img src="`+ generoCover +` " class="portadagenero"></a>
             <a href="cadagenero.html?idGenero=` +  generoId + `"><h2 class="cadagenero nombre">` + nombreGenero + ` </h2></a></li>` 
 
+            
             document.querySelector(".listadogeneros").innerHTML += htmlGeneros
 
        

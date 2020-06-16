@@ -70,6 +70,7 @@ body{
     margin-bottom: 10px;
     margin-top: 0px;
 }
+
 .toggle-nav {
     background-color: black;
     padding: 10px;
@@ -125,11 +126,21 @@ a.nav{
     background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 20% 70%;
     justify-content: space-around;
     height:50px;
     margin-top: 180px;
     
+}
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 .nosotras{
     font-family:'Inria Sans', sans-serif;
@@ -267,7 +278,7 @@ nav:hover ul.detalle{
         display: grid;
         grid-template-columns:  5% 30% 30% 30%;
         justify-content: space-around;
-        margin-top: 26px;
+        margin-top: 10px;
     }
    .fas{
        font-size: 28px;
@@ -276,7 +287,7 @@ nav:hover ul.detalle{
         height: 70px;
         display:block;
         width: 70px;
-        padding-top: 7px;
+        padding-top: 3px;
         padding-bottom: 3px;
         margin: 0 auto;
         margin-right: 3px;
@@ -296,7 +307,7 @@ nav:hover ul.detalle{
         font-family:'Inria Sans', sans-serif;
         font-size: 24px;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         padding-bottom: 5px;
     }   
     menu{
@@ -304,7 +315,7 @@ nav:hover ul.detalle{
         margin: 0;
         margin-bottom: 0;
         width:90%;
-        margin-top: 5px;
+    
     }
     div.container{
         display: grid;
@@ -407,6 +418,10 @@ nav:hover ul.detalle{
         color: #4f5b66;
       }
 
+      .fab{
+          margin-top: 15px;
+          font-size: 30px;
+      }
       
 
   

@@ -25,6 +25,7 @@ window.addEventListener("load", function(){
             let portadaGeneros = `<img class="portadagenero" src="` + generoCover+ `">
             <h3 class="nombregenero"> `+ nombreGenero + `</h3>`
 
+            
             document.querySelector(".infodelgenero").innerHTML += portadaGeneros
  
             let generoId = infoGeneros.id;
