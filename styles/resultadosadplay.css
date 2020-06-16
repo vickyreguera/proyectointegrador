@@ -124,6 +124,11 @@ ul li{
     text-align: center;
     font-size: 30px;
 }
+.ellink{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
 ul.gridrepro {
     display: grid;
     grid-template-columns: 30% 60%;
@@ -221,6 +226,17 @@ color: black;
     margin-bottom: 20px;
 
 }
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 
 
 
@@ -331,7 +347,7 @@ color: black;
     img.portadaplaylist{
     height: 200px;
     width: 200px;
-    margin-left: 155px;
+    align-content: center;
 
     }
     .fotito{
@@ -363,7 +379,7 @@ color: black;
         color: black;
         text-decoration: none;
         padding-bottom: 5px;
-        margin-left: 70px;
+        text-align: center;
     }
     ul.gridrepro{
         margin-top: 8px;
@@ -442,4 +458,9 @@ color: black;
     z-index: 1;
     color: #4f5b66;
   }
+
+  .fab{
+    margin-top: 15px;
+    font-size: 30px;
+}
 }

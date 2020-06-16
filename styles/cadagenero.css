@@ -228,6 +228,18 @@ li.artistas{
     border-radius: 50%;
 
 }
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
 
 @media (min-width:1024px){
     header {
@@ -408,5 +420,10 @@ li.artistas{
 
       .fas{
         font-size: 25px;
+    }
+
+    .fab{
+        margin-top: 15px;
+        font-size: 30px;
     }
     }

@@ -32,10 +32,10 @@ function mostrarPlaylist(codigoTrack){
             return response.json();
         })
         .then(function (track) {
-            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
-        })
-        .catch(function(errors){
-            console.log(errors);
+
+            
+            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a href="tracks.html?idTrack=' + track.id + '">' + track.title + '</a></li>' 
+        
             
             for (let index = 0; index < cancionesFavoritas.length; index++) {
                 
@@ -52,14 +52,15 @@ function mostrarPlaylist(codigoTrack){
                     let resultados = resultado.data
 
                     
-                    let titleCancion = resultados.title
+                    let titleCancion = resultados.title;
                     let idCancion = resultados.id;
 
-                    let todasFavoritas = `<li class = "cancion">
-                        <a href="tracks.html?idTrack=`+ idCancion + `"><h3 class="cancion">`
-                        + titleCancion + `</h3></a></li>`
+                    let todasFavoritas = `<li class ="titulacion"><h3 class="titulacion"> <a href="tracks.html?idTrack=` + idCancion + `">`
+                        + titleCancion + `</a> </h3> </li>`
                     
                         document.querySelector(".listacanciones").innerHTML += todasFavoritas
+
+                        
     }) 
     
         }

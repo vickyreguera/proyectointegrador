@@ -261,6 +261,16 @@ a.linkeando{
     text-decoration: none;
     color:black;
 }
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
 
 @media (min-width: 1024px){
     header {
@@ -503,5 +513,8 @@ a.linkeando{
             z-index: 1;
             color: #4f5b66;
           } 
-    
+          .fab{
+            margin-top: 15px;
+            font-size: 30px;
+        }
 }

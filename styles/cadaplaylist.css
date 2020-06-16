@@ -148,13 +148,7 @@ h5{
     text-decoration: none;
     
 }
-.infoalbum {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: space-around;
-    
-}
+
 article.info{
    margin-left: 0;
     font-family:'Inria Sans', sans-serif;
@@ -269,16 +263,35 @@ div.nosotras{
     color: white;
     margin-top: 20px;
 }
-.canciones{
+
+.listacanciones{
+    padding-top: 6px;
+    padding-bottom:10px;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+}
+li.titulacion{
     font-family:'Inria Sans', sans-serif;
     text-decoration: none;
     color:black;
     font-size: 20px;
-    margin-top:15px;
+    
 }
-.listacanciones{
-    padding-top: 4px;
-    padding-bottom:10px;
+
+.mimusica{
+    text-align: left;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 
@@ -357,12 +370,7 @@ div.nosotras{
         width:90%;
         margin-top: 5px;
     }
-    div.container{
-        display: grid;
-        grid-template-columns: 40% 50%;
-        justify-content: space-around;
-        margin-bottom: 150px;
-    }
+    
     img.portadaartist{
         display: block;
         max-width: 300px;
@@ -457,10 +465,11 @@ div.nosotras{
             list-style: decimal-leading-zero;
             margin-left: 50px;
         }
-        .cancion{
+        .titulacion{
             font-family:'Inria Sans', sans-serif;
             font-size: 25px;
-            padding: 8px;
+            padding: 5px;
+            border-bottom: 1px solid black;
             
         }
         .buscar{
@@ -503,5 +512,12 @@ div.nosotras{
             z-index: 1;
             color: #4f5b66;
           }
-    
+
+          section.listasongs{
+              width:95%;
+          }
+          .fab{
+            margin-top: 15px;
+            font-size: 30px;
+        }
 }

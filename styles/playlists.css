@@ -70,6 +70,7 @@ img.portadaplaylist{
     min-height: 200px;
     margin: 0 auto;
     margin-bottom: 15px;
+    align-content: center;
 }
 .infoalbum ul{
     display: grid;
@@ -222,7 +223,16 @@ color: black;
     margin-bottom: 20px;
 
 }
-
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
 
 
 @media(min-width: 1024px){
@@ -332,7 +342,7 @@ color: black;
     img.portadaplaylist{
     height: 200px;
     width: 200px;
-    margin-left: 155px;
+    text-align: center;
 
     }
     .fotito{
@@ -364,7 +374,7 @@ color: black;
         color: black;
         text-decoration: none;
         padding-bottom: 5px;
-        margin-left: 70px;
+        text-align: center;
     }
     ul.gridrepro{
         margin-top: 8px;
@@ -443,4 +453,9 @@ color: black;
     z-index: 1;
     color: #4f5b66;
   }
+
+  .fab{
+    margin-top: 15px;
+    font-size: 30px;
+}
 }

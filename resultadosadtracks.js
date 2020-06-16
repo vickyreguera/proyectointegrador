@@ -25,8 +25,12 @@ window.addEventListener("load", function () {
             for (let index = 0; index < 1; index++) {
                 const cadaResultado = resultados[index];
            
+                let idTrack = cadaResultado.id;
+                let nombreCancion = cadaResultado.title;
 
-                document.querySelector(".titulando").innerHTML = cadaResultado.title;
+                let infoCancion = `<h3 class="titulando"> <a class="ellink" href="tracks.html?idTrack=` + idTrack +`">` + nombreCancion + ` </a></h3>`
+
+                document.querySelector(".titulando").innerHTML = infoCancion
                     
                 document.querySelector(".fecha").innerHTML = cadaResultado.duration;
                    
@@ -43,7 +47,7 @@ window.addEventListener("load", function () {
                     
                     document.querySelector(".artist").innerHTML = artista;
                     
-                   let idTrack = cadaResultado.id
+                   
 
                     let reproducir = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=tracks&id=` + idTrack + `&app_id=1`
 

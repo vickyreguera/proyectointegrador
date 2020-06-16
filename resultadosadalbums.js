@@ -20,9 +20,14 @@ window.addEventListener("load", function () {
             for (let index = 0; index < 1; index++) {
                 const cadaAlbum = info [index];
            
-                document.querySelector(".nombre").innerHTML = cadaAlbum.title;
+                let idAlbum = cadaAlbum.id
+
                 document.querySelector(".tini").src = cadaAlbum.cover_medium;
-                
+               
+                let cancion = `<h3 class="nombre"> <a href="albums.html?idAlbums=`+ idAlbum +`"">` + cadaAlbum.title + `</a> </h3>`
+
+                document.querySelector(".nombre").innerHTML = cancion;
+
                 let nombreArtista = cadaAlbum.artist.name;
                 let idArtista = cadaAlbum.artist.id;
     
@@ -30,7 +35,7 @@ window.addEventListener("load", function () {
                 
                 document.querySelector(".cantante").innerHTML = todoArtist;
                 
-                let idAlbum = cadaAlbum.id
+                
                 let escuchar = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=album&id=` + idAlbum + `&app_id=1`
                 
     

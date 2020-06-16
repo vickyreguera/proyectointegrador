@@ -24,9 +24,9 @@ window.addEventListener("load", function () {
                 let fotoPlay = cadaPlaylist.picture_medium;
                 let idPlay = cadaPlaylist.id;
                 
-
+                let linkPlay = `<h3 class="titulando"> <a class="ellink "href="playlists.html?idPlaylists=` + idPlay + `">` + nombrePlay + `</a> </h3>`
                 document.querySelector(".portadaplaylist").src = fotoPlay;
-                document.querySelector(".titulando").innerHTML += nombrePlay;
+                document.querySelector(".titulando").innerHTML += linkPlay;
 
                 let escuche = `https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=600&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=` + idPlay + `&app_id=1`
 

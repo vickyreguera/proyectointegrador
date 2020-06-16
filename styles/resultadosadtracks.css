@@ -84,6 +84,10 @@ h3.titulando{
     padding: 10px;
     padding-bottom: 5px;
 }
+.ellink{
+    text-decoration: none;
+    color:black;
+}
 h5{
     text-align: center;
     margin: 0 auto;
@@ -265,6 +269,18 @@ ol li{
 margin-left: 110px;
 padding-bottom:40px;
  }
+
+ .deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
+}
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
  
  
  
@@ -469,6 +485,9 @@ footer{
       width:300px;
   }
 
-
+  .fab{
+    margin-top: 15px;
+    font-size: 30px;
+}
    
 }

@@ -213,17 +213,22 @@ body{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .subnombre{
     font-family:'Inria Sans', sans-serif;
     margin-left: 10px;
     font-size: 12px;
 }
-.data i{
-    margin-top: 10px;
-    font-size: 30px;
+.deezer{
+    display: grid;
+    grid-template-columns: 50% 20% 20%;
+    justify-content: center;
 }
-
-
+.fab{
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
 
 
 @media (min-width:1024px){
@@ -376,7 +381,10 @@ body{
         margin-top:0px;
         font-size: 25px;
     }
-    
+    .fab{
+        margin-top: 15px;
+        font-size: 30px;
+    }
 }
 
 
