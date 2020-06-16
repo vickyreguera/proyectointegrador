@@ -226,7 +226,7 @@ ol.listacanciones{
     background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 20% 70%;
     justify-content: space-around;
     height: 50px;
     margin-top: 180px;

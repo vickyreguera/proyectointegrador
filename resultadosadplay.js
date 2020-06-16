@@ -19,10 +19,15 @@ window.addEventListener("load", function () {
     
             for (let index = 0; index < 1; index++) {
                 const cadaPlaylist = info [index];
-           
+               
+                let idPlay = cadaPlaylist.id;
+                window.location.href="playlists.html?idPlaylists=" + idPlay
+
+                /* TODO ESTO LO TUVIMOS QUE SACAR POR EL WINDOW.LOCATION 
+
                 let nombrePlay = cadaPlaylist.title;
                 let fotoPlay = cadaPlaylist.picture_medium;
-                let idPlay = cadaPlaylist.id;
+                
                 
                 let linkPlay = `<h3 class="titulando"> <a class="ellink "href="playlists.html?idPlaylists=` + idPlay + `">` + nombrePlay + `</a> </h3>`
                 document.querySelector(".portadaplaylist").src = fotoPlay;
@@ -79,7 +84,7 @@ window.addEventListener("load", function () {
                         } // cierra for canciones
 
                     }) // cierra then canciones
-
+*/
             } // cierra el for inicial
             
             

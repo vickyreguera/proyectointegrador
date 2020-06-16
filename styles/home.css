@@ -242,6 +242,64 @@ nav:hover ul.detalle{
 .spinnertracks{
     margin-top: 20px;
 }
+.mensaje{
+    background-color: black;
+    width: 90%;
+    align-content: center;
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 20px;
+}
+.unite{
+    font-family:'Inria Sans', sans-serif ;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.boton{
+    background-color:white;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+    height:40px;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    margin-left:90px;
+    
+}
+.uk-modal-dialog{
+    margin-top: 100px;
+    background-color: rgb(250, 229, 219);
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.registrarse{
+    margin-top: 100px;
+    background-color: rgb(250, 229, 219);
+    width: 90%;
+    margin: 0 auto;
+   
+}
+label{
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.enviando{
+    background-color:white;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 50%;
+    height:40px;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+    margin-left:90px;
+    margin-bottom: 100px;
+    
+}
 
 @media (min-width:1024px){
     header {

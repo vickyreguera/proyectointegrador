@@ -26,6 +26,10 @@ window.addEventListener("load", function () {
                 const cadaResultado = resultados[index];
            
                 let idTrack = cadaResultado.id;
+                window.location.href="tracks.html?idTrack=" + idTrack
+
+                /* TODO ESTO LO TUVIMOS QUE SACAR POR EL WINDOW.LOCATION 
+
                 let nombreCancion = cadaResultado.title;
 
                 let infoCancion = `<h3 class="titulando"> <a class="ellink" href="tracks.html?idTrack=` + idTrack +`">` + nombreCancion + ` </a></h3>`
@@ -142,7 +146,7 @@ console.log(localStorage);
 })
 
 
-
+*/
        
 } // cierra el for inicial
         

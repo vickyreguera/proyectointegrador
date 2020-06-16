@@ -21,7 +21,9 @@ window.addEventListener("load", function () {
                 const cadaAlbum = info [index];
            
                 let idAlbum = cadaAlbum.id
+                window.location.href="albums.html?idAlbums=" + idAlbum
 
+                /* TODO ESTO LO TUVIMOS QUE SACAR POR EL WINDOW.LOCATION 
                 document.querySelector(".tini").src = cadaAlbum.cover_medium;
                
                 let cancion = `<h3 class="nombre"> <a href="albums.html?idAlbums=`+ idAlbum +`"">` + cadaAlbum.title + `</a> </h3>`
@@ -95,8 +97,9 @@ window.addEventListener("load", function () {
 
 
             } // cierra for
+            
         })   
-    
+    */
             } // cierra for inicial
             
             

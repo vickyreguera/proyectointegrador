@@ -76,7 +76,7 @@ window.addEventListener("load", function () {
                 }) // cierra primer fetch
     } // cierra if
     else {
-        alert("¿No se recibió ID de canción?")
+        alert("No se recibió ID de canción")
     }
  
 // Agregar a playlist
