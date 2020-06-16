@@ -204,7 +204,7 @@ ul.gridrepro {
     background-color: black;
     width:100%;
     display: grid;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 20% 70%;
     justify-content: space-around;
     height: 50px;
     margin-top: 200px;
@@ -270,11 +270,12 @@ div.nosotras{
     font-family:'Inria Sans', sans-serif;
     font-size: 20px;
 }
-li.titulacion{
+.titulacion{
     font-family:'Inria Sans', sans-serif;
     text-decoration: none;
     color:black;
     font-size: 20px;
+    margin-bottom: 10px;
     
 }
 
@@ -472,7 +473,7 @@ li.titulacion{
             font-family:'Inria Sans', sans-serif;
             font-size: 25px;
             padding: 5px;
-            border-bottom: 1px solid black;
+            
             
         }
         .buscar{

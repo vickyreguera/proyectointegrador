@@ -19,10 +19,16 @@ window.addEventListener("load", function () {
     
             for (let index = 0; index < 1; index++) {
                 const cadaArtista = info [index];
-           
+                
+                let idAr = cadaArtista.id;
+                window.location.href="artists.html?idArtist=" + idAr
+
+                /* TODO ESTO LO TUVIMOS QUE SACAR POR EL WINDOW.LOCATION 
+
+
+
                 let nombreAr = cadaArtista.name;
                 let fotoAr = cadaArtista.picture_xl;
-                let idAr = cadaArtista.id;
                 let fans = cadaArtista.nb_fan;
                 let cantidadAlbumes = cadaArtista.nb_album;
 
@@ -70,7 +76,7 @@ window.addEventListener("load", function () {
 
     
             
-    
+    */
             
     
             } // cierro for inicial

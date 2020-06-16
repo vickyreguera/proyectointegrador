@@ -23,6 +23,12 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + b
         for (let index = 0; index < 1; index++) {
             const cadaResultado = resultado[index];
 
+            let trackId = cadaResultado.id
+
+            window.location.href="tracks.html?idTrack=" + trackId;
+
+           /* TODO ESTO LO TUVIMOS QUE SACAR POR EL WINDOW.LOCATION 
+           
             let nombreTrack = cadaResultado.title
 
             let nombreDelArtista = cadaResultado.artist.name
@@ -33,7 +39,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + b
 
             let duracion = cadaResultado.duration
 
-            let trackId = cadaResultado.id
+            
 
             let trackResultado = `<main class="container">
             <section class="colizq">
@@ -104,7 +110,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + b
                             })
                         }) 
         document.querySelector(".buscar").innerHTML += trackResultado
-
+    */
         }
 
     

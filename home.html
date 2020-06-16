@@ -104,6 +104,31 @@
             </nav> 
             </div> 
         </div>
+        <div class="suscrpcion">
+            <div class="mensaje"><h3 class="unite"> Suscribite al plan premium para disfrutar de la mejor música sin interrupciones</h3>
+                <!-- This is a button toggling the modal -->
+<button class="boton" uk-toggle="target: #my-id" type="button"> Suscribirse</button> <i class="fas fa-user" style="color:#FFFFFF"></i>
+                <!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <form class="registrarse" action="" method="POST">
+            <p>
+                <label for="nombre"> Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese aquí...">
+            </p>
+            <p>
+                <label for="email"> Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese aquí...">
+            </p>
+            <p>
+                <input class="enviando" type="submit" value="enviar">
+            </p>
+        </form>
+    </div>
+</div>
+            </div>
+
+        </div>
     </main>
     <footer>
         <div class="footer">
