@@ -35,6 +35,7 @@ window.addEventListener("load", function () {
 
                     let reproducir = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=tracks&id=` + codigoTrack + `&app_id=1`
 
+                    document.querySelector(".spinnertracks").style.display = "none"
                     document.querySelector(".portadaartist").src = reproducir;
 
 
@@ -125,7 +126,13 @@ document.querySelector(".laquiero").addEventListener("click", function(e){
  
 })
  
- 
+ document.querySelector(".anterior").addEventListener("onclick", function(e){
+     let volver = confirm("¿Desea volver a la página anterior?") 
+    if (volver == true) { 
+       
+        
+    } // cierra if
+}) //cierra function y el evento
 
  
  

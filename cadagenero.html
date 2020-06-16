@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../proyectointegrador/styles/cadagenero.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
     <script src="cadagenero.js"></script>
 </head>
 <body>
@@ -25,18 +30,22 @@
     </header>
  
     
-        <div class="buscar">
-            <div class="container-1"></div>
-            <form action="resultados.html" method="GET">
-                <span class="icon"><i class="fa fa-search"></i></span>  
-                <input type="text" name="buscador" placeholder="Busca una canción...">
+    <div class="buscar">
+        <nav class="atras"> <a href="generos.html" class="volver"><i class="fas fa-arrow-circle-left anterior"></i> </a> </nav>
+        <div class="icon"><i class="fa fa-search"></i></div>  
+        <div class="container-1">
+        <form action="resultados.html" method="GET">
 
-            </form>
+            <input type="text" name="buscador" placeholder="Busca una canción...">
+
+        </form>
         </div>
+    </div>
 
         <main class="container">
             <section class="colizq">
             <div class="infodelgenero">
+                
                 <!-- agrego con js 
                 <img class="portadagenero" src="#">
                 <h3 class="nombregenero"> nombre del genero </h3>  -->

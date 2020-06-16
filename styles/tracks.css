@@ -276,6 +276,10 @@ padding-bottom:40px;
     margin-left: 10px;
     margin-right: 5px;
 }
+
+.buscar{
+    display:none;
+}
  
  
 @media(min-width: 1024px){
@@ -283,7 +287,7 @@ padding-bottom:40px;
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-top: 50px;
+    
     margin-bottom: 250px;
     }
 .portadacamilo{
@@ -323,7 +327,7 @@ header {
     justify-content: space-around;
     background-color: black;
     height: 90px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -439,17 +443,24 @@ footer{
     margin: 100px auto;
     width: 300px;
     height: 50px;
-    margin-left: 40px;
+    margin-left: 5px;
     padding-left: 20px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: 10% 10% 60%;
+    justify-content: space-around;
     
 }
+
 .container-1{
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
+    display: grid;
+    margin-top: 5px;
+    margin-left: 0;
   }
 
   .container-1 input#search{
@@ -466,13 +477,14 @@ footer{
     border-radius: 5px;
   }
 
-  .container-1 .icon{
-    position: absolute;
+.icon{
+    
     top: 50%;
-    margin-left: 17px;
-    margin-top: 17px;
-    z-index: 1;
+    margin-left: 20px;
+    margin-top: 7px;
+    
     color: #4f5b66;
+    
   }
 
 .portadaartist{
@@ -482,5 +494,29 @@ footer{
 .fab{
     margin-top: 15px;
     font-size: 30px;
+}
+
+.volver{
+    text-decoration: none; 
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    
+}
+
+
+.atras{
+    margin-bottom: 10px;
+}
+
+.spinnertracks{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    
+}
+.colizq{
+    position: relative;
 }
 }

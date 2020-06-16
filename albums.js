@@ -23,6 +23,7 @@ window.addEventListener("load", function (){
 
             let todoArtist = `<h5 class="cantante"><a class="linkeando" href="artists.html?idArtist=`+ idArtista + `">`+ nombreArtista + `</a> </li>`
             
+            document.querySelector(".spinnertracks").style.display = "none"
             document.querySelector(".cantante").innerHTML = todoArtist;
             
             

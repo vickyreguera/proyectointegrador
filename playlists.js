@@ -13,7 +13,7 @@ window.addEventListener("load", function (){
     .then(
         function(resultado){  
             console.log(resultado)  
-
+            document.querySelector(".spinnertracks").style.display = "none"
             document.querySelector(".titulando").innerHTML = resultado.title; 
             document.querySelector(".titulo").innerHTML = resultado.fans;
             document.querySelector(".portadaplaylist").src = resultado.picture_medium;

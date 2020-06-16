@@ -9,6 +9,11 @@
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
     <script src="tracks.js"></script>
  
 </head>
@@ -27,16 +32,23 @@
                 </ul>
         </header>
         <main>
+            
             <div class="buscar">
-                <div class="container-1"></div>
+                <nav class="atras"> <a href="home.html" class="volver"><i class="fas fa-arrow-circle-left anterior"></i> </a> </nav>
+                <div class="icon"><i class="fa fa-search"></i></div>  
+                <div class="container-1">
                 <form action="resultados.html" method="GET">
-                    <span class="icon"><i class="fa fa-search"></i></span>  
+        
                     <input type="text" name="buscador" placeholder="Busca una canción...">
     
                 </form>
+                </div>
             </div>
+
+            
             <main class="container">
             <section class="colizq">
+                <div uk-spinner class="spinnertracks"></div>
                 <div>
                     <iframe class="portadaartist" scrolling="no" frameborder="0" allowTransparency="true" src="" width="700" height="350">
                 </iframe>
