@@ -321,7 +321,7 @@ padding-bottom:40px;
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 250px;
+    margin-bottom: 70px;
     }
 .portadacamilo{
 margin: 0 auto;
