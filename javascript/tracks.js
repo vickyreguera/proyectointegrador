@@ -38,6 +38,8 @@ window.addEventListener("load", function () {
                     document.querySelector(".spinnertracks").style.display = "none"
                     document.querySelector(".portadaartist").src = reproducir;
 
+                  
+
 
  
                     fetch("https://cors-anywhere.herokuapp.com/" + resultado.artist.tracklist)
