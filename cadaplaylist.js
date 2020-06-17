@@ -34,7 +34,7 @@ function mostrarPlaylist(codigoTrack){
         .then(function (track) {
 
             
-            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a href="tracks.html?idTrack=' + track.id + '">' + track.title + '</a></li>' 
+            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a class="titulacion" href="tracks.html?idTrack=' + track.id + '">' + track.title + '</a></li>' 
         
             
             for (let index = 0; index < cancionesFavoritas.length; index++) {

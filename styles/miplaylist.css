@@ -236,7 +236,10 @@ body{
 .fas{
     font-size: 20px;
 }
-
+.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
 
 @media (min-width:1024px){
     header {

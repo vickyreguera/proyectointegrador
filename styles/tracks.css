@@ -307,7 +307,15 @@ padding-bottom:40px;
     text-decoration: none;
     cursor: pointer;
 }
- 
+.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+    text-decoration: none !important;
+    color:white !important;
+}
+.melleva{
+    text-decoration: none;
+    color:black;
+}
+
  
 @media(min-width: 1024px){
  

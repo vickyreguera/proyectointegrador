@@ -321,6 +321,11 @@ h3.nombre{
     color: black;
     font-family:'Inria Sans', sans-serif;
 }
+.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
 
 @media (min-width: 1024px){
     header {
