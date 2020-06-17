@@ -108,6 +108,7 @@ nav:hover ul.navegacion{
     background-color: black;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 20px;
 }
 
 a.nav{
@@ -303,6 +304,9 @@ label{
     margin-bottom: 100px;
     
 }
+.fas{
+    font-size: 20px;
+}
 
 @media (min-width:1024px){
     header {
@@ -339,21 +343,25 @@ label{
         display: grid;
         grid-template-columns:  5% 30% 30% 30%;
         justify-content: space-around;
-        margin-top: 10px;
+        margin-top: 26px;
     }
    .fas{
        font-size: 28px;
    }
-    .logo img{
-        height: 70px;
-        display:block;
-        width: 70px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        margin: 0 auto;
-        margin-right: 3px;
-        
-    }
+   .logo{
+       padding-top: 7px;
+       padding-bottom: 7px;
+   }
+   .logo img{
+    height: 70px;
+    display:block;
+    width: 70px;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
 
     h4.audiora{
         margin-top: 20px;

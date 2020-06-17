@@ -70,16 +70,21 @@ body{
     margin-bottom: 10px;
     margin-top: 0px;
 }
+
 .toggle-nav {
     background-color: black;
-    padding: 10px;
+    padding: 8px;
     color: white;
     margin: 0 auto;
     display: block;
-    margin-top: 10px;
     width: 15px;
+    height: 20px;
     margin-bottom: 15px;
+    padding-top: 3px;
+    
+
 }
+
 ul.navegacion{
     display: none;
     width: 100%;
@@ -107,6 +112,10 @@ nav:hover ul.navegacion{
     background-color: black;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 20px;
+}
+.fas{
+    font-size: 20px;
 }
 
 a.nav{
@@ -120,7 +129,6 @@ a.nav{
     padding-bottom: 5px;
     
 }
-
 .footer{
     background-color: black;
     width:100%;
@@ -174,9 +182,7 @@ div.nosotras{
     margin-left: 10px;
     margin-bottom: 20px;
 }
-.fa{
-    margin-top: 10px;
-}
+
 .deezer{
     display: grid;
     grid-template-columns: 50% 20% 20%;
@@ -186,6 +192,11 @@ div.nosotras{
     margin-top: 17px;
     margin-left: 10px;
     margin-right: 5px;
+}
+
+.fa{
+    margin-top: 5px;
+    
 }
 
 @media (min-width:1024px){

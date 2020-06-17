@@ -83,6 +83,7 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
+    padding: 0;
 }
 
 nav:hover ul.navegacion{
@@ -120,6 +121,9 @@ a.nav{
     padding-top: 5px;
     padding-bottom: 5px;
     
+}
+.fas{
+    font-size: 20px;
 }
 
 .footer{
@@ -211,6 +215,7 @@ li.artistas{
     grid-template-columns: 30% 65%;
     justify-content: space-around;
     margin-bottom: 10px;
+    
 }
 
 .nombreartista{
@@ -226,6 +231,7 @@ li.artistas{
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 50%;
+    
 
 }
 .deezer{

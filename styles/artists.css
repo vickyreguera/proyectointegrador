@@ -60,11 +60,12 @@ body{
     height: 80px;
     margin: 0 auto;
     width: 80px;
-    
     display:block;
     align-content: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+    height: 90px;
 }
 .toggle-nav {
     background-color: black;
@@ -79,6 +80,7 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
+    padding-left: 0px;
 }
 
 nav:hover ul.navegacion{
@@ -101,9 +103,15 @@ nav:hover ul.navegacion{
      margin-bottom: 10px;
     width:90%;
     background-color: black;
-    padding-top: 5px;
+    padding-top: 4px;
     padding-bottom: 5px;
+    height: 20px;
    
+}
+.lupa{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 a.nav{
@@ -319,6 +327,12 @@ div.nosotras{
 
 .buscar{
     display:none;
+}
+.lupa{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-bottom: 10px;
 }
 
 

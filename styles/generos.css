@@ -228,6 +228,9 @@ nav:hover ul.detalle{
 .buscar{
     display:none;
 }
+.fas{
+    font-size: 20px;
+}
 
 @media (min-width:1024px){
     header {

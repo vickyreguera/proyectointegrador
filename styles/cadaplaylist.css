@@ -63,7 +63,9 @@ body{
     display:block;
     align-content: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+    height: 90px;
 }
 .toggle-nav {
     background-color: black;
@@ -78,6 +80,7 @@ body{
 ul.navegacion{
     display: none;
     width: 100%;
+    padding: 0;
 }
 
 nav:hover ul.navegacion{
@@ -103,6 +106,9 @@ nav:hover ul.navegacion{
     padding-top: 5px;
     padding-bottom: 5px;
    
+}
+.fas{
+    font-size: 20px;
 }
 
 a.nav{
