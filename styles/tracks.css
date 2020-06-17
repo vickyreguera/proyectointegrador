@@ -250,13 +250,15 @@ ol li{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
+    
  }
  .nos{
     font-size: 12px;
     font-weight: 3px;
     text-align: center;
     color: white;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
  }
  .otras{
      display: none;
