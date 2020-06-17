@@ -216,6 +216,7 @@ ul.info{
     font-size: 20px;
     font-family: 'Inria Sans', sans-serif;
     list-style:decimal-leading-zero; 
+    color: black;
 }
 
 .names{

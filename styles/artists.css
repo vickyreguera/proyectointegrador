@@ -219,6 +219,7 @@ section.listasongs{
 ol.listacanciones{
     list-style: decimal-leading-zero;
     margin-left: 50px;
+    color: black;
 }
 .cancion{
     font-family:'Inria Sans', sans-serif;

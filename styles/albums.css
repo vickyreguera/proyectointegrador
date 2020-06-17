@@ -518,9 +518,11 @@ h3.nombre{
             font-family:'Inria Sans', sans-serif;
             font-size: 25px;
             padding: 8px;
+            
         }
         .de{
-            margin-top: 5px;
+            
+            margin-bottom: 2px;
         }
         .cantante{
             margin-top: 0px;
@@ -530,7 +532,7 @@ h3.nombre{
         .tini{
             width:300px;
             margin-left: 150px;
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
         .buscar{
