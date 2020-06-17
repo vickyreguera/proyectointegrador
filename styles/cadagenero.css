@@ -287,16 +287,19 @@ li.artistas{
    .fas{
        font-size: 28px;
    }
-    .logo img{
-        height: 70px;
-        display:block;
-        width: 70px;
-        padding-top: 7px;
-        padding-bottom: 3px;
-        margin: 0 auto;
-        margin-right: 3px;
-        
-    }
+   .logo{
+    padding-top: 0;
+}
+.logo img{
+    height: 80px;
+    display:block;
+    width: 70px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    margin-right: 3px;
+    
+}
 
     h4.audiora{
         margin-top: 20px;

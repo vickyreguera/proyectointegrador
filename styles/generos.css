@@ -272,6 +272,9 @@ nav:hover ul.detalle{
     .fas{
        font-size: 28px;
     }
+    .logo{
+        padding-top: 0;
+    }
     .logo img{
         height: 70px;
         display:block;

@@ -113,13 +113,24 @@
     <div class="uk-modal-dialog uk-modal-body">
         <form class="registrarse" action="" method="POST">
             <p class="name">
-                <label for="nombre"> Nombre:</label>
+                <label class="formulario" for="nombre"> Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Ingrese aquí...">
             </p>
             <p>
-                <label for="email"> Email:</label>
+                <label class="formulario" for="email"> Email:</label>
                 <input type="email" name="email" id="email" placeholder="Ingrese aquí...">
             </p>
+            <p class="name">
+                <p class="formulario"> Pack:
+                <select name="pack">
+                  <option> Mensual </option>
+                  <option> Anual </option>
+                </select>
+            </p>
+              </p>
+              <p class="name">
+                <p class="condiciones"><input type="checkbox" name="acepto"> He leído y acepto los términos y condiciones de uso </p><br>
+            </p>  
             <p>
                 <input class="enviando" type="submit" value="enviar">
             </p>

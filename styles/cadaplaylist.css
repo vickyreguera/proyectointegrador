@@ -347,8 +347,11 @@ div.nosotras{
     .fas{
         font-size: 28px;
     }
+    .logo{
+        padding-top: 0;
+    }
     .logo img{
-        height: 70px;
+        height: 80px;
         display:block;
         width: 70px;
         padding-top: 7px;
