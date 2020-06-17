@@ -391,7 +391,7 @@ div.nosotras{
         margin-top:-5px;
     }
     .logo img{
-        height: 70px;
+        height: 80px;
         display:block;
         width: 70px;
         padding-top: 7px;
@@ -401,7 +401,7 @@ div.nosotras{
         
     }
     h4.audiora{
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 46px;
         font-family: 'Dancing Script', cursive;;
         color:  rgb(250, 229, 219);

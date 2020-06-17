@@ -361,7 +361,7 @@ h3.nombre{
         font-size: 28px;
     }
     .logo img{
-        height: 70px;
+        height: 80px;
         display:block;
         width: 70px;
         padding-top: 7px;
@@ -371,7 +371,7 @@ h3.nombre{
         
     }
     h4.audiora{
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 46px;
         font-family: 'Dancing Script', cursive;;
         color:  rgb(250, 229, 219);
@@ -391,7 +391,7 @@ h3.nombre{
         margin: 0;
         margin-bottom: 0;
         width:90%;
-        margin-top: 5px;
+        margin-top: 3px;
     }
     div.container{
         display: grid;

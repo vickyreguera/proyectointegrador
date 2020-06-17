@@ -275,7 +275,7 @@ body{
         margin-top: 26px;
     }
     .fas{
-        font-size: 25px;
+        font-size: 28px;
     }
     .logo img{
         height: 70px;
@@ -309,7 +309,7 @@ body{
         margin: 0;
         margin-bottom: 0;
         width:90%;
-        margin-top: 5px;
+        margin-top: 0px;
     }
     footer{
         height: 60px;
