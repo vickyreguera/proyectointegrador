@@ -217,7 +217,7 @@ h4.reproducir{
     grid-template-columns: 20% 70%;
     justify-content: space-around;
     height: 50px;
-    margin-top: 200px;
+    margin-top: 70px;
     
 }
 .nosotras{
@@ -398,6 +398,7 @@ h3.nombre{
         display: grid;
         grid-template-columns: 40% 50%;
         justify-content: space-around;
+        width: 100%;
         margin-bottom: 0px;
     }
     img.portadaartist{
@@ -494,7 +495,6 @@ h3.nombre{
         section.listasongs{
             display: block;
             background-color: rgb(250, 229, 219);
-            width: 100%;
             margin: 0 auto;
             margin-top: 0;
             margin-bottom: 0px;
@@ -582,7 +582,7 @@ h3.nombre{
         }
 
         
-          .fab{
+        .fab{
             margin-top: 15px;
             font-size: 30px;
         }

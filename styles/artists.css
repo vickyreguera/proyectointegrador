@@ -232,12 +232,12 @@ ol.listacanciones{
 }
 .footer{
     background-color: black;
-    width:100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 70%;
     justify-content: space-around;
     height: 50px;
-    margin-top: 180px;
+    margin-top: 70;
     
 }
 .nosotras{
@@ -427,7 +427,7 @@ div.nosotras{
         display: grid;
         grid-template-columns: 40% 50%;
         justify-content: space-around;
-        margin-bottom: 150px;
+        margin-bottom: 70px;
 
     }
     img.portadaartist{
