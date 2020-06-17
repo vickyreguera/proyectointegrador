@@ -55,7 +55,7 @@ function mostrarPlaylist(codigoTrack){
                     let titleCancion = resultados.title;
                     let idCancion = resultados.id;
 
-                    let todasFavoritas = `<li class ="titulacion"><h3 class="titulacion"> <a href="tracks.html?idTrack=` + idCancion + `">`
+                    let todasFavoritas = `<li class ="titulacion"><h3 class="titulacion"> <a class="titulacion" href="tracks.html?idTrack=` + idCancion + `">`
                         + titleCancion + `</a> </h3> </li>`
                     
                         document.querySelector(".listacanciones").innerHTML += todasFavoritas
