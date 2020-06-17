@@ -272,9 +272,10 @@ article.col{
 h4.album{
     font-size: 20px;
     font-family:'Inria Sans', sans-serif;
-    padding-top: 3px;
+    padding-top: 0px;
     margin-left: 0px;
     padding-left: 0px;
+    margin-top: 0px;
 }
 .fas{
     display: block;
@@ -333,6 +334,15 @@ div.nosotras{
     margin-bottom: 5px;
     margin-top: 0px;
     padding-bottom: 10px;
+}
+.infoalbum ul{
+    padding-left: 0px;
+}
+.titulando{
+    margin-top: 0px;
+   color: black;
+    font-family:'Inria Sans', sans-serif;
+    font-weight: bolder;
 }
 
 
@@ -503,8 +513,9 @@ div.nosotras{
         font-size: 25px;
         font-family:'Inria Sans', sans-serif;
         padding-left: 10px;
-        padding-top: 5px;
+        padding-top: 0px;
         margin-left: 10px;
+        margin-top: 0px;
        
     }
     .fas{
@@ -588,6 +599,7 @@ div.nosotras{
 
 .atras{
     margin-bottom: 10px;
+    margin-top: -15px;
 }
 
 
@@ -595,5 +607,6 @@ div.nosotras{
     margin-top: 15px;
     font-size: 30px;
 }
+
 
 }
