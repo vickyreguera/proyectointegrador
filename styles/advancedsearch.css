@@ -239,17 +239,19 @@ div.nosotras{
    .fas{
        font-size: 28px;
    }
-    .logo img{
-        height: 70px;
-        display:block;
-        width: 70px;
-        padding-top: 7px;
-        padding-bottom: 3px;
-        margin: 0 auto;
-        margin-right: 3px;
-        
-    }
-
+   .logo{
+    
+    padding-bottom: 10px;
+}
+.logo img{
+ height: 70px;
+ display:block;
+ width: 70px;
+ margin: 0 auto;
+ margin-top: 0px;
+ margin-right: 3px;
+ margin-bottom: 10px;
+}
     h4.audiora{
         margin-top: 20px;
         font-size: 46px;
