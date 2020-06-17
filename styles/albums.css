@@ -198,7 +198,8 @@ h4.reproducir{
 .tini{
     width: 70%;
     height: 300px;
-    margin-left: 57px;
+    margin: 0 auto;
+    margin-left: 62px;
 
 }
 
@@ -241,6 +242,7 @@ section.listasongs{
 }
 ol.listacanciones{
     list-style: decimal-leading-zero;
+    color: black;
     margin-left: 50px;
     
 }
@@ -249,6 +251,7 @@ ol.listacanciones{
     font-size: 20px;
     padding: 5px;  
     text-decoration: none;
+    color: black;
 }
 div.titaudiora{
     display: none;
@@ -302,7 +305,7 @@ a.linkeando{
     font-size: 30px;
 }
 
-.nombre .de .cantante{
+.cantante{
     text-decoration: none;
     color: black;
     font-family:'Inria Sans', sans-serif;
@@ -310,11 +313,14 @@ a.linkeando{
 h5.de{
     margin-bottom: 0px;
     margin-top: 15px;
+    font-family:'Inria Sans', sans-serif;
 }
 h3.nombre{
     margin-bottom: 0px;
     font-size: 30px;
     font-weight: bold;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
 }
 
 .infoalbum{
@@ -523,7 +529,7 @@ h3.nombre{
         }
         .tini{
             width:300px;
-            margin-left: 92px;
+            margin-left: 150px;
             margin-top: 50px;
         }
 
