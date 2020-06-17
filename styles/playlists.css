@@ -209,6 +209,7 @@ ul.info{
     text-align: center;
     color: white;
     margin-top: 20px;
+    margin-bottom: 0px;
  }
  li.can{
     margin: 10px;
@@ -246,7 +247,10 @@ color: black;
 .buscar{
     display:none;
 }
-
+.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
 
 @media(min-width: 1024px){
 
