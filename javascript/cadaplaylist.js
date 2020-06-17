@@ -1,5 +1,11 @@
 window.addEventListener("load", function(){
 
+    let nombrePlaylist = prompt("Ingrese el nombre de su playlist")
+
+    let nombreDelUsuario = '<h3 class="mimusica">' + nombrePlaylist+ '</h3>'
+
+    document.querySelector(".infoalbum").innerHTML += nombreDelUsuario
+
 let recuperoStorage = localStorage.getItem("playlist");
 let playlist = JSON.parse(recuperoStorage);
 
