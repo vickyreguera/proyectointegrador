@@ -287,6 +287,39 @@ a.linkeando{
 .buscar{
     display:none;
 }
+.cancionAlbum{
+    text-decoration: none;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 20px;
+}
+
+.linkeando{
+    text-decoration: none;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+    font-size: 30px;
+}
+
+.nombre .de .cantante{
+    text-decoration: none;
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+}
+h5.de{
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+h3.nombre{
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.infoalbum{
+    color: black;
+    font-family:'Inria Sans', sans-serif;
+}
 
 @media (min-width: 1024px){
     header {
@@ -364,7 +397,7 @@ a.linkeando{
         display: grid;
         grid-template-columns: 40% 50%;
         justify-content: space-around;
-        margin-bottom: 150px;
+        margin-bottom: 0px;
     }
     img.portadaartist{
         display: block;
@@ -394,7 +427,7 @@ a.linkeando{
         font-size: 35px;
         font-weight: bold;
         padding: 0;
-        padding-top: 28px;
+        padding-top: 0x;
         padding-left: 10px;
         padding-bottom: 5px;
 
@@ -485,7 +518,7 @@ a.linkeando{
         }
         .tini{
             width:300px;
-            margin-left: 150px;
+            margin-left: 92px;
             margin-top: 50px;
         }
 
@@ -554,5 +587,17 @@ a.linkeando{
             font-size: 30px;
         }
 
+        .cancionAlbum{
+            text-decoration: none;
+            color: black;
+            font-family:'Inria Sans', sans-serif;
+            font-size: 20px;
+        }
         
+        .linkeando{
+            text-decoration: none;
+            color: black;
+            font-family:'Inria Sans', sans-serif;
+            font-size: 30px;
+        }
 }

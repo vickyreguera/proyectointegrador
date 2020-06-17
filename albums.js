@@ -58,7 +58,7 @@ window.addEventListener("load", function (){
 
                 let nombreCancion = masSongs.title;
                 let idCancion = masSongs.id
-                let albumCanciones = `<li class="cancion"> <a href="tracks.html?idTrack=` + idCancion + `">`  + nombreCancion + ` </a> </li>`
+                let albumCanciones = `<li class="cancion"> <a href="tracks.html?idTrack=` + idCancion + `" class="cancionAlbum">`  + nombreCancion + ` </a> </li>`
 
                 
 
