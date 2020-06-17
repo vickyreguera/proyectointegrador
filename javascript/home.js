@@ -112,7 +112,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
     document.querySelector(".enviando").addEventListener("click", function(e){
 
         
-        let muchasGracias = `<h3 class="gracias"> Muchas gracias por suscribirte, ¡A disfrutar! </h3> <br> <img class="graciaslogo"src="../proyectointegrador/fotos/audiora circulo.png" alt="logo">`
+        let muchasGracias = `<h3 class="gracias"> Muchas gracias por suscribirte, ¡A disfrutar! </h3> <br> <img class="graciaslogo"src="fotos/audiora circulo.png" alt="logo">`
 
         document.querySelector(".registrarse").innerHTML = muchasGracias;
     })
