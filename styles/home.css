@@ -215,8 +215,8 @@ h4.nombre{
 
 img.foto{
     margin: 0 auto;
-    width: 50%;
-    height:150px;
+    width: 45%;
+    height:175px;
     border-radius: 100%;
     display: block;
     margin-bottom: 10px;
@@ -543,6 +543,13 @@ nav:hover ul.detalle{
         margin-bottom: 30px;
         margin-right: 100px;
     }
-    
+    img.foto{
+        margin: 0 auto;
+        width: 50%;
+        height:150px;
+        border-radius: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
   
 }

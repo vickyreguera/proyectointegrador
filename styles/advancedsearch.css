@@ -136,7 +136,7 @@ a.nav{
     grid-template-columns: 20% 70%;
     justify-content: space-around;
     height:50px;
-    margin-top: 70px;
+    margin-top: 165px;
     
 }
 .nosotras{
@@ -287,6 +287,7 @@ div.nosotras{
         background-color: black;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        margin-top: 240px;
     }
     .nosotras{
         display: grid;

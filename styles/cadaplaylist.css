@@ -213,7 +213,7 @@ ul.gridrepro {
     grid-template-columns: 20% 70%;
     justify-content: space-around;
     height: 50px;
-    margin-top: 600px;
+    margin-top: 390px;
     
 }
 .nosotras{
@@ -289,6 +289,8 @@ div.nosotras{
     text-align: left;
     margin-left: 20px;
     text-decoration: underline;
+    font-family:'Inria Sans', sans-serif;
+    color: black;
 }
 .deezer{
     display: grid;
@@ -554,5 +556,9 @@ div.nosotras{
           .fab{
             margin-top: 15px;
             font-size: 30px;
+        }
+
+        .footer{
+            margin-top: 400px;
         }
 }

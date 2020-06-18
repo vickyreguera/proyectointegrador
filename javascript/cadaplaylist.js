@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
 
     let nombrePlaylist = prompt("Ingrese el nombre de su playlist")
 
-    let nombreDelUsuario = '<h3 class="mimusica">' + nombrePlaylist+ '</h3>'
+    let nombreDelUsuario = '<h3 class="mimusica">' + nombrePlaylist + '</h3>'
 
     document.querySelector(".infoalbum").innerHTML += nombreDelUsuario
 
@@ -38,39 +38,13 @@ function laPlaylist(codigoTrack){
         .then(function (response) {
             return response.json();
         })
-        .then(function (track) {
+        .then(function (resultado) {
 
+            let titleCancion = resultado.title;
+            let idCancion = resultado.id
             
-            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a class="titulacion" href="tracks.html?idTrack=' + track.id + '">' + track.title + '</a></li>' 
+            document.querySelector(".listacanciones").innerHTML += '<li class="titulacion">' + '<a class="titulacion" href="tracks.html?idTrack=' + idCancion + '">' + titleCancion + '</a></li>' 
         
-            
-            for (let index = 0; index < cancionesFavoritas.length; index++) {
-                
-                fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + cancionesFavoritas[i])
-                .then(
-                    function(respuesta) {
-                        return respuesta.json();
-                    }
-                 )
-                 .then(
-                        function (resultado) {
-                            
-                        
-                    let resultados = resultado.data
-
-                    
-                    let titleCancion = resultados.title;
-                    let idCancion = resultados.id;
-
-                    let todasFavoritas = `<li class ="titulacion"><h3 class="titulacion"> <a class="titulacion" href="tracks.html?idTrack=` + idCancion + `">`
-                        + titleCancion + `</a> </h3> </li>`
-                    
-                        document.querySelector(".listacanciones").innerHTML += todasFavoritas
-
-                        
-    }) 
-    
-        }
         })
             }     
         
