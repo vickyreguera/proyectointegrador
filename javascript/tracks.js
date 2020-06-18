@@ -75,6 +75,9 @@ window.addEventListener("load", function () {
                         console.log(continuar);
  
                     }) // cierra function
+
+                    
+                   
  
                 }) // cierra primer fetch
     } // cierra if
@@ -82,60 +85,53 @@ window.addEventListener("load", function () {
         alert("No se recibió ID de canción")
     }
  
-// Agregar a playlist
+// Add to playlist
     let recuperoStorage = localStorage.getItem("playlist");
  
- 
+ // si no hay nada en storage, arranco un array
 if(recuperoStorage == null){
     playlist = [];
 } 
-else {
+else { //Sino, agarro lo que hay en Storage y lo descomprimo con Json para leer de storage y pasarlo a objeto (descomprime el texto y lo pasa a un objeto fácil de utilizar)
     playlist = JSON.parse(recuperoStorage);
 }
  
-//Me fijo que no esté en la lista y cambio el texto del botón
+//Se fija si ya está esa canción en la playlist y si es así, botón para sacarlo
 if(playlist.includes(codigoTrack)){
     document.querySelector(".play").innerHTML = "Remove from playlist";
 }
  
-//Paso 2: agregar un track a la playlist.
+//Para agregar una canción a la playlist
 document.querySelector(".laquiero").addEventListener("click", function(e){
     //Detener el comportamiento default de <a></a>
     e.preventDefault();
  
     if(playlist.includes(codigoTrack)){
-        //Si el track está tenemos que quitarlo.
-        // indexof() para localizar valores en un array 
-        let array = playlist.indexOf(codigoTrack);
-        playlist.splice(array, 1);
+        //Si el track está ya en la playlist, lo va a sacar (el splice es sacar algo del array (posicionCancion), el 1 hace referencia a borrá solo un elemento)
+        // indexof() para localizar valores en un array. Pregunta: ¿En qué posición está esa canción? para poder sacarlo con el splice
+        let posicionCancion = playlist.indexOf(codigoTrack);
+        playlist.splice(posicionCancion, 1);
         document.querySelector(".play").innerHTML = "Add to playlist";
         console.log(playlist);
         
     } 
     else { 
-        //Agrego el id del track a la lista
+        //El push agrega la canción (el id) a la playlist si no era favorita 
         playlist.push(codigoTrack);
         document.querySelector(".play").innerHTML = "Remove from playlist"
     }
     
  
- 
     //Paso 3 guardar lista en localStorage
-    let alStorage = JSON.stringify(playlist);
-    localStorage.setItem("playlist", alStorage);
+    // Una vez se actualizó la información de canciones en la playlist, se vuelve a convertir a JSON y se manda al storage
+    let loMando = JSON.stringify(playlist);
+    localStorage.setItem("playlist", loMando);
     console.log(localStorage);
  
  
 })
  
- document.querySelector(".anterior").addEventListener("onclick", function(e){
-     let volver = confirm("¿Desea volver a la página anterior?") 
-    if (volver == true) { 
-       
-        
-    } // cierra if
-}) //cierra function y el evento
-
+ 
  
  
  
