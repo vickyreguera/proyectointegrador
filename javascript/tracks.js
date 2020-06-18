@@ -14,8 +14,8 @@ window.addEventListener("load", function () {
                 function (resultado) {
                     console.log(resultado)
                     
-                    
-                    document.querySelector(".titulando").innerHTML = resultado.title
+                    let nombreCancion = resultado.title
+                    document.querySelector(".titulando").innerHTML = nombreCancion
 
                     let tiempo = resultado.duration
                     let enSegundos = `<li class="fecha"><strong>` + tiempo + ` segundos </strong></li>`

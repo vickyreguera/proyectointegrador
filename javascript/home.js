@@ -59,7 +59,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
 
            document.querySelector(".spinnertracks").style.display = "none"
            document.querySelector(".listadotracks").innerHTML += htmlTracksTrending
-    
+           
        }
 
        let infoArtists = resultado.artists.data;
