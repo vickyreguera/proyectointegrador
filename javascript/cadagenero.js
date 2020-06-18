@@ -28,7 +28,7 @@ window.addEventListener("load", function(){
             
             document.querySelector(".infodelgenero").innerHTML += portadaGeneros
  
-            let generoId = infoGeneros.id;
+            
 
         }) /* cierra .then */
  

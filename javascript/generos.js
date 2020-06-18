@@ -10,6 +10,7 @@ window.addEventListener("load", function(){
     function(resultado){ 
         let infoGeneros = resultado.data;
 
+        /* 1 por all */
         for (let index = 1; index < infoGeneros.length; index++) {
             const cadaGenero = infoGeneros[index];
             
