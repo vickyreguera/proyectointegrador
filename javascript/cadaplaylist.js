@@ -8,19 +8,19 @@ window.addEventListener("load", function(){
 
 let traigoInfo = localStorage.getItem("playlist");
 let playlist = JSON.parse(traigoInfo);
-// el Json lo trae devuelta en objeto a lo que estaba en el storage
+//Json trae el objeto de storage
 
 
 console.log(traigoInfo);
 if(traigoInfo == null || traigoInfo == "[]"){
     playlist = [];
     document.querySelector(".listacanciones").innerHTML += '<li class="nohay"> No hay canciones en tu playlist </li>'
-    // si no hay nada que me ponga esa frase
+   
     
 } 
 else {
 
-   // si sí hay, recorre la lista de canciones añadidas a la playlisy
+   // si sí hay, recorre la lista de canciones añadidas a la playlist
 
     for (let index = 0; index < playlist.length; index++) {
         const canciones = playlist[index];

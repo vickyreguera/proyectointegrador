@@ -92,11 +92,11 @@ window.addEventListener("load", function () {
 if(recuperoStorage == null){
     playlist = [];
 } 
-else { //Sino, agarro lo que hay en Storage y lo descomprimo con Json para leer de storage y pasarlo a objeto (descomprime el texto y lo pasa a un objeto fácil de utilizar)
+else { //Leo con Json para pasarlo a objeto
     playlist = JSON.parse(recuperoStorage);
 }
  
-//Se fija si ya está esa canción en la playlist y si es así, botón para sacarlo
+//Si está, botón para sacarlo
 if(playlist.includes(codigoTrack)){
     document.querySelector(".play").innerHTML = "Remove from playlist";
 }
@@ -107,8 +107,7 @@ document.querySelector(".laquiero").addEventListener("click", function(e){
     e.preventDefault();
  
     if(playlist.includes(codigoTrack)){
-        //Si el track está ya en la playlist, lo va a sacar (el splice es sacar algo del array (posicionCancion), el 1 hace referencia a borrá solo un elemento)
-        // indexof() para localizar valores en un array. Pregunta: ¿En qué posición está esa canción? para poder sacarlo con el splice
+        //Sacar la canción si está
         let posicionCancion = playlist.indexOf(codigoTrack);
         playlist.splice(posicionCancion, 1);
         document.querySelector(".play").innerHTML = "Add to playlist";
@@ -116,14 +115,14 @@ document.querySelector(".laquiero").addEventListener("click", function(e){
         
     } 
     else { 
-        //El push agrega la canción (el id) a la playlist si no era favorita 
+        // Manda la cancion si no está
         playlist.push(codigoTrack);
         document.querySelector(".play").innerHTML = "Remove from playlist"
     }
     
  
-    //Paso 3 guardar lista en localStorage
-    // Una vez se actualizó la información de canciones en la playlist, se vuelve a convertir a JSON y se manda al storage
+    
+    // convertir a JSON y mandar al storage
     let loMando = JSON.stringify(playlist);
     localStorage.setItem("playlist", loMando);
     console.log(localStorage);
