@@ -611,6 +611,16 @@ div.nosotras{
     margin-top: 15px;
     font-size: 30px;
 }
+.spinnertracks{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    
+}
+.colizq{
+    position: relative;
+}
 
 
 }
